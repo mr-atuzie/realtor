@@ -98,7 +98,7 @@ const Review = () => {
             spaceBetween={50}
             navigation
             // pagination={{ clickable: true }}
-            // loop={true}
+            loop={true}
             autoplay={{
               delay: 3000,
               disableOnInteraction: false,
@@ -134,7 +134,7 @@ const Review = () => {
                         {review}
                       </p>
 
-                      <div className=" flex gap-1 text-yellow-400">
+                      <div className=" flex gap-1 my-3 text-yellow-400">
                         <BsStarFill size={30} />
                         <BsStarFill size={30} />
                         <BsStarFill size={30} />
