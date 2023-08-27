@@ -55,7 +55,7 @@ const Register = () => {
         <h1 className=" text-center text-lg my-4 text-gray-500">or</h1>
 
         <button
-          className=" w-full text-center py-2 my-7 bg-white border text-black rounded-full"
+          className=" w-full  flex items-center gap-1 text-center py-2 my-7 bg-white border text-black rounded-full"
           type="submit"
         >
           <FcGoogle />
@@ -63,7 +63,7 @@ const Register = () => {
         </button>
 
         <button
-          className=" w-full text-center py-2 my-2 bg-white border text-black  rounded-full"
+          className=" w-full flex items-center gap-1 text-center py-2 my-2 bg-white border text-black  rounded-full"
           type="submit"
         >
           <FaFacebook />
@@ -71,7 +71,7 @@ const Register = () => {
         </button>
 
         <button
-          className=" w-full text-center py-2 my-2 bg-white border text-black  rounded-full"
+          className=" w-full  flex items-center gap-1 text-center py-2 my-2 bg-white border text-black  rounded-full"
           type="submit"
         >
           <FaTwitter />
