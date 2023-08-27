@@ -9,7 +9,7 @@ const Register = () => {
       <form className=" w-[90%] lg:w-[38%] py-5 mx-auto">
         <div className=" flex items-center text-purple-600">
           <IoLogoBuffer size={25} />
-          <h1 className=" ml-1 font-ghjbold text-xs  lg:text-base">ARTECH</h1>
+          <h1 className=" ml-1 font-bold text-xs  lg:text-base">ARTECH</h1>
         </div>
 
         <div className=" my-8">
@@ -22,10 +22,10 @@ const Register = () => {
         </div>
 
         <div className=" my-3">
-          <div className=" text-sm flex items-center">
-            <label htmlFor="email">Email</label>
-            <span className=" text-purple-600">*</span>
-          </div>
+          <label className=" text-sm" htmlFor="email">
+            Email
+          </label>
+
           <input
             className="border p-2 rounded-full block w-full"
             type="email"
@@ -34,10 +34,9 @@ const Register = () => {
         </div>
 
         <div className=" my-3">
-          <div className=" text-sm flex items-center">
-            <label htmlFor="password">Password</label>
-            <span className=" text-purple-600">*</span>
-          </div>
+          <label className=" text-sm" htmlFor="password">
+            Password
+          </label>
           <input
             className="border p-2 rounded-full block w-full"
             type="password"
@@ -52,10 +51,10 @@ const Register = () => {
           Sign up
         </button>
 
-        <h1 className=" text-center text-lg my-4 text-gray-500">or</h1>
+        <h1 className=" text-center text-lg my-3 text-gray-500">or</h1>
 
         <button
-          className=" w-full  flex items-center gap-1 text-center py-2 my-7 bg-white border text-black rounded-full"
+          className=" w-full  flex items-center gap-1 text-center py-2 my-2 bg-white border text-black rounded-full"
           type="submit"
         >
           <FcGoogle />
