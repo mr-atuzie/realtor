@@ -1,9 +1,17 @@
 import React from "react";
 import phone from "../assets/pv.jpg";
+import { GiOwl } from "react-icons/gi";
 
 const Phone = () => {
   return (
     <div className=" w-full bg-purple-50  py-5  h-screen">
+      <div className=" w-[90%] mx-auto flex items-center text-purple-600">
+        <GiOwl className=" font-bold" size={20} />
+        <h1 className=" ml-1 font-bold text-sm text-black  lg:text-base">
+          ARTECH
+        </h1>
+      </div>
+
       <div className=" flex flex-col items-center">
         <img
           width={200}
