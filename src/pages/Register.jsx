@@ -45,13 +45,13 @@ const Register = () => {
         </div>
 
         <button
-          className=" w-full text-center py-2 my-7 bg-purple-600 text-white  rounded-xl"
+          className=" w-full text-center py-2 my-5 bg-purple-600 text-white  rounded-xl"
           type="submit"
         >
           Sign up
         </button>
 
-        <h1 className=" text-center text-lg my-4 text-gray-500">or</h1>
+        <h1 className=" text-center text-lg my-7 text-gray-500">or</h1>
 
         <button
           className=" w-full  flex items-center justify-center gap-2 text-center py-2 my-4 bg-white border text-black rounded-full"
