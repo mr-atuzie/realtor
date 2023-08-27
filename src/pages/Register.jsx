@@ -6,7 +6,7 @@ import { FaFacebook, FaTwitter, FaApple } from "react-icons/fa";
 
 const Register = () => {
   return (
-    <div className=" w-full  h-screen">
+    <div className=" w-full bg-gray-50  h-screen">
       <form className=" w-[90%] lg:w-[38%] py-5 mx-auto">
         <div className=" flex items-center text-purple-600">
           <GiOwl className=" font-bold" size={20} />
