@@ -11,6 +11,7 @@ const Phone = () => {
           <GiOwl className=" font-bold" size={20} />
           <h1 className=" ml-1 font-bold text-sm  lg:text-base">ARTECH</h1>
         </div>
+
         <div className=" my-8">
           <Link to={"/"}>
             <h2 className="text-xl lg:text-3xl font-medium text-center ">
@@ -27,12 +28,12 @@ const Phone = () => {
         <img
           width={200}
           height={200}
-          className=" my-6 object-cover rounded-full"
+          className=" my-3 object-cover rounded-full"
           src={phone}
           alt=""
         />
 
-        <form className=" w-[90%] lg:w-[38%] py-5 mx-auto">
+        <form className=" w-[90%] lg:w-[38%]  mx-auto">
           <div className=" mb-3">
             <label className=" text-gray-800 text-xs" htmlFor="password">
               Phone number
