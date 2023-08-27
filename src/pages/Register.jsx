@@ -5,7 +5,7 @@ import { FaFacebook, FaTwitter } from "react-icons/fa";
 
 const Register = () => {
   return (
-    <div className=" w-full text-lg font-medium flex justify-center items-center h-screen">
+    <div className=" w-full  h-screen">
       <form className=" w-[90%] lg:w-[38%] ">
         <div className=" flex items-center">
           <IoLogoBuffer size={20} />
