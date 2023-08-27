@@ -61,7 +61,7 @@ const Register = () => {
 
         <h1 className=" text-center text-lg my-6 text-gray-500">or</h1>
 
-        <div className=" my-3">
+        <div className=" mb-3">
           <label className=" text-sm" htmlFor="email">
             Email
           </label>
@@ -85,7 +85,7 @@ const Register = () => {
         </div>
 
         <button
-          className=" w-full text-center py-2 my-5 bg-purple-600 text-white  rounded-xl"
+          className=" w-full text-center py-2 my-4 bg-purple-600 text-white  rounded-xl"
           type="submit"
         >
           Sign up
