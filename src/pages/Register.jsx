@@ -11,9 +11,7 @@ const Register = () => {
       <form className=" w-[90%] lg:w-[38%] py-5 mx-auto">
         <div className=" flex items-center text-purple-600">
           <GiOwl className=" font-bold" size={20} />
-          <h1 className=" ml-1 font-bold text-sm text-black  lg:text-base">
-            ARTECH
-          </h1>
+          <h1 className=" ml-1 font-bold text-sm   lg:text-base">ARTECH</h1>
         </div>
 
         <div className=" my-8">
