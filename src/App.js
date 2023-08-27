@@ -6,12 +6,14 @@ import Blog from "./pages/Blog";
 import Pricing from "./pages/Pricing";
 import Service from "./pages/Service";
 import Register from "./pages/Register";
+import Phone from "./pages/Phone";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Register />} />
+        <Route path="/phone" element={<Phone />} />
         <Route path="/about-us" element={<About />} />
         <Route path="/services" element={<Service />} />
         <Route path="/blog" element={<Blog />} />

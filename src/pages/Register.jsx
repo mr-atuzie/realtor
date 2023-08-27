@@ -3,10 +3,11 @@ import React from "react";
 import { GiOwl } from "react-icons/gi";
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebook, FaTwitter, FaApple } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   return (
-    <div className=" w-full bg-gray-50  h-screen">
+    <div className=" w-full bg-purple-50  h-screen">
       <form className=" w-[90%] lg:w-[38%] py-5 mx-auto">
         <div className=" flex items-center text-purple-600">
           <GiOwl className=" font-bold" size={20} />
@@ -16,9 +17,11 @@ const Register = () => {
         </div>
 
         <div className=" my-8">
-          <h2 className="text-xl lg:text-3xl font-medium text-center ">
-            Create your account
-          </h2>
+          <Link to={"/phone"}>
+            <h2 className="text-xl lg:text-3xl font-medium text-center ">
+              Create your account
+            </h2>
+          </Link>
           <p className="text-xs text-gray-500 text-center">
             Improve your business by creating a strong digital presence.
           </p>
