@@ -16,7 +16,7 @@ const Phone = () => {
         <div className=" my-8">
           <Link to={"/"}>
             <h2 className="text-xl lg:text-3xl font-medium text-center ">
-              Create your account
+              Phone Verification
             </h2>
           </Link>
           <p className="text-xs text-gray-500 text-center">
@@ -29,15 +29,15 @@ const Phone = () => {
         <img
           width={200}
           height={200}
-          className=" my-8 object-cover rounded-full"
+          className=" my-6 object-cover rounded-full"
           src={phone}
           alt=""
         />
 
         <form className=" w-[90%] lg:w-[38%] py-5 mx-auto">
           <div className=" mb-3">
-            <label className=" text-gray-800 text-sm" htmlFor="password">
-              Your phone number
+            <label className=" text-gray-800 text-xs" htmlFor="password">
+              Phone number
             </label>
             <input
               className="border p-2 rounded-xl block w-full"
