@@ -20,7 +20,7 @@ const Phone = () => {
             </h2>
           </Link>
           <p className="text-xs text-gray-500 text-center">
-            Improve your business by creating a strong digital presence.
+            Enter your phone number to recieve a verifaction code
           </p>
         </div>
       </div>
@@ -35,11 +35,6 @@ const Phone = () => {
         />
 
         <form className=" w-[90%] lg:w-[38%] py-5 mx-auto">
-          <div>
-            <p className=" text-center text-gray-500 text-xs">
-              Enter your phone number to recieve a verifaction code
-            </p>
-          </div>
           <div className=" mb-3">
             <input
               className="border p-2 rounded-xl block w-full"
