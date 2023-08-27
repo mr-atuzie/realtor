@@ -9,7 +9,7 @@ const Register = () => {
     <div className=" w-full  h-screen">
       <form className=" w-[90%] lg:w-[38%] py-5 mx-auto">
         <div className=" flex items-center text-purple-600">
-          <GiOwl size={30} />
+          <GiOwl size={20} />
           <h1 className=" ml-1 font-bold text-xs  lg:text-base">ARTECH</h1>
         </div>
 
@@ -21,38 +21,6 @@ const Register = () => {
             Improve your business by creating a strong digital presence.
           </p>
         </div>
-
-        <div className=" my-3">
-          <label className=" text-sm" htmlFor="email">
-            Email
-          </label>
-
-          <input
-            className="border p-2 rounded-xl block w-full"
-            type="email"
-            name="email"
-          />
-        </div>
-
-        <div className=" my-3">
-          <label className=" text-sm" htmlFor="password">
-            Password
-          </label>
-          <input
-            className="border p-2 rounded-xl block w-full"
-            type="password"
-            name="password"
-          />
-        </div>
-
-        <button
-          className=" w-full text-center py-2 my-5 bg-purple-600 text-white  rounded-xl"
-          type="submit"
-        >
-          Sign up
-        </button>
-
-        <h1 className=" text-center text-lg my-6 text-gray-500">or</h1>
 
         <button
           className=" w-full  flex items-center justify-center gap-2 text-center py-2 my-4 bg-white border text-black rounded-full"
@@ -84,6 +52,38 @@ const Register = () => {
         >
           <FaTwitter className="text-blue-500" />
           Sign up with Twitter
+        </button>
+
+        <h1 className=" text-center text-lg my-6 text-gray-500">or</h1>
+
+        <div className=" my-3">
+          <label className=" text-sm" htmlFor="email">
+            Email
+          </label>
+
+          <input
+            className="border p-2 rounded-xl block w-full"
+            type="email"
+            name="email"
+          />
+        </div>
+
+        <div className=" my-3">
+          <label className=" text-sm" htmlFor="password">
+            Password
+          </label>
+          <input
+            className="border p-2 rounded-xl block w-full"
+            type="password"
+            name="password"
+          />
+        </div>
+
+        <button
+          className=" w-full text-center py-2 my-5 bg-purple-600 text-white  rounded-xl"
+          type="submit"
+        >
+          Sign up
         </button>
       </form>
     </div>
