@@ -38,6 +38,13 @@ const Register = () => {
             name="password"
           />
         </div>
+
+        <button
+          className=" my-7 bg-black text-white font-semibold rounded-md"
+          type="submit"
+        >
+          Sign up
+        </button>
       </form>
     </div>
   );
