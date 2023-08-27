@@ -6,7 +6,7 @@ import { FaFacebook, FaTwitter } from "react-icons/fa";
 const Register = () => {
   return (
     <div className=" w-full  h-screen">
-      <form className=" w-[90%] lg:w-[38%] ">
+      <form className=" w-[90%] lg:w-[38%] py-5 mx-auto">
         <div className=" flex items-center text-purple-600">
           <IoLogoBuffer size={20} />
           <h1 className=" ml-1 font-semibold text-xs  lg:text-base">ARTECH</h1>
