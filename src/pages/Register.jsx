@@ -1,7 +1,7 @@
 import React from "react";
 import { IoLogoBuffer } from "react-icons/io";
 import { FcGoogle } from "react-icons/fc";
-import { FaFacebook, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaApple } from "react-icons/fa";
 
 const Register = () => {
   return (
@@ -17,7 +17,7 @@ const Register = () => {
             Create your account
           </h2>
           <p className="text-xs text-gray-500 text-center">
-            Let's get started with your 30 days free trail
+            Improve your business by creating a strong digital presence.
           </p>
         </div>
 
@@ -27,7 +27,7 @@ const Register = () => {
           </label>
 
           <input
-            className="border p-2 rounded-full block w-full"
+            className="border p-2 rounded-xl block w-full"
             type="email"
             name="email"
           />
@@ -38,23 +38,23 @@ const Register = () => {
             Password
           </label>
           <input
-            className="border p-2 rounded-full block w-full"
+            className="border p-2 rounded-xl block w-full"
             type="password"
             name="password"
           />
         </div>
 
         <button
-          className=" w-full text-center py-2 my-7 bg-purple-600 text-white  rounded-2xl"
+          className=" w-full text-center py-2 my-7 bg-purple-600 text-white  rounded-xl"
           type="submit"
         >
           Sign up
         </button>
 
-        <h1 className=" text-center text-lg my-3 text-gray-500">or</h1>
+        <h1 className=" text-center text-lg my-4 text-gray-500">or</h1>
 
         <button
-          className=" w-full  flex items-center justify-center gap-1 text-center py-2 my-2 bg-white border text-black rounded-full"
+          className=" w-full  flex items-center justify-center gap-1 text-center py-2 my-4 bg-white border text-black rounded-full"
           type="submit"
         >
           <FcGoogle />
@@ -62,19 +62,27 @@ const Register = () => {
         </button>
 
         <button
-          className=" w-full flex items-center gap-1 text-center justify-center py-2 my-2 bg-white border text-black  rounded-full"
+          className=" w-full text-gray-600 flex items-center gap-1 text-center justify-center py-2 my-4 bg-white border   rounded-full"
           type="submit"
         >
-          <FaFacebook />
+          <FaFacebook className="text-blue-600" />
           Sign up with Facebook
         </button>
 
         <button
-          className=" w-full  flex items-center gap-1 text-center py-2 my-2 bg-white border text-black  rounded-full"
+          className=" w-full text-gray-600  flex items-center gap-1 text-center py-2 my-4 bg-white border   rounded-full"
           type="submit"
         >
-          <FaTwitter />
-          Sign up with X
+          <FaApple className="text-black" />
+          Sign up with Apple
+        </button>
+
+        <button
+          className=" w-full text-gray-600  flex items-center gap-1 text-center py-2 my-4 bg-white border rounded-full"
+          type="submit"
+        >
+          <FaTwitter className="text-blue-500" />
+          Sign up with Twitter
         </button>
       </form>
     </div>
