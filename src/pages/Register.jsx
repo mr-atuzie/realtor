@@ -7,12 +7,12 @@ const Register = () => {
   return (
     <div className=" w-full  h-screen">
       <form className=" w-[90%] lg:w-[38%] ">
-        <div className=" flex items-center">
+        <div className=" flex items-center text-purple-600">
           <IoLogoBuffer size={20} />
           <h1 className=" ml-1 font-semibold text-xs  lg:text-base">ARTECH</h1>
         </div>
 
-        <div className=" my-4">
+        <div className=" my-8">
           <h2 className="text-xl lg:text-3xl font-medium text-center ">
             Create your account
           </h2>
@@ -21,7 +21,7 @@ const Register = () => {
           </p>
         </div>
 
-        <div className=" my-4">
+        <div className=" my-3">
           <div className=" text-sm flex items-center">
             <label htmlFor="email">Email</label>
             <span className=" text-purple-600">*</span>
@@ -33,7 +33,7 @@ const Register = () => {
           />
         </div>
 
-        <div className=" my-4">
+        <div className=" my-3">
           <div className=" text-sm flex items-center">
             <label htmlFor="password">Password</label>
             <span className=" text-purple-600">*</span>
@@ -46,7 +46,7 @@ const Register = () => {
         </div>
 
         <button
-          className=" w-full text-center py-2 my-7 bg-black text-white font-semibold rounded-full"
+          className=" w-full text-center py-2 my-7 bg-purple-600 text-white  rounded-2xl"
           type="submit"
         >
           Sign up
