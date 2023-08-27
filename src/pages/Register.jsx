@@ -17,7 +17,7 @@ const Register = () => {
           Let's get started with your 30 days free trail
         </p>
 
-        <div>
+        <div className=" my-7">
           <label className=" text-sm" htmlFor="email">
             Email
           </label>
@@ -25,6 +25,17 @@ const Register = () => {
             className="border p-2 rounded-md block w-full"
             type="email"
             name="email"
+          />
+        </div>
+
+        <div className=" my-7">
+          <label className=" text-sm" htmlFor="email">
+            Password
+          </label>
+          <input
+            className="border p-2 rounded-md block w-full"
+            type="password"
+            name="password"
           />
         </div>
       </form>
