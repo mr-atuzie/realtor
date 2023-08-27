@@ -1,5 +1,6 @@
 import React from "react";
-import { IoLogoBuffer } from "react-icons/io";
+// import { IoLogoBuffer } from "react-icons/io";
+import { GiOwl } from "react-icons/gi";
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebook, FaTwitter, FaApple } from "react-icons/fa";
 
@@ -8,7 +9,7 @@ const Register = () => {
     <div className=" w-full  h-screen">
       <form className=" w-[90%] lg:w-[38%] py-5 mx-auto">
         <div className=" flex items-center text-purple-600">
-          <IoLogoBuffer size={25} />
+          <GiOwl size={30} />
           <h1 className=" ml-1 font-bold text-xs  lg:text-base">ARTECH</h1>
         </div>
 
@@ -51,7 +52,7 @@ const Register = () => {
           Sign up
         </button>
 
-        <h1 className=" text-center text-lg my-7 text-gray-500">or</h1>
+        <h1 className=" text-center text-lg my-6 text-gray-500">or</h1>
 
         <button
           className=" w-full  flex items-center justify-center gap-2 text-center py-2 my-4 bg-white border text-black rounded-full"
