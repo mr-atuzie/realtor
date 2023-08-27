@@ -64,7 +64,7 @@ const Register = () => {
         </h1>
 
         <div className=" mb-3">
-          <label className=" text-sm" htmlFor="email">
+          <label className=" text-gray-800 text-sm" htmlFor="email">
             Email
           </label>
 
@@ -76,7 +76,7 @@ const Register = () => {
         </div>
 
         <div className=" my-3">
-          <label className=" text-sm" htmlFor="password">
+          <label className=" text-gray-800 text-sm" htmlFor="password">
             Password
           </label>
           <input
