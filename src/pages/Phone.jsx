@@ -36,6 +36,9 @@ const Phone = () => {
 
         <form className=" w-[90%] lg:w-[38%] py-5 mx-auto">
           <div className=" mb-3">
+            <label className=" text-sm" htmlFor="password">
+              Phone number
+            </label>
             <input
               className="border p-2 rounded-xl block w-full"
               type="tel"
@@ -43,7 +46,7 @@ const Phone = () => {
             />
           </div>
           <button
-            className=" w-full text-center py-2 my-4 bg-purple-600 text-white  rounded-xl"
+            className=" w-full text-center py-2 my-3 bg-purple-600 text-white  rounded-xl"
             type="submit"
           >
             SEND OTP
