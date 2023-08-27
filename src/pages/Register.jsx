@@ -59,7 +59,7 @@ const Register = () => {
           Sign up with Twitter
         </button>
 
-        <h1 className=" text-center text-lg my-6 text-gray-500">or</h1>
+        <h1 className=" text-center text-lg my-4 text-gray-500">or</h1>
 
         <div className=" mb-3">
           <label className=" text-sm" htmlFor="email">
