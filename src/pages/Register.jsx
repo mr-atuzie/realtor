@@ -62,7 +62,7 @@ const Register = () => {
         </button>
 
         <button
-          className=" w-full text-gray-600 flex items-center gap-2 text-center justify-center py-2 my-4 bg-white border   rounded-full"
+          className=" w-full  flex items-center gap-2 text-center justify-center py-2 my-4 bg-white border   rounded-full"
           type="submit"
         >
           <FaFacebook className="text-blue-600" />
@@ -70,7 +70,7 @@ const Register = () => {
         </button>
 
         <button
-          className=" w-full text-gray-600  flex items-center gap-2 text-center justify-center py-2 my-4 bg-white border   rounded-full"
+          className=" w-full   flex items-center gap-2 text-center justify-center py-2 my-4 bg-white border   rounded-full"
           type="submit"
         >
           <FaApple className="text-black" />
@@ -78,7 +78,7 @@ const Register = () => {
         </button>
 
         <button
-          className=" w-full text-gray-600  flex items-center gap-2 text-center justify-center py-2 my-4 bg-white border rounded-full"
+          className=" w-full  flex items-center gap-2 text-center justify-center py-2 my-4 bg-white border rounded-full"
           type="submit"
         >
           <FaTwitter className="text-blue-500" />
