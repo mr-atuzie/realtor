@@ -6,14 +6,15 @@ import { FaFacebook, FaTwitter, FaApple } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { auth } from "../firebase-config";
+import { FacebookAuthProvider } from "firebase/auth";
 
 const Register = () => {
   const navigate = useNavigate();
-  const provider = new GoogleAuthProvider();
 
   const handleGoogle = async (e) => {
     e.preventDefault();
 
+    const provider = new GoogleAuthProvider();
     try {
       signInWithPopup(auth, provider).then((result) => {
         console.log(result);
@@ -26,6 +27,27 @@ const Register = () => {
 
         sessionStorage.setItem("user", JSON.stringify(user));
         navigate("/dashboard");
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const handleFacebook = async (e) => {
+    e.preventDefault();
+    const provider = new FacebookAuthProvider();
+    try {
+      signInWithPopup(auth, provider).then((result) => {
+        console.log(result);
+
+        // const user = {
+        //   name: result.user.displayName,
+        //   email: result.user.email,
+        //   photo: result.user.photoURL,
+        // };
+
+        // sessionStorage.setItem("user", JSON.stringify(user));
+        // navigate("/dashboard");
       });
     } catch (error) {
       console.log(error);
@@ -61,7 +83,7 @@ const Register = () => {
 
         <button
           className=" w-full  flex items-center gap-2 text-center justify-center py-2 my-4 bg-white border   rounded-full"
-          type="submit"
+          onClick={handleFacebook}
         >
           <FaFacebook className="text-blue-600" />
           Sign up with Facebook
