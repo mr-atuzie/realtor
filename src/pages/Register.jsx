@@ -3,9 +3,35 @@ import React from "react";
 import { GiOwl } from "react-icons/gi";
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebook, FaTwitter, FaApple } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { auth } from "../firebase-config";
 
 const Register = () => {
+  const navigate = useNavigate();
+  const provider = new GoogleAuthProvider();
+
+  const handleGoogle = async (e) => {
+    e.preventDefault();
+
+    try {
+      signInWithPopup(auth, provider).then((result) => {
+        console.log(result);
+
+        const user = {
+          name: result.user.displayName,
+          email: result.user.email,
+          photo: result.user.photoURL,
+        };
+
+        sessionStorage.setItem("user", JSON.stringify(user));
+        navigate("/dashboard");
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <div className=" w-full bg-purple-50  h-screen">
       <form className=" w-[90%] lg:w-[38%] py-5 mx-auto">
@@ -27,7 +53,7 @@ const Register = () => {
 
         <button
           className=" w-full  flex items-center justify-center gap-2 text-center py-2 my-4 bg-white border text-black rounded-full"
-          type="submit"
+          onClick={handleGoogle}
         >
           <FcGoogle />
           Sign up with Google
