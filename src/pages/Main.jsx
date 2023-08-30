@@ -14,7 +14,7 @@ const Main = () => {
             alt=""
           />
           <div>
-            <h2 className=" font-medium capitalize">{user?.name}</h2>
+            <h2 className=" font-medium capitalize text-sm">{user?.name}</h2>
             <p className=" text-xs text-gray-500">{user?.email}</p>
           </div>
         </div>
