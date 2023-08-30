@@ -24,18 +24,18 @@ const Main = () => {
           <div className=" w-2 h-2 bg-red-500 rounded-full absolute  right-2"></div>
         </div>
       </div>
-      <div className=" h-[150px] p-2 rounded-lg my-6 bg-purple-700">
+      <div className="  p-3 rounded-lg my-6 bg-black">
         <div className=" text-white text-2xl flex items-center gap-1 font-light">
           <span className=" text-sm">$</span>
           <p>1685</p>
         </div>
 
         <div className=" my-3">
-          <button className=" bg-transparent text-white capitalize items-center rounded-md py-2.5">
+          <button className="flex justify-center gap-1 bg-gray-700 px-4  text-white capitalize items-center rounded-md py-2.5">
             <BsArrowUpShort /> buy
           </button>
 
-          <button className=" bg-transparent text-white capitalize items-center rounded-md py-2.5">
+          <button className=" flex justify-center gap-1 bg-gray-700 px-4  text-white capitalize items-center rounded-md py-2.5">
             <BsArrowDownShort />
             withdraw
           </button>
@@ -43,7 +43,7 @@ const Main = () => {
 
         <div className=" flex items-center gap-3">
           <div className=" text-white">
-            <p className=" text-sm font-medium">income</p>
+            <p className=" text-sm capitalize font-medium">income</p>
             <div className=" text-white text flex items-center gap-1 font-light">
               <span className=" text-sm">$</span>
               <p>2790</p>
@@ -51,7 +51,7 @@ const Main = () => {
           </div>
 
           <div className=" text-white">
-            <p className=" text-sm font-medium">outcome</p>
+            <p className=" text-sm capitalize font-medium">outcome</p>
             <div className=" text-white text flex items-center gap-1 font-light">
               <span className=" text-sm">$</span>
               <p>790</p>
@@ -59,7 +59,7 @@ const Main = () => {
           </div>
 
           <div className=" text-white">
-            <p className=" text-sm font-medium">intrest</p>
+            <p className=" text-sm capitalize font-medium">intrest</p>
             <div className=" text-white text flex items-center gap-1 font-light">
               <span className=" text-sm">$</span>
               <p>3280</p>
