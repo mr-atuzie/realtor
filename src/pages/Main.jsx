@@ -19,21 +19,23 @@ const Main = () => {
           </div>
         </div>
 
-        <div className=" bg-purple-50 flex justify-center items-center h-[50px] relative w-[50px] rounded-full">
+        <div className=" bg-gray-50 flex justify-center items-center h-[50px] relative w-[50px] rounded-full">
           <IoMdNotificationsOutline size={30} />
-          <div className=" w-2 h-2 bg-red-500 rounded-full absolute  right-1"></div>
+          <div className=" w-2 h-2 bg-red-500 rounded-full absolute  -right-2"></div>
         </div>
       </div>
-      <div className="  p-3 rounded-lg my-6 bg-black">
-        <div className="flex flex-col justify-center items-center">
-          <p className=" text-xs capitalize font-medium">Account Balance</p>
+      <div className="  p-3 rounded-lg my-6 bg-black shadow-xl">
+        <div className="flex flex-col items-center">
+          <p className=" text-xs text-white  uppercase font-medium">
+            Account Balance
+          </p>
           <div className=" text-white text-2xl flex items-center gap-1 font-light">
             <span className=" text-sm">$</span>
             <p>1685</p>
           </div>
         </div>
 
-        <div className=" my-3 flex gap-3">
+        <div className=" my-4 flex gap-4">
           <button className="flex text-sm justify-center gap-1 bg-gray-800 px-4  text-white capitalize items-center rounded-md py-2.5">
             <BsArrowUpShort /> buy
           </button>
