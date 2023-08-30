@@ -1,4 +1,5 @@
 import React from "react";
+import { BsArrowDownShort, BsArrowUpShort } from "react-icons/bs";
 import { IoMdNotificationsOutline } from "react-icons/io";
 
 const Main = () => {
@@ -23,7 +24,7 @@ const Main = () => {
           <div className=" w-2 h-2 bg-red-500 rounded-full absolute  right-2"></div>
         </div>
       </div>
-      <div className=" h-[150px] rounded-lg my-6 bg-purple-700">
+      <div className=" h-[150px] p-2 rounded-lg my-6 bg-purple-700">
         <div className=" text-white text-2xl flex items-center gap-1 font-light">
           <span className=" text-sm">$</span>
           <p>2000</p>
@@ -31,10 +32,11 @@ const Main = () => {
 
         <div>
           <button className=" bg-transparent text-white capitalize items-center rounded-md py-2.5">
-            buy
+            <BsArrowUpShort /> buy
           </button>
 
           <button className=" bg-transparent text-white capitalize items-center rounded-md py-2.5">
+            <BsArrowDownShort />
             withdraw
           </button>
         </div>
