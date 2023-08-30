@@ -12,7 +12,10 @@ const Main = () => {
             className=" w-[50px] h-[50px] rounded-full object-cover"
             alt=""
           />
-          <h2 className=" font-medium capitalize">{user?.name}</h2>
+          <div>
+            <h2 className=" font-medium capitalize">{user?.name}</h2>
+            <p className=" text-xs text-gray-500">{user?.email}</p>
+          </div>
         </div>
 
         <div className=" bg-purple-50 flex justify-center items-center h-[50px] relative w-[50px] rounded-full">
@@ -25,10 +28,6 @@ const Main = () => {
           <span className=" text-sm">$</span>
           <p>2000</p>
         </div>
-        {/* <div>
-          
-          <p className=" text-xs text-gray-500">{user?.email}</p>
-        </div> */}
       </div>
     </div>
   );
