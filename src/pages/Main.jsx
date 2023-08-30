@@ -9,7 +9,7 @@ const Main = () => {
         <div className=" flex items-center gap-2">
           <img
             src={user?.photo}
-            className=" w-[50px] h-[50px] rounded-full object-cover"
+            className=" w-[40px] h-[40px] rounded-full object-cover"
             alt=""
           />
           <div>
