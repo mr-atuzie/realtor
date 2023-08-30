@@ -27,10 +27,10 @@ const Main = () => {
       <div className=" h-[150px] p-2 rounded-lg my-6 bg-purple-700">
         <div className=" text-white text-2xl flex items-center gap-1 font-light">
           <span className=" text-sm">$</span>
-          <p>2000</p>
+          <p>1685</p>
         </div>
 
-        <div>
+        <div className=" my-3">
           <button className=" bg-transparent text-white capitalize items-center rounded-md py-2.5">
             <BsArrowUpShort /> buy
           </button>
@@ -39,6 +39,32 @@ const Main = () => {
             <BsArrowDownShort />
             withdraw
           </button>
+        </div>
+
+        <div className=" flex items-center gap-3">
+          <div className=" text-white">
+            <p className=" text-sm font-medium">income</p>
+            <div className=" text-white text flex items-center gap-1 font-light">
+              <span className=" text-sm">$</span>
+              <p>2790</p>
+            </div>
+          </div>
+
+          <div className=" text-white">
+            <p className=" text-sm font-medium">outcome</p>
+            <div className=" text-white text flex items-center gap-1 font-light">
+              <span className=" text-sm">$</span>
+              <p>790</p>
+            </div>
+          </div>
+
+          <div className=" text-white">
+            <p className=" text-sm font-medium">intrest</p>
+            <div className=" text-white text flex items-center gap-1 font-light">
+              <span className=" text-sm">$</span>
+              <p>3280</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
