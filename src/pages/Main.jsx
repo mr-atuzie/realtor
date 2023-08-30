@@ -20,7 +20,12 @@ const Main = () => {
           <div className=" w-5 h-5 bg-red-500 rounded-full absolute top-0 right-2"></div>
         </div>
       </div>
-      <div className=" my-4 bg-black">
+      <div className=" h-[150px] rounded-lg my-4 bg-black">
+        <p className=" text-white text-2xl font-light">
+          {" "}
+          <span className=" text-sm">$</span>
+          2000
+        </p>
         {/* <div>
           
           <p className=" text-xs text-gray-500">{user?.email}</p>
