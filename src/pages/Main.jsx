@@ -4,7 +4,7 @@ import { IoMdNotificationsOutline } from "react-icons/io";
 const Main = () => {
   const user = JSON.parse(sessionStorage.getItem("user"));
   return (
-    <div className=" p-5">
+    <div className=" p-4">
       <div className=" flex items-center justify-between">
         <div className=" flex items-center gap-2">
           <img
@@ -15,17 +15,16 @@ const Main = () => {
           <h2 className=" font-medium capitalize">{user?.name}</h2>
         </div>
 
-        <div className=" bg-purple-50 h-[50px] relative w-[50px] rounded-full">
+        <div className=" bg-purple-50 flex justify-center items-center h-[50px] relative w-[50px] rounded-full">
           <IoMdNotificationsOutline size={25} />
-          <div className=" w-5 h-5 bg-red-500 rounded-full absolute top-0 right-2"></div>
+          <div className=" w-2 h-2 bg-red-500 rounded-full absolute  right-2"></div>
         </div>
       </div>
-      <div className=" h-[150px] rounded-lg my-4 bg-black">
-        <p className=" text-white text-2xl font-light">
-          {" "}
+      <div className=" h-[150px] rounded-lg my-6 bg-purple-700">
+        <div className=" text-white text-2xl flex items-center gap-1 font-light">
           <span className=" text-sm">$</span>
-          2000
-        </p>
+          <p>2000</p>
+        </div>
         {/* <div>
           
           <p className=" text-xs text-gray-500">{user?.email}</p>
