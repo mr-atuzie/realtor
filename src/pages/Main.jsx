@@ -21,7 +21,7 @@ const Main = () => {
 
         <div className=" bg-purple-50 flex justify-center items-center h-[50px] relative w-[50px] rounded-full">
           <IoMdNotificationsOutline size={30} />
-          <div className=" w-2 h-2 bg-red-500 rounded-full absolute  right-2"></div>
+          <div className=" w-2 h-2 bg-red-500 rounded-full absolute  right-1"></div>
         </div>
       </div>
       <div className="  p-3 rounded-lg my-6 bg-black">
