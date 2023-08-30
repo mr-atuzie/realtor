@@ -31,6 +31,10 @@ const Main = () => {
 
         <div>
           <button className=" bg-transparent text-white capitalize items-center rounded-md py-2.5">
+            buy
+          </button>
+
+          <button className=" bg-transparent text-white capitalize items-center rounded-md py-2.5">
             withdraw
           </button>
         </div>
