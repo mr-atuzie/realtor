@@ -54,7 +54,7 @@ const Otp = () => {
             className=" w-full text-center py-2 my-3 bg-purple-600 text-white  rounded-xl"
             type="submit"
           >
-            Send OTP
+            Verify OTP
           </button>
         </form>
       </div>
