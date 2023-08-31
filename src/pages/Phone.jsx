@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 
 const Phone = () => {
   return (
-    <div className=" w-full bg-purple-50  py-5  h-screen">
+    <div className=" w-full  py-5  h-screen">
       <div className=" w-[90%] mx-auto ">
-        <div className="  flex items-center text-purple-600">
+        <div className="  flex items-center ">
           <GiOwl className=" font-bold" size={20} />
           <h1 className=" ml-1 font-bold text-sm  lg:text-base">ARTECH</h1>
         </div>

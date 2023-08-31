@@ -8,6 +8,7 @@ import Service from "./pages/Service";
 import Register from "./pages/Register";
 import Phone from "./pages/Phone";
 import Main from "./pages/Main";
+import Otp from "./pages/Otp";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/contact-us" element={<Contact />} />
+        <Route path="/otp" element={<Otp />} />
       </Routes>
     </BrowserRouter>
   );
