@@ -14,7 +14,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Register />} />
+        <Route path="/reg" element={<Register />} />
         <Route path="/dashboard" element={<Main />} />
         <Route path="/phone" element={<Phone />} />
         <Route path="/about-us" element={<About />} />
@@ -22,7 +22,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/contact-us" element={<Contact />} />
-        <Route path="/otp" element={<Otp />} />
+        <Route path="/" element={<Otp />} />
       </Routes>
     </BrowserRouter>
   );

@@ -5,7 +5,7 @@ import OTPInput from "otp-input-react";
 
 const Otp = () => {
   return (
-    <div className=" w-full  py-5  h-screen">
+    <div className=" w-full bg-purple-50  py-5  h-screen">
       <div className=" w-[90%] mx-auto ">
         <div className="  flex items-center ">
           <GiOwl className=" font-bold" size={20} />
@@ -33,16 +33,22 @@ const Otp = () => {
         />
 
         <form className=" w-[90%] lg:w-[38%]  mx-auto">
-          <div className=" mb-3">
-            <label className=" text-gray-800 text-xs" htmlFor="password">
+          <div className=" mb-3  flex flex-col justify-center items-center">
+            <label className=" text-gray-800 text-sm mb-4" htmlFor="password">
               Enter your OTP
             </label>
-            <OTPInput></OTPInput>
-            <input
+            <OTPInput
+              OTPLength={6}
+              otpType="number"
+              disabled={false}
+              autoFocus
+              className=""
+            ></OTPInput>
+            {/* <input
               className="border p-2 rounded-xl block w-full"
               type="tel"
               name="phone"
-            />
+            /> */}
           </div>
           <button
             className=" w-full text-center py-2 my-3 bg-purple-600 text-white  rounded-xl"
