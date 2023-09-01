@@ -16,13 +16,13 @@ function App() {
       <Routes>
         <Route path="/reg" element={<Register />} />
         <Route path="/dashboard" element={<Main />} />
-        <Route path="/phone" element={<Phone />} />
+        <Route path="/" element={<Phone />} />
         <Route path="/about-us" element={<About />} />
         <Route path="/services" element={<Service />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/contact-us" element={<Contact />} />
-        <Route path="/" element={<Otp />} />
+        <Route path="/otp" element={<Otp />} />
       </Routes>
     </BrowserRouter>
   );

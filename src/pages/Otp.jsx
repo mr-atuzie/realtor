@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import phone from "../assets/pv.jpg";
 import { GiOwl } from "react-icons/gi";
+import { CgSpinner } from "react-icons/cg";
 import OTPInput from "otp-input-react";
 
 const Otp = () => {
   const [OTP, setOTP] = useState("");
+  const [loading, setLoading] = useState(false);
+
   return (
     <div className=" w-full bg-purple-50  py-5  h-screen">
       <div className=" w-[90%] mx-auto ">
@@ -34,7 +37,7 @@ const Otp = () => {
         />
 
         <form className=" w-[90%] lg:w-[38%]  mx-auto">
-          <div className=" mb-3  flex flex-col justify-center items-center">
+          <div className=" mb-10  flex flex-col justify-center items-center">
             <label className=" text-gray-800 text-sm mb-4" htmlFor="password">
               Enter your OTP
             </label>
@@ -53,10 +56,12 @@ const Otp = () => {
             /> */}
           </div>
           <button
-            className=" w-full text-center py-2 my-3 bg-purple-600 text-white  rounded-xl"
-            type="submit"
+            className=" w-full text-center py-2.5 rounded my-3 bg-purple-600 flex justify-center items-center gap-1 text-white  "
+            onClick={() => setLoading(false)}
           >
-            Verify OTP
+            {loading && <CgSpinner className=" animate-spin" size={25} />}
+
+            <span> Verify OTP</span>
           </button>
         </form>
       </div>

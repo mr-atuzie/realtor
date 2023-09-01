@@ -1,12 +1,70 @@
-import React from "react";
+import React, { useState } from "react";
 import phone from "../assets/pv.jpg";
 import { GiOwl } from "react-icons/gi";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { CgSpinner } from "react-icons/cg";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
+import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
+import { auth } from "../firebase-config";
+import { Toaster, toast } from "react-hot-toast";
 
 const Phone = () => {
+  const [loading, setLoading] = useState(false);
+  const [ph, setPh] = useState("");
+
+  const navigate = useNavigate();
+
+  const handleSubmit = () => {
+    setLoading(true);
+    if (!window.recaptchaVerifier) {
+      window.recaptchaVerifier = new RecaptchaVerifier(
+        auth,
+        "recaptcha-container",
+        {
+          size: "normal",
+          callback: (response) => {
+            onSignUp();
+          },
+          "expired-callback": () => {
+            // Response expired. Ask user to solve reCAPTCHA again.
+            // ...
+          },
+        }
+      );
+    }
+  };
+
+  function onSignUp() {
+    setLoading(true);
+    // onCaptchVerify();
+
+    const appVerifier = window.recaptchaVerifier;
+    const formatPh = "+" + ph;
+
+    signInWithPhoneNumber(auth, formatPh, appVerifier)
+      .then((confirmationResult) => {
+        // SMS sent. Prompt user to type the code from the message, then sign the
+        // user in with confirmationResult.confirm(code).
+        window.confirmationResult = confirmationResult;
+        setLoading(false);
+        toast.success("OTP sent successfully");
+        navigate("/otp");
+      })
+      .catch((error) => {
+        // Error; SMS not sent
+        console.log(error);
+      });
+  }
   return (
-    <div className=" w-full  py-5  h-screen">
+    <div className=" w-full  py-5 bg-pink-50  h-screen">
+      <Toaster
+        position="top-center"
+        reverseOrder={true}
+        toastOptions={{ duration: 4000 }}
+      />
       <div className=" w-[90%] mx-auto ">
+        <div id="recaptcha-container"></div>
         <div className="  flex items-center ">
           <GiOwl className=" font-bold" size={20} />
           <h1 className=" ml-1 font-bold text-sm  lg:text-base">ARTECH</h1>
@@ -33,24 +91,27 @@ const Phone = () => {
           alt=""
         />
 
-        <form className=" w-[90%] lg:w-[38%]  mx-auto">
-          <div className=" mb-3">
+        <div className=" w-[90%] lg:w-[30%]  mx-auto">
+          <div className=" mb-8">
             <label className=" text-gray-800 text-xs" htmlFor="password">
               Phone number
             </label>
-            <input
-              className="border p-2 rounded-xl block w-full"
+            <PhoneInput country={"ng"} value={ph} onChange={setPh} />
+            {/* <input
+              className="border p-2.5 block w-full"
               type="tel"
               name="phone"
-            />
+            /> */}
           </div>
           <button
-            className=" w-full text-center py-2 my-3 bg-purple-600 text-white  rounded-xl"
-            type="submit"
+            onClick={handleSubmit}
+            className=" w-full text-center py-2.5 rounded my-3 bg-purple-600 flex justify-center items-center gap-1 text-white  "
           >
-            Send OTP
+            {loading && <CgSpinner className=" animate-spin" size={25} />}
+
+            <span> Send code via SMS</span>
           </button>
-        </form>
+        </div>
       </div>
     </div>
   );

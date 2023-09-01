@@ -9,3 +9,7 @@
     font-family: "Rubik", sans-serif;
   }
 }
+
+.react-tel-input .form-control {
+  @apply !w-full py-6 !text-base;
+}
