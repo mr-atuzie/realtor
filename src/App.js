@@ -14,9 +14,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/reg" element={<Register />} />
+        <Route path="/" element={<Register />} />
         <Route path="/dashboard" element={<Main />} />
-        <Route path="/" element={<Phone />} />
+        <Route path="/phome" element={<Phone />} />
         <Route path="/about-us" element={<About />} />
         <Route path="/services" element={<Service />} />
         <Route path="/blog" element={<Blog />} />
