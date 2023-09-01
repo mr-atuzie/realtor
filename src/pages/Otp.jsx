@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import phone from "../assets/pv.jpg";
 import { GiOwl } from "react-icons/gi";
 import OTPInput from "otp-input-react";
 
 const Otp = () => {
+  const [OTP, setOTP] = useState("");
   return (
     <div className=" w-full bg-purple-50  py-5  h-screen">
       <div className=" w-[90%] mx-auto ">
@@ -38,11 +39,12 @@ const Otp = () => {
               Enter your OTP
             </label>
             <OTPInput
+              value={OTP}
+              onChange={setOTP}
               OTPLength={6}
               otpType="number"
               disabled={false}
               autoFocus
-              className=""
             ></OTPInput>
             {/* <input
               className="border p-2 rounded-xl block w-full"
