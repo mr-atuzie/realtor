@@ -43,7 +43,7 @@ const Register = () => {
       const result = await signInWithPopup(auth, provider);
       console.log(result);
 
-      const credential = GithubAuthProvider.credentialFromResult(result);
+      const credential = await GithubAuthProvider.credentialFromResult(result);
 
       const token = credential.accessToken;
 
