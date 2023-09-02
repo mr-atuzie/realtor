@@ -48,16 +48,17 @@ const Register = () => {
       const token = credential.accessToken;
 
       console.log(token);
-      const user = result.user;
-      console.log(user);
-      // const user = {
-      //   name: result.user.displayName,
-      //   email: result.user.email,
-      //   photo: result.user.photoURL,
-      // };
+      // const user = result.user;
+      // console.log(user);
 
-      // sessionStorage.setItem("user", JSON.stringify(user));
-      // navigate("/dashboard");
+      const user = {
+        name: result.user.displayName,
+        email: result.user.email,
+        photo: result.user.photoURL,
+      };
+
+      sessionStorage.setItem("user", JSON.stringify(user));
+      navigate("/dashboard");
     } catch (error) {
       console.log(error);
     }
