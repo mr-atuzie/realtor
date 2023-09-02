@@ -10,6 +10,12 @@ import Phone from "./pages/Phone";
 import Main from "./pages/Main";
 import Otp from "./pages/Otp";
 
+// secret
+// 1zFL61N0uIhJpBE3dClA4vESQI_jOI9pILY_WVWCXlovc_XbwC
+
+// id
+// M0FzMUFrTEJYajg0dzBhSmduN1c6MTpjaQ
+
 function App() {
   return (
     <BrowserRouter>
