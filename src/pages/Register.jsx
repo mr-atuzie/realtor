@@ -3,12 +3,13 @@ import React from "react";
 import { GiOwl } from "react-icons/gi";
 import { FcGoogle } from "react-icons/fc";
 // import { FaFacebook, FaTwitter, FaApple } from "react-icons/fa";
-// import { FaFacebook } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { auth } from "../firebase-config";
 // import { FacebookAuthProvider } from "firebase/auth";
 import { GithubAuthProvider } from "firebase/auth";
+import { TwitterAuthProvider } from "firebase/auth";
 import { BsGithub } from "react-icons/bs";
 
 const Register = () => {
@@ -39,6 +40,34 @@ const Register = () => {
   const handleGithub = async (e) => {
     e.preventDefault();
     const provider = new GithubAuthProvider();
+    try {
+      const result = await signInWithPopup(auth, provider);
+      console.log(result);
+
+      const credential = await GithubAuthProvider.credentialFromResult(result);
+
+      const token = credential.accessToken;
+
+      console.log(token);
+      // const user = result.user;
+      // console.log(user);
+
+      const user = {
+        name: result.user.displayName,
+        email: result.user.email,
+        photo: result.user.photoURL,
+      };
+
+      sessionStorage.setItem("user", JSON.stringify(user));
+      navigate("/dashboard");
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const handleTwitter = async (e) => {
+    e.preventDefault();
+    const provider = new TwitterAuthProvider();
     try {
       const result = await signInWithPopup(auth, provider);
       console.log(result);
@@ -117,16 +146,16 @@ const Register = () => {
           onClick={handleGithub}
         >
           <BsGithub className="text-black" />
-          Sign up with Facebook
+          Sign up with Github
         </button>
 
-        {/* <button
+        <button
           className=" w-full   flex items-center gap-2 text-center justify-center py-2 my-4 bg-white border   rounded-full"
-          type="submit"
+          onClick={handleTwitter}
         >
-          <FaApple className="text-black" />
-          Sign up with Apple
-        </button> */}
+          <FaTwitter className="text-blue-500" />
+          Sign up with Twitter
+        </button>
 
         {/* <button
           className=" w-full  flex items-center gap-2 text-center justify-center py-2 my-4 bg-white border rounded-full"
