@@ -3,11 +3,13 @@ import React from "react";
 import { GiOwl } from "react-icons/gi";
 import { FcGoogle } from "react-icons/fc";
 // import { FaFacebook, FaTwitter, FaApple } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
+// import { FaFacebook } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { auth } from "../firebase-config";
-import { FacebookAuthProvider } from "firebase/auth";
+// import { FacebookAuthProvider } from "firebase/auth";
+import { GithubAuthProvider } from "firebase/auth";
+import { BsGithub } from "react-icons/bs";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -34,22 +36,28 @@ const Register = () => {
     }
   };
 
-  const handleFacebook = async (e) => {
+  const handleGithub = async (e) => {
     e.preventDefault();
-    const provider = new FacebookAuthProvider();
+    const provider = new GithubAuthProvider();
     try {
-      await signInWithPopup(auth, provider).then((result) => {
-        console.log(result);
+      const result = await signInWithPopup(auth, provider);
+      console.log(result);
 
-        // const user = {
-        //   name: result.user.displayName,
-        //   email: result.user.email,
-        //   photo: result.user.photoURL,
-        // };
+      const credential = GithubAuthProvider.credentialFromResult(result);
 
-        // sessionStorage.setItem("user", JSON.stringify(user));
-        // navigate("/dashboard");
-      });
+      const token = credential.accessToken;
+
+      console.log(token);
+      const user = result.user;
+      console.log(user);
+      // const user = {
+      //   name: result.user.displayName,
+      //   email: result.user.email,
+      //   photo: result.user.photoURL,
+      // };
+
+      // sessionStorage.setItem("user", JSON.stringify(user));
+      // navigate("/dashboard");
     } catch (error) {
       console.log(error);
     }
@@ -77,9 +85,9 @@ const Register = () => {
   // };
 
   return (
-    <div className=" w-full bg-purple-50  h-screen">
+    <div className=" w-full bg-gray-50 h-screen">
       <form className=" w-[90%] lg:w-[38%] py-5 mx-auto">
-        <div className=" flex items-center text-purple-600">
+        <div className=" flex items-center text-black">
           <GiOwl className=" font-bold" size={20} />
           <h1 className=" ml-1 font-bold text-sm   lg:text-base">ARTECH</h1>
         </div>
@@ -105,9 +113,9 @@ const Register = () => {
 
         <button
           className=" w-full  flex items-center gap-2 text-center justify-center py-2 my-4 bg-white border   rounded-full"
-          onClick={handleFacebook}
+          onClick={handleGithub}
         >
-          <FaFacebook className="text-blue-600" />
+          <BsGithub className="text-black" />
           Sign up with Facebook
         </button>
 
@@ -167,7 +175,7 @@ const Register = () => {
         </div>
 
         <button
-          className=" w-full text-center py-2 my-4 bg-purple-600 text-white  rounded-xl"
+          className=" w-full text-center py-2 my-4 bg-black text-white  rounded-xl"
           type="submit"
         >
           Sign up
