@@ -3,7 +3,7 @@ import React from "react";
 import { GiOwl } from "react-icons/gi";
 import { FcGoogle } from "react-icons/fc";
 // import { FaFacebook, FaTwitter, FaApple } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
+import { FaTwitter, FaSms } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { auth } from "../firebase-config";
@@ -123,11 +123,10 @@ const Register = () => {
         </div>
 
         <div className=" my-8">
-          <Link to={"/phone"}>
-            <h2 className="text-xl lg:text-3xl font-medium text-center ">
-              Create your account
-            </h2>
-          </Link>
+          <h2 className="text-xl lg:text-3xl font-medium text-center ">
+            Create your account
+          </h2>
+
           <p className="text-xs text-gray-500 text-center">
             Improve your business by creating a strong digital presence.
           </p>
@@ -156,15 +155,12 @@ const Register = () => {
           <FaTwitter className="text-blue-500" />
           Sign up with Twitter
         </button>
-
-        {/* <button
-          className=" w-full  flex items-center gap-2 text-center justify-center py-2 my-4 bg-white border rounded-full"
-          type="submit"
-        >
-          <FaTwitter className="text-blue-500" />
-          Sign up with Twitter
-        </button> */}
-
+        <Link to={"/phone"}>
+          <button className=" w-full  flex items-center gap-2 text-center justify-center py-2 my-4 bg-white border rounded-full">
+            <FaSms className="text-green-500" />
+            Sign up with Phone
+          </button>
+        </Link>
         <h1 className=" text-center text-lg my-4 capitalize text-gray-400">
           or
         </h1>

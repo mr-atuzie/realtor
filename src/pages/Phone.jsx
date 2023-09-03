@@ -56,8 +56,9 @@ const Phone = () => {
         console.log(error);
       });
   }
+
   return (
-    <div className=" w-full  py-5 bg-pink-50  h-screen">
+    <div className=" w-full  py-5 bg-gray-50  h-screen">
       <Toaster
         position="top-center"
         reverseOrder={true}
@@ -105,7 +106,7 @@ const Phone = () => {
           </div>
           <button
             onClick={handleSubmit}
-            className=" w-full text-center py-2.5 rounded my-3 bg-purple-600 flex justify-center items-center gap-1 text-white  "
+            className=" w-full text-center py-2.5 rounded my-3 bg-black flex justify-center items-center gap-1 text-white  "
           >
             {loading && <CgSpinner className=" animate-spin" size={25} />}
 
