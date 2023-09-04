@@ -1,11 +1,13 @@
 import React from "react";
 import { BsArrowDownShort, BsArrowUpShort } from "react-icons/bs";
 import { IoMdNotificationsOutline } from "react-icons/io";
+import MobileNav from "../components/MobileNav";
 
 const Main = () => {
   const user = JSON.parse(sessionStorage.getItem("user"));
   return (
     <div className=" p-4">
+      <MobileNav />
       <div className=" flex items-center justify-between">
         <div className=" flex items-center gap-2">
           <img
