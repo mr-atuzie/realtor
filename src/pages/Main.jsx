@@ -11,7 +11,11 @@ const Main = () => {
       <div className=" flex items-center justify-between">
         <div className=" flex items-center gap-2">
           <img
-            src={user?.photo}
+            src={
+              !user?.photo
+                ? "https://w7.pngwing.com/pngs/178/595/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
+                : user?.photo
+            }
             className=" w-[40px] h-[40px] rounded-full object-cover"
             alt=""
           />
