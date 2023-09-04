@@ -98,6 +98,7 @@ const Phone = () => {
   const verifyOTP = async (e) => {
     e.preventDefault();
     console.log(otp);
+    setLoading(true);
 
     if (otp === "" || otp === null) return toast.error("Invalid OTP");
 
@@ -106,6 +107,7 @@ const Phone = () => {
       navigate("/dashboard");
     } catch (error) {
       console.log(error);
+      setLoading(false);
     }
   };
 
