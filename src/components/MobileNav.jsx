@@ -1,7 +1,9 @@
 import React from "react";
 import { BiHomeAlt2, BiLogOut } from "react-icons/bi";
+import { BsBarChartLineFill } from "react-icons/bs";
 import { IoPersonOutline } from "react-icons/io5";
-import { MdOutlineExplore } from "react-icons/md";
+import { IoMdMore } from "react-icons/io";
+// import { MdOutlineExplore } from "react-icons/md";
 // import { AiTwotoneHeart } from "react-icons/ai";
 import { NavLink } from "react-router-dom";
 // import { Link } from "react-router-dom";
@@ -28,8 +30,8 @@ const MobileNav = () => {
               isActive ? "text-blue-500" : "text-gray-900"
             }
           >
-            <MdOutlineExplore size={25} />
-            <p className=" text-xs mt-2">Explore</p>
+            <BsBarChartLineFill size={25} />
+            <p className=" text-xs mt-2">Stats</p>
           </NavLink>
         </div>
 
@@ -42,6 +44,17 @@ const MobileNav = () => {
           >
             <IoPersonOutline size={30} />
             <p className=" text-xs mt-2">Profile</p>
+          </NavLink>
+        </div>
+        <div className=" flex flex-col items-center justify-center">
+          <NavLink
+            to={"/"}
+            className={({ isActive }) =>
+              isActive ? "text-blue-500" : "text-gray-900"
+            }
+          >
+            <IoMdMore size={25} />
+            <p className=" text-xs mt-2">More</p>
           </NavLink>
         </div>
 
