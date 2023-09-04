@@ -100,7 +100,8 @@ const Phone = () => {
     console.log(otp);
     setLoading(true);
 
-    if (otp === "" || otp === null) return toast.error("Invalid OTP");
+    if (otp === "" || otp === null)
+      return toast.error("Invalid verification code");
 
     try {
       await confirmObj.confirm(otp);
@@ -108,6 +109,7 @@ const Phone = () => {
     } catch (error) {
       console.log(error);
       setLoading(false);
+      toast.error(error.message);
     }
   };
 
