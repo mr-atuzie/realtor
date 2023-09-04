@@ -30,7 +30,7 @@ const Main = () => {
           <div className=" w-2 h-2 bg-red-500 rounded-full absolute  left-2"></div>
         </div>
       </div>
-      <div className="  p-4 rounded-lg my-6 bg-black shadow-xl">
+      <div className=" hidden  p-4 rounded-lg my-6 bg-black shadow-xl">
         <div className="flex flex-col justify-center">
           <p className=" text-xs text-white  uppercase font-medium">
             Account Balance
