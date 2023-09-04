@@ -6,7 +6,7 @@ import MobileNav from "../components/MobileNav";
 const Main = () => {
   const user = JSON.parse(sessionStorage.getItem("user"));
   return (
-    <div className=" p-4">
+    <div className=" p-4 bg-gray-100 h-screen">
       <MobileNav />
       <div className=" flex items-center justify-between">
         <div className=" flex items-center gap-2">
