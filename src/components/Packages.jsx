@@ -3,9 +3,9 @@ import { BsCheck2 } from "react-icons/bs";
 
 const Packages = () => {
   return (
-    <div className="border-t border-gray-200  bg-black py-10">
+    <div className="border-t border-gray-600  bg-black py-10">
       <div className="w-[80%] mx-auto">
-        <div className=" text-center text-white lg:text-4xl font-semibold capitalize ">
+        <div className=" text-center text-white text-lg lg:text-4xl font-semibold capitalize ">
           {" "}
           our Packages
         </div>

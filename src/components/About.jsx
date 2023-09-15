@@ -5,7 +5,7 @@ const About = () => {
     <div className=" bg-black">
       <div className=" lg:w-[80%] mx-auto py-10">
         <div className=" text-center ">
-          <div className=" text-white lg:text-4xl font-semibold capitalize ">
+          <div className="text-lg text-white lg:text-4xl font-semibold capitalize ">
             About Us
           </div>
           <p className="text-gray-500 text-center text-xs lg:text-base">

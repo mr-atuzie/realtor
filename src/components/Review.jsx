@@ -94,7 +94,7 @@ const Review = () => {
   ];
 
   return (
-    <div className=" bg-black py-10 lg:py-40 border-t border-gray-200 ">
+    <div className=" bg-black py-10 lg:py-40 border-t border-gray-600 ">
       <div className="w-[80%] mx-auto">
         <div className=" text-white flex justify-center items-center">
           <FaQuoteLeft />
@@ -143,7 +143,7 @@ const Review = () => {
                         {review}
                       </p>
 
-                      <div className="flex  items-center gap-4">
+                      <div className="flex   gap-4">
                         <img
                           className=" w-10 h-10 rounded-full object-cover"
                           src={img}
