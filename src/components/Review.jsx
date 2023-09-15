@@ -151,7 +151,7 @@ const Review = () => {
                         />
 
                         <div>
-                          <h3 className=" text-sm group-hover:text-black  text-white capitalize   mt-4">
+                          <h3 className=" text-sm group-hover:text-black  text-white capitalize ">
                             {name}
                           </h3>
 
