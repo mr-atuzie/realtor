@@ -14,10 +14,10 @@ const HeroII = () => {
 
       <div className=" w-full h-full absolute top-0 z-30 bg-black/20 flex  items-center">
         <div className=" w-[80%] mx-auto text-center">
-          <p className="text-white capitalize tracking-wide font-medium  text-base my-3">
+          <p className="text-white capitalize tracking-wide font-medium text-xs  lg:text-base my-3">
             recieve. Transfer. Send Money Safely
           </p>
-          <h1 className="  text-gray-500 uppercase text-3xl lg:text-5xl font-bold ">
+          <h1 className="  text-gray-300 uppercase text-3xl lg:text-5xl font-bold ">
             Lorem ipsum dolor sit amet consectetur.
             <br /> adipisicing elit. Aperiam.
           </h1>
