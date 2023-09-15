@@ -143,7 +143,7 @@ const Review = () => {
                         {review}
                       </p>
 
-                      <div className="flex   gap-4">
+                      <div className="flex  items-center gap-4 mt-1">
                         <img
                           className=" w-10 h-10 rounded-full object-cover"
                           src={img}
