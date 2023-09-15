@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { GiOwl } from "react-icons/gi";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import { IoCloseOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
@@ -22,10 +23,9 @@ const Navbar = () => {
   return (
     <div className=" p-4 absolute top-0 z-40  w-full   ">
       <div className=" w-[90%] lg:w-[80%] mx-auto  flex justify-between items-center">
-        <div>
-          <h1 className=" text-white z-10 text-xl lg:text-3xl font-semibold  uppercase  ">
-            trade Fair
-          </h1>
+        <div className=" flex items-center text-black">
+          <GiOwl className=" font-bold" size={20} />
+          <h1 className=" ml-1 font-bold text-sm   lg:text-base">TRADE-FAIR</h1>
         </div>
 
         <ul className="hidden text-gray-400 md:flex ">
