@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <div className=" p-4 absolute top-0 z-40  w-full   ">
       <div className=" w-[90%] lg:w-[80%] mx-auto  flex justify-between items-center">
-        <div className=" flex items-center text-black">
+        <div className=" flex items-center text-white">
           <GiOwl className=" font-bold" size={20} />
           <h1 className=" ml-1 font-bold text-sm   lg:text-base">TRADE-FAIR</h1>
         </div>
