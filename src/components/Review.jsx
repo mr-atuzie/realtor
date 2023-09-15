@@ -135,7 +135,7 @@ const Review = () => {
               return (
                 <SwiperSlide
                   key={id}
-                  className="group hover:bg-white duration-200 ease-in bg-gray-900 shadow-md p-7   rounded-md"
+                  className="group hover:bg-white duration-200 ease-in bg-gray-900 shadow-md  p-4 lg:p-7   rounded-md"
                 >
                   <div>
                     <div className=" ">
