@@ -9,6 +9,7 @@ import Register from "./pages/Register";
 import Phone from "./pages/Phone";
 import Main from "./pages/Main";
 import Otp from "./pages/Otp";
+import Home from "./pages/Home";
 
 // secret
 // 1zFL61N0uIhJpBE3dClA4vESQI_jOI9pILY_WVWCXlovc_XbwC
@@ -20,7 +21,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Register />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/dashboard" element={<Main />} />
         <Route path="/phone" element={<Phone />} />
         <Route path="/about-us" element={<About />} />
