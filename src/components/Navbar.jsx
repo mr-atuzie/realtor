@@ -67,7 +67,7 @@ const Navbar = () => {
           </ul>
 
           <Link to={"/register"}>
-            <button className="hidden md:flex rounded bg-green-700 mt-16 text-white px-6 py-3 capitalize hover:bg-white hover:text-black hover:border-2 hover:border-black ">
+            <button className=" rounded bg-green-700 mt-16 text-white px-6 py-3 capitalize hover:bg-white hover:text-black hover:border-2 hover:border-black ">
               Register
             </button>
           </Link>

@@ -50,10 +50,10 @@ const Agents = () => {
     <div className=" bg-black py-10">
       <div className=" w-[80%] mx-auto">
         <div className=" text-center ">
-          <div className=" text-2xl text-white lg:text-4xl font-semibold capitalize ">
+          <div className=" text text-white lg:text-4xl font-semibold capitalize ">
             Meet Our agents
           </div>
-          <p className="text-gray-500 text-center">
+          <p className="text-gray-500 text-center text-xs lg:text-base">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nobis.
           </p>
         </div>

@@ -98,12 +98,12 @@ const Review = () => {
       <div className="w-[80%] mx-auto">
         <div className=" text-white flex justify-center items-center">
           <FaQuoteLeft />
-          <div className=" mt-6 text-center capitalize text-2xl text-white lg:text-4xl font-semibold">
+          <div className=" mt-6 text-center capitalize text-white lg:text-4xl font-semibold">
             What our customer say about us
           </div>
           <FaQuoteRight />
         </div>
-        <p className="text-gray-500 text-center">
+        <p className="text-gray-500 text-xs lg:text-base text-center">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nobis.
         </p>
 
