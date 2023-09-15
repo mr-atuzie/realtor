@@ -128,8 +128,8 @@ const Review = () => {
               delay: 3000,
               disableOnInteraction: false,
             }}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
+            // onSlideChange={() => console.log("slide change")}
+            // onSwiper={(swiper) => console.log(swiper)}
           >
             {reviews.map(({ id, img, name, role, review }) => {
               return (

@@ -14,6 +14,11 @@ const Navbar = () => {
     { id: 6, link: "/contact-us", name: "contacts" },
   ];
 
+  const handleNav = () => {
+    setNav(!nav);
+    console.log("nav clicked");
+  };
+
   return (
     <div className=" p-4 absolute top-0 z-40  w-full   ">
       <div className=" w-[90%] lg:w-[80%] mx-auto  flex justify-between items-center">
@@ -43,7 +48,7 @@ const Navbar = () => {
         </Link>
 
         <button
-          onClick={() => setNav(!nav)}
+          onClick={handleNav}
           className=" text-white cursor-pointer z-50 pr-4 md:hidden"
         >
           {nav ? <IoCloseOutline size={30} /> : <HiOutlineBars3 size={30} />}
