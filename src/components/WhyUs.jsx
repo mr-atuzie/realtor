@@ -31,13 +31,10 @@ const WhyUs = () => {
   return (
     <div className=" bg-gray-50  py-10">
       <div className="w-[80%] mt-10 lg:mt-0 mx-auto">
-        <div className=" text-center capitalize text-2xl font-semibold">
+        {/* <div className=" text-center capitalize text-2xl font-semibold">
           why delve?
-        </div>
-        <p className="text-gray-500 text-center">
-          Porro ullam repudiandae optio obcaecati rem ipsam quaerat doloremque
-          cumque iste.
-        </p>
+        </div> */}
+        <p className="text-gray-500 text-center">We're trusted</p>
 
         <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-10 mt-10">
           {reviews.map(({ id, name, review }) => {
