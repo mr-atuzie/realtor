@@ -66,7 +66,7 @@ const About = () => {
           {/* text container */}
           <div className=" w-[80%] mt-6 lg:mt-0 mx-auto lg:w-[40%]">
             <h3 className=" text-white font-semibold text-xl lg:text-3xl capitalize">
-              Tramsfer , Pay with Ease
+              Transfer , Pay with Ease
             </h3>
             <p className=" text-gray-500 text-sm lg:text-base mt-4">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
