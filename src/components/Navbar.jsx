@@ -51,7 +51,7 @@ const Navbar = () => {
           onClick={handleNav}
           className=" text-white  cursor-pointer pr-4 rounded-full  z-50  md:hidden"
         >
-          {nav ? <IoCloseOutline size={20} /> : <HiOutlineBars3 size={20} />}
+          {nav ? <IoCloseOutline size={30} /> : <HiOutlineBars3 size={30} />}
         </button>
       </div>
       {nav && (
@@ -72,7 +72,7 @@ const Navbar = () => {
           </ul>
 
           <Link to={"/register"}>
-            <button className=" text-sm lg:text-base rounded bg-green-700 mt-16 text-white px-6 py-2.5 lg:py-3 capitalize hover:bg-white hover:text-black hover:border-2 hover:border-black ">
+            <button className=" text-sm lg:text-base rounded bg-green-700 mt-8 text-white px-6 py-2.5 lg:py-3 capitalize hover:bg-white hover:text-black hover:border-2 hover:border-black ">
               Register
             </button>
           </Link>
