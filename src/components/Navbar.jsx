@@ -42,12 +42,12 @@ const Navbar = () => {
           </button>
         </Link>
 
-        <div
+        <button
           onClick={() => setNav(!nav)}
-          className=" text-white cursor-pointer -z-50 pr-4 md:hidden"
+          className=" text-white cursor-pointer z-50 pr-4 md:hidden"
         >
           {nav ? <IoCloseOutline size={30} /> : <HiOutlineBars3 size={30} />}
-        </div>
+        </button>
       </div>
       {nav && (
         <div className=" p-6 z-40 duration-300 flex flex-col fixed  shadow-md bg-black/90 top-0 right-0  w-[80vw] h-screen">
