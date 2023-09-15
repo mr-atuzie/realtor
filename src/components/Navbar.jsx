@@ -15,56 +15,74 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className=" flex justify-between items-center w-full h-20  px-4   bg-white">
-      <div>
-        <h1 className=" z-10 text-3xl lg:text-5xl font-semibold  uppercase  ml-2">
-          Delve
-        </h1>
-      </div>
+    <div className=" p-4 absolute top-0 z-40  w-full   ">
+      <div className=" w-[90%] lg:w-[80%] mx-auto  flex justify-between items-center">
+        <div>
+          <h1 className=" text-green-700 z-10 text-xl lg:text-3xl font-semibold  uppercase  ">
+            trade Fair
+          </h1>
+        </div>
 
-      <ul className="hidden md:flex">
-        {links.map(({ id, link, name }) => {
-          return (
-            <li
-              key={id}
-              className=" capitalize px-4 cursor-pointer font-medium  hover:scale-105 duration-200"
-            >
-              <Link to={link}> {name}</Link>
-            </li>
-          );
-        })}
-      </ul>
-
-      <div className="hidden md:flex">
-        <button className=" bg-black text-white px-4 py-3 capitalize hover:bg-white hover:text-black hover:border-2 hover:border-black ">
-          Resume
-        </button>
-      </div>
-
-      <div
-        onClick={() => setNav(!nav)}
-        className=" cursor-pointer z-40 pr-4 md:hidden"
-      >
-        {nav ? <IoCloseOutline size={30} /> : <HiOutlineBars3 size={30} />}
-      </div>
-
-      {nav && (
-        <ul className=" flex flex-col justify-center absolute z-40 items-center bg-gray-50 top-0 left-0 w-full h-screen">
+        <ul className="hidden text-gray-400 md:flex ">
           {links.map(({ id, link, name }) => {
             return (
-              <Link to={link} onClick={() => setNav(!nav)}>
-                <li
-                  key={id}
-                  className=" px-4 cursor-pointer capitalize py-4 text-xl  hover:scale-105 duration-200"
-                >
-                  {name}
-                </li>
-              </Link>
+              <li
+                key={id}
+                className=" capitalize px-4 cursor-pointer over:scale-105 duration-200"
+              >
+                <Link to={link}> {name}</Link>
+              </li>
             );
           })}
         </ul>
+
+        <button className="hidden md:flex rounded bg-blue-700 text-white px-6 py-3 capitalize hover:bg-white hover:text-black hover:border-2 hover:border-black ">
+          Get Started
+        </button>
+
+        <div
+          onClick={() => setNav(!nav)}
+          className=" text-white cursor-pointer z-40 pr-4 md:hidden"
+        >
+          {nav ? <IoCloseOutline size={30} /> : <HiOutlineBars3 size={30} />}
+        </div>
+      </div>
+      {nav && (
+        <div className=" z-50 duration-300 flex flex-col fixed  shadow-md bg-black/90 top-0 right-0  w-[80vw] h-screen">
+          <div className=" bg-blue-700 p-4 flex justify-between items-center">
+            <div>
+              <h1 className="text-white text-xl uppercase lg:text-5xl font-semibold ">
+                Spice trade
+              </h1>
+            </div>
+            <div
+              onClick={() => setNav(!nav)}
+              className=" cursor-pointer text-white  p-4 md:hidden"
+            >
+              {nav ? (
+                <IoCloseOutline size={30} />
+              ) : (
+                <HiOutlineBars3 size={30} />
+              )}
+            </div>
+          </div>
+          <ul className=" mt-11  ">
+            {links.map(({ id, link, name }) => {
+              return (
+                <Link to={link} onClick={() => setNav(!nav)}>
+                  <li
+                    key={id}
+                    className=" px-4 cursor-pointer text-gray-50 capitalize py-4   hover:scale-105 duration-200"
+                  >
+                    {name}
+                  </li>
+                </Link>
+              );
+            })}
+          </ul>
+        </div>
       )}
-    </nav>
+    </div>
   );
 };
 
