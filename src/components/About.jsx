@@ -5,11 +5,11 @@ const About = () => {
     <div className=" bg-black">
       <div className=" lg:w-[80%] mx-auto py-10">
         <div className=" text-center ">
-          <div className=" text text-white lg:text-4xl font-semibold capitalize ">
+          <div className=" text-white lg:text-4xl font-semibold capitalize ">
             About Us
           </div>
           <p className="text-gray-500 text-center text-xs lg:text-base">
-            consectetur adipisicing elit. Ipsa nobis.
+            Why you should trade with us.
           </p>
         </div>
         <div className=" w-full flex-row-reverse items-center mt-14  lg:flex justify-around ">

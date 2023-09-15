@@ -47,7 +47,7 @@ const Agents = () => {
     },
   ];
   return (
-    <div className=" bg-black py-10">
+    <div className="border-t border-gray-200  bg-black py-10">
       <div className=" w-[80%] mx-auto">
         <div className=" text-center ">
           <div className=" text text-white lg:text-4xl font-semibold capitalize ">

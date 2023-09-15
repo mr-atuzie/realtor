@@ -94,7 +94,7 @@ const Review = () => {
   ];
 
   return (
-    <div className=" bg-black py-10 lg:py-40 ">
+    <div className=" bg-black py-10 lg:py-40 border-t border-gray-200 ">
       <div className="w-[80%] mx-auto">
         <div className=" text-white flex justify-center items-center">
           <FaQuoteLeft />

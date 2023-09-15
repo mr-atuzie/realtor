@@ -3,13 +3,13 @@ import { BsCheck2 } from "react-icons/bs";
 
 const Packages = () => {
   return (
-    <div className=" bg-black py-10">
+    <div className="border-t border-gray-200  bg-black py-10">
       <div className="w-[80%] mx-auto">
-        <div className=" text-center text-2xl text-white lg:text-4xl font-semibold capitalize ">
+        <div className=" text-center text-white lg:text-4xl font-semibold capitalize ">
           {" "}
           our Packages
         </div>
-        <p className="text-gray-500 text-center">
+        <p className="text-gray-500 text-center text-xs">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nobis.
         </p>
         <div className=" grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3  md:gap-10 mt-10">
