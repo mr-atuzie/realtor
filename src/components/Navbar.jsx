@@ -44,7 +44,7 @@ const Navbar = () => {
 
         <div
           onClick={() => setNav(!nav)}
-          className=" text-white cursor-pointer z-40 pr-4 md:hidden"
+          className=" text-white cursor-pointer -z-50 pr-4 md:hidden"
         >
           {nav ? <IoCloseOutline size={30} /> : <HiOutlineBars3 size={30} />}
         </div>
