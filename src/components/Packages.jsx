@@ -29,28 +29,28 @@ const Packages = () => {
             </div>
 
             <ul className=" mt-5">
-              <li className=" text-gray-400 capitalize tracking-wide flex items-center gap-2 mb-2">
+              <li className="text-sm lg:text-base text-gray-400 capitalize tracking-wide flex items-center gap-2 mb-2">
                 <span className=" h-8 w-8 flex items-center justify-center rounded-full text-green-700 bg-green-100">
                   <BsCheck2 />
                 </span>
                 99.5% uptime guarantee
               </li>
 
-              <li className=" text-gray-400  capitalize tracking-wide flex items-center gap-2 mb-2">
+              <li className="text-sm lg:text-base text-gray-400  capitalize tracking-wide flex items-center gap-2 mb-2">
                 <span className=" h-8 w-8 flex items-center justify-center rounded-full text-green-700 bg-green-100">
                   <BsCheck2 />
                 </span>
                 8 hours of electricity daily.
               </li>
 
-              <li className=" text-gray-600 capitalize tracking-wide flex items-center gap-2 mb-2">
+              <li className="text-sm lg:text-base text-gray-600 capitalize tracking-wide flex items-center gap-2 mb-2">
                 <span className=" h-8 w-8 flex items-center justify-center rounded-full text-green-700 bg-green-100">
                   <BsCheck2 />
                 </span>
                 Weekly Waste Pick ups.
               </li>
 
-              <li className=" text-gray-400 capitalize tracking-wide flex items-center gap-2 mb-2">
+              <li className="text-sm lg:text-base text-gray-400 capitalize tracking-wide flex items-center gap-2 mb-2">
                 <span className=" h-8 w-8 flex items-center justify-center rounded-full text-green-700 bg-green-100">
                   <BsCheck2 />
                 </span>
@@ -78,56 +78,56 @@ const Packages = () => {
             </div>
 
             <ul className=" mt-5">
-              <li className=" text-gray-400 capitalize tracking-wide flex items-center gap-2 mb-2">
+              <li className=" text-sm lg:text-base text-gray-400 capitalize tracking-wide flex items-center gap-2 mb-2">
                 <span className=" h-8 w-8 flex items-center justify-center rounded-full text-green-700 bg-green-100">
                   <BsCheck2 />
                 </span>
                 99.5% uptime guarantee
               </li>
 
-              <li className=" text-gray-400 capitalize tracking-wide flex items-center gap-2 mb-2">
+              <li className="text-sm lg:text-base text-gray-400 capitalize tracking-wide flex items-center gap-2 mb-2">
                 <span className=" h-8 w-8 flex items-center justify-center rounded-full text-green-700 bg-green-100">
                   <BsCheck2 />
                 </span>
                 12 hours of electricity daily.
               </li>
 
-              <li className=" text-gray-400 capitalize tracking-wide flex items-center gap-2 mb-2">
+              <li className="text-sm lg:text-base text-gray-400 capitalize tracking-wide flex items-center gap-2 mb-2">
                 <span className=" h-8 w-8 flex items-center justify-center rounded-full text-green-700 bg-green-100">
                   <BsCheck2 />
                 </span>
                 Weekly Waste Pick ups.
               </li>
 
-              <li className=" text-gray-400 capitalize tracking-wide flex items-center gap-2 mb-2">
+              <li className="text-sm lg:text-base text-gray-400 capitalize tracking-wide flex items-center gap-2 mb-2">
                 <span className=" h-8 w-8 flex items-center justify-center rounded-full text-green-700 bg-green-100">
                   <BsCheck2 />
                 </span>
                 Daily in-house clean ups.
               </li>
 
-              <li className=" text-gray-400 capitalize tracking-wide flex items-center gap-2 mb-2">
+              <li className="text-sm lg:text-base text-gray-400 capitalize tracking-wide flex items-center gap-2 mb-2">
                 <span className=" h-8 w-8 flex items-center justify-center rounded-full text-green-700 bg-green-100">
                   <BsCheck2 />
                 </span>
                 gym membership
               </li>
 
-              <li className=" text-gray-400 capitalize tracking-wide flex items-center gap-2 mb-2">
+              <li className="text-sm lg:text-base text-gray-400 capitalize tracking-wide flex items-center gap-2 mb-2">
                 <span className=" h-8 w-8 flex items-center justify-center rounded-full text-green-700 bg-green-100">
                   <BsCheck2 />
                 </span>
                 rotary club membership
               </li>
 
-              <li className=" text-gray-400 capitalize tracking-wide flex items-center gap-2 mb-2">
+              <li className="text-sm lg:text-base text-gray-400 capitalize tracking-wide flex items-center gap-2 mb-2">
                 <span className=" h-8 w-8 flex items-center justify-center rounded-full text-green-700 bg-green-100">
                   <BsCheck2 />
                 </span>
                 Daily News paper
               </li>
 
-              <li className=" text-gray-400 capitalize tracking-wide flex items-center gap-2 mb-2">
+              <li className="text-sm lg:text-base text-gray-400 capitalize tracking-wide flex items-center gap-2 mb-2">
                 <span className=" h-8 w-8 flex items-center justify-center rounded-full text-green-700 bg-green-100">
                   <BsCheck2 />
                 </span>
@@ -156,35 +156,35 @@ const Packages = () => {
             </div>
 
             <ul className=" mt-5">
-              <li className=" text-gray-400 capitalize tracking-wide flex items-center gap-2 mb-2">
+              <li className="text-sm lg:text-base text-gray-400 capitalize tracking-wide flex items-center gap-2 mb-2">
                 <span className=" h-8 w-8 flex items-center justify-center rounded-full text-green-700 bg-green-100">
                   <BsCheck2 />
                 </span>
                 99.5% uptime guarantee
               </li>
 
-              <li className=" text-gray-400 capitalize tracking-wide flex items-center gap-2 mb-2">
+              <li className="text-sm lg:text-base text-gray-400 capitalize tracking-wide flex items-center gap-2 mb-2">
                 <span className=" h-8 w-8 flex items-center justify-center rounded-full text-green-700 bg-green-100">
                   <BsCheck2 />
                 </span>
                 24 hours of electricity daily.
               </li>
 
-              <li className=" text-gray-400 capitalize tracking-wide flex items-center gap-2 mb-2">
+              <li className="text-sm lg:text-base text-gray-400 capitalize tracking-wide flex items-center gap-2 mb-2">
                 <span className=" h-8 w-8 flex items-center justify-center rounded-full text-green-700 bg-green-100">
                   <BsCheck2 />
                 </span>
                 Weekly Waste Pick ups.
               </li>
 
-              <li className=" text-gray-400 capitalize tracking-wide flex items-center gap-2 mb-2">
+              <li className="text-sm lg:text-base text-gray-400 capitalize tracking-wide flex items-center gap-2 mb-2">
                 <span className=" h-8 w-8 flex items-center justify-center rounded-full text-green-700 bg-green-100">
                   <BsCheck2 />
                 </span>
                 Daily in-house clean ups.
               </li>
 
-              <li className=" text-gray-400 capitalize tracking-wide flex items-center gap-2 mb-2">
+              <li className="text-sm lg:text-base text-gray-400 capitalize tracking-wide flex items-center gap-2 mb-2">
                 <span className=" h-8 w-8 flex items-center justify-center rounded-full text-green-700 bg-green-100">
                   <BsCheck2 />
                 </span>
