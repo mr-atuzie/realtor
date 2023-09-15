@@ -20,14 +20,14 @@ const About = () => {
         <div className=" flex flex-col lg:flex-row justify-between">
           <div className=" lg:w-[50%]">
             <div className="mb-8">
-              <h1 className="font-semibold text-2xl tracking-wide capitalize">
+              <h1 className=" text-white font-semibold text-2xl tracking-wide capitalize">
                 Our Agency story
               </h1>
-              <p className="text-gray-600">
+              <p className="text-gray-500">
                 Check out our company story and work process
               </p>
             </div>
-            <p>
+            <p className="text-white">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
               quod illo officia necessitatibus maiores repellendus cum excepturi
               error tenetur aliquam asperiores ut odit blanditiis quam dolorem a
@@ -35,7 +35,7 @@ const About = () => {
             </p>
             <br />
 
-            <p>
+            <p className="text-white">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
               maiores, vero quibusdam officiis consequuntur voluptatem similique
               corporis magni laborum quae. blanditiis quam dolorem a aut natus
@@ -68,7 +68,7 @@ const About = () => {
               {more ? "Show less" : "More about us"}
             </button>
           </div>
-          <div className=" ">
+          <div className=" mt-6 ">
             <img
               className=" "
               src="https://img.freepik.com/free-photo/portrait-african-american-family-taking-selfie-together-with-digital-tablet-home-family-lifestyle-concept_58466-12031.jpg?size=626&ext=jpg&uid=R74218588&ga=GA1.2.89680559.1678048408&semt=sph"
