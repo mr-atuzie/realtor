@@ -8,9 +8,9 @@ const Contact = () => {
           <h1 className="uppercase text-white text-2xl lg:text-4xl font-semibold tracking-wider">
             Do you have a question?
           </h1>
-          <p className=" text-sm lg:text-base capitalize    text-white my-2">
+          {/* <p className=" text-sm lg:text-base capitalize    text-white my-2">
             We'll help you to find the best Accommodation for you.
-          </p>
+          </p> */}
         </div>
 
         <button className=" bg-white font-medium text-sm lg:text-base text-green-700 px-6 py-2.5 lgpy-3 capitalize rounded-full">
