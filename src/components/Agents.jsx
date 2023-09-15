@@ -53,6 +53,9 @@ const Agents = () => {
           <div className=" text-2xl text-white lg:text-4xl font-semibold capitalize ">
             Meet Our agents
           </div>
+          <p className="text-gray-500 text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nobis.
+          </p>
         </div>
 
         <div className=" grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-10 mt-16">
@@ -71,10 +74,10 @@ const Agents = () => {
                     />
                   </div>
                   <div className="my-4">
-                    <p className=" text-center  font-medium capitalize ">
+                    <p className=" text-white text-center  font-medium capitalize ">
                       {name}
                     </p>
-                    <p className=" text-center  text-sm text-gray-500 capitalize">
+                    <p className=" text-center  text-sm text-gray-400 capitalize">
                       {location}
                     </p>
                     <div className="   text-orange-500">

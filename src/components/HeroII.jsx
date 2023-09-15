@@ -17,7 +17,7 @@ const HeroII = () => {
           <p className="text-white capitalize tracking-wide font-medium  text-base my-3">
             recieve. Transfer. Send Money Safely
           </p>
-          <h1 className="  text-orange-600 uppercase text-3xl lg:text-5xl font-bold ">
+          <h1 className="  text-gray-500 uppercase text-3xl lg:text-5xl font-bold ">
             Lorem ipsum dolor sit amet consectetur.
             <br /> adipisicing elit. Aperiam.
           </h1>

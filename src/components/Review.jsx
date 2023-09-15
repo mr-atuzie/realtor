@@ -103,6 +103,9 @@ const Review = () => {
           </div>
           <FaQuoteRight />
         </div>
+        <p className="text-gray-500 text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nobis.
+        </p>
 
         <div className="  mt-16">
           <Swiper

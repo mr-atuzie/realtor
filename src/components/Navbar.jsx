@@ -18,7 +18,7 @@ const Navbar = () => {
     <div className=" p-4 absolute top-0 z-40  w-full   ">
       <div className=" w-[90%] lg:w-[80%] mx-auto  flex justify-between items-center">
         <div>
-          <h1 className=" text-green-700 z-10 text-xl lg:text-3xl font-semibold  uppercase  ">
+          <h1 className=" text-white z-10 text-xl lg:text-3xl font-semibold  uppercase  ">
             trade Fair
           </h1>
         </div>
@@ -36,9 +36,11 @@ const Navbar = () => {
           })}
         </ul>
 
-        <button className="hidden md:flex rounded bg-blue-700 text-white px-6 py-3 capitalize hover:bg-white hover:text-black hover:border-2 hover:border-black ">
-          Get Started
-        </button>
+        <Link to={"/register"}>
+          <button className="hidden md:flex rounded bg-green-700 text-white px-6 py-3 capitalize hover:bg-white hover:text-black hover:border-2 hover:border-black ">
+            Get Started
+          </button>
+        </Link>
 
         <div
           onClick={() => setNav(!nav)}
@@ -49,23 +51,6 @@ const Navbar = () => {
       </div>
       {nav && (
         <div className=" z-50 duration-300 flex flex-col fixed  shadow-md bg-black/90 top-0 right-0  w-[80vw] h-screen">
-          <div className=" bg-blue-700 p-4 flex justify-between items-center">
-            <div>
-              <h1 className="text-white text-xl uppercase lg:text-5xl font-semibold ">
-                Spice trade
-              </h1>
-            </div>
-            <div
-              onClick={() => setNav(!nav)}
-              className=" cursor-pointer text-white  p-4 md:hidden"
-            >
-              {nav ? (
-                <IoCloseOutline size={30} />
-              ) : (
-                <HiOutlineBars3 size={30} />
-              )}
-            </div>
-          </div>
           <ul className=" mt-11  ">
             {links.map(({ id, link, name }) => {
               return (
@@ -80,6 +65,12 @@ const Navbar = () => {
               );
             })}
           </ul>
+
+          <Link to={"/register"}>
+            <button className="hidden md:flex rounded bg-green-700 mt-16 text-white px-6 py-3 capitalize hover:bg-white hover:text-black hover:border-2 hover:border-black ">
+              Register
+            </button>
+          </Link>
         </div>
       )}
     </div>
