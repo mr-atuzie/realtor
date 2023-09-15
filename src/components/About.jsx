@@ -9,10 +9,10 @@ const About = () => {
             About Us
           </div>
           <p className="text-gray-500 text-center text-xs lg:text-base">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nobis.
+            consectetur adipisicing elit. Ipsa nobis.
           </p>
         </div>
-        <div className=" w-full flex-row-reverse items-center  lg:flex justify-around ">
+        <div className=" w-full flex-row-reverse items-center mt-14  lg:flex justify-around ">
           <img
             className=" w-[80%] mx-auto lg:w-[40%]"
             src="https://www.edubridgeindia.com/blog/storage/2022/08/jobs-in-banking-sector-scaled.jpg"
