@@ -50,8 +50,8 @@ const Navbar = () => {
         </div>
       </div>
       {nav && (
-        <div className=" z-50 duration-300 flex flex-col fixed  shadow-md bg-black/90 top-0 right-0  w-[80vw] h-screen">
-          <ul className=" mt-11  ">
+        <div className=" p-6 z-50 duration-300 flex flex-col fixed  shadow-md bg-black/90 top-0 right-0  w-[80vw] h-screen">
+          <ul className=" mt-11   ">
             {links.map(({ id, link, name }) => {
               return (
                 <Link to={link} onClick={() => setNav(!nav)}>
