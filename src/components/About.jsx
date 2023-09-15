@@ -14,7 +14,7 @@ const About = () => {
           {/* text container */}
           <div className=" w-[80%] mt-6 lg:mt-0 mx-auto lg:w-[40%]">
             <h3 className=" text-white font-semibold text-xl lg:text-3xl capitalize">
-              An elegant swimming pool and pool side area
+              Invest and get Double
             </h3>
             <p className=" text-gray-500  mt-4 text-sm lg:text-base">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
@@ -44,7 +44,7 @@ const About = () => {
           {/* text container */}
           <div className=" w-[80%] mt-6 lg:mt-0 mx-auto lg:w-[40%]">
             <h3 className=" text-white font-semibold text-xl lg:text-3xl capitalize">
-              Fun Games in cozy places
+              Save More, Earn More
             </h3>
             <p className=" text-gray-500 mt-4 text-sm lg:text-base">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
@@ -66,7 +66,7 @@ const About = () => {
           {/* text container */}
           <div className=" w-[80%] mt-6 lg:mt-0 mx-auto lg:w-[40%]">
             <h3 className=" text-white font-semibold text-xl lg:text-3xl capitalize">
-              24 Hours Restaurant and Room service
+              Tramsfer , Pay with Ease
             </h3>
             <p className=" text-gray-500 text-sm lg:text-base mt-4">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
