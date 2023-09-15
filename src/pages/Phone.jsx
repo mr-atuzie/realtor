@@ -12,68 +12,26 @@ import OTPInput from "otp-input-react";
 
 const Phone = () => {
   const [loading, setLoading] = useState(false);
-  const [ph, setPh] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
   const [otp, setOtp] = useState("");
   const [flag, setFlag] = useState(false);
   const [confirmObj, setConfirmObj] = useState("");
 
   const navigate = useNavigate();
 
-  // const handleSubmit = () => {
-  //   setLoading(true);
-  //   if (!window.recaptchaVerifier) {
-  //     window.recaptchaVerifier = new RecaptchaVerifier(
-  //       auth,
-  //       "recaptcha-container",
-  //       {
-  //         size: "normal",
-  //         callback: (response) => {
-  //           onSignUp();
-  //         },
-  //         "expired-callback": () => {
-  //           // Response expired. Ask user to solve reCAPTCHA again.
-  //           // ...
-  //         },
-  //       }
-  //     );
-  //   }
-  // };
-
-  // function onSignUp() {
-  //   setLoading(true);
-  //   // onCaptchVerify();
-
-  //   const appVerifier = window.recaptchaVerifier;
-  //   const formatPh = "+" + ph;
-
-  //   signInWithPhoneNumber(auth, formatPh, appVerifier)
-  //     .then((confirmationResult) => {
-  //       // SMS sent. Prompt user to type the code from the message, then sign the
-  //       // user in with confirmationResult.confirm(code).
-  //       window.confirmationResult = confirmationResult;
-  //       setLoading(false);
-  //       toast.success("OTP sent successfully");
-  //       navigate("/otp");
-  //     })
-  //     .catch((error) => {
-  //       // Error; SMS not sent
-  //       console.log(error);
-  //     });
-  // }
-
   const getOTP = async (e) => {
     e.preventDefault();
-    console.log(ph);
+
     setLoading(true);
 
-    if (ph === "" || ph === undefined)
+    if (phoneNumber === "" || phoneNumber === undefined)
       return toast.error("Please enter a valid number");
 
-    const formatPh = "+" + ph;
+    const formatPhoneNumber = "+" + phoneNumber;
 
     try {
-      const response = await setUpRecaptcha(formatPh);
-      console.log(response);
+      const response = await setUpRecaptcha(formatPhoneNumber);
+
       setFlag(true);
       setConfirmObj(response);
       toast.success("OTP sent successfully");
@@ -97,7 +55,6 @@ const Phone = () => {
 
   const verifyOTP = async (e) => {
     e.preventDefault();
-    console.log(otp);
     setLoading(true);
 
     if (otp === "" || otp === null)
@@ -153,12 +110,11 @@ const Phone = () => {
               <label className=" text-gray-800 text-xs" htmlFor="password">
                 Phone number
               </label>
-              <PhoneInput country={"ng"} value={ph} onChange={setPh} />
-              {/* <input
-              className="border p-2.5 block w-full"
-              type="tel"
-              name="phone"
-            /> */}
+              <PhoneInput
+                country={"ng"}
+                value={phoneNumber}
+                onChange={setPhoneNumber}
+              />
             </div>
             <button
               type="submit"
