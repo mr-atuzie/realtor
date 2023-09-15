@@ -15,18 +15,15 @@ const Footer = () => {
     "Terms of Coveraage",
   ];
   return (
-    <div className="h-full lg:h-[60vh] bg-gray-900  py-10 ">
+    <div className="h-full lg:h-[60vh] bg-black  py-10 ">
       <div className=" w-[90%] md:w-[80%] mx-auto ">
         <div className=" flex flex-col lg:flex-row justify-between items-start  mt-12">
           <div>
             <div className=" uppercase font-semibold tracking-wider text-3xl text-neutral-300 ">
-              DELVE
-            </div>
-            <div className=" w-full capitalize font-medium text-lg  text-neutral-300 ">
-              Do you need help finding Accommodations?
+              Trade fair
             </div>
 
-            <p className=" text-gray-500">
+            <p className="text-sm lg:text-base text-gray-400">
               Recieve updates, hot deals , discounts sent straight to inbox.
             </p>
 
@@ -36,7 +33,7 @@ const Footer = () => {
                 type="email"
                 placeholder="Your email"
               />
-              <button className=" w-[30%]  py-3 px-6 bg-green-700 text-white">
+              <button className=" w-[30%] text-sm lg:text-base  py-3 px-6 bg-green-700 text-white">
                 Subscribe
               </button>
             </div>
