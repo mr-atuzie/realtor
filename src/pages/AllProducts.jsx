@@ -5,6 +5,9 @@ import { productData } from "../data";
 import { addToCart } from "../redux/features/cartSlice";
 import { useDispatch } from "react-redux";
 import { FaShoppingBag } from "react-icons/fa";
+import { Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
 
 const AllProducts = () => {
   const category = [
@@ -25,7 +28,11 @@ const AllProducts = () => {
   return (
     <div className=" py-10 lg:py-16">
       <div className=" w-[95%] lg:w-[85%]  mx-auto mb-5">
-        <Swiper slidesPerView={4.8}>
+        <Swiper
+          modules={[Pagination]}
+          pagination={{ clickable: true }}
+          // slidesPerView={4.8}
+        >
           {category.map((cat) => {
             return (
               <SwiperSlide key={cat}>
