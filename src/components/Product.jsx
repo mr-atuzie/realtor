@@ -2,10 +2,14 @@ import React from "react";
 import "swiper/css";
 // import { shortenText } from "../utils";
 import { productData } from "../data";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../redux/features/cartSlice";
 
 const Team = () => {
+  const dispatch = useDispatch();
+
   const handleClick = (product) => {
-    console.log(product);
+    dispatch(addToCart(product));
   };
 
   return (

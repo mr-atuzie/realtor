@@ -6,12 +6,8 @@ import Service from "../components/Service";
 import banner from "../assets/luxe salon.png";
 import banner2 from "../assets/1.png";
 import Product from "../components/Product";
-import { selectCart } from "../redux/features/cartSlice";
-import { useSelector } from "react-redux";
 
 const Home = () => {
-  const cart = useSelector(selectCart);
-  console.log(cart);
   return (
     <div>
       <Navbar />
