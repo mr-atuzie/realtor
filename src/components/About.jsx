@@ -21,7 +21,7 @@ const About = () => {
             About Luxe Lueur
           </h2>
 
-          <div className=" mt-1 lg:mt-0 lg:max-w-2xl">
+          <div className=" mt-2 lg:mt-0 lg:max-w-2xl">
             <p className=" text-xs lg:text-base text-gray-600 mb-4">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
               quisquam voluptates eum laboriosam excepturi molestiae nulla nihil
@@ -31,7 +31,7 @@ const About = () => {
               harum.
             </p>
 
-            <p className=" text-gray-600 mb-4">
+            <p className="text-xs lg:text-base text-gray-600 mb-4">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
               praesentium quis excepturi harum.Lorem ipsum dolor sit amet
               consectetur adipisicing elit. Rem praesentium quis excepturi

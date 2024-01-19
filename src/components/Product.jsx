@@ -30,16 +30,16 @@ const Team = () => {
         </p>
       </div>
 
-      <div className=" w-full flex justify-end items-end my-4">
-        <Link
-          className=" text-xs font-medium text-purple-600 uppercase"
-          to={"/products"}
-        >
-          sell all
-        </Link>
-      </div>
-
       <div className=" w-[90%] lg:w-[85%]  mx-auto grid grid-cols-2 gap-4 lg:grid-cols-5 lg:gap-8">
+        <div className=" w-full flex justify-end items-end my-5">
+          <Link
+            className=" text-xs font-medium text-purple-600 uppercase"
+            to={"/products"}
+          >
+            sell all
+          </Link>
+        </div>
+
         {productData.map((slide, index) => {
           const { imageurl, price, id, name } = slide;
           return (
@@ -68,7 +68,7 @@ const Team = () => {
                       quantity: 1,
                     })
                   }
-                  className="flex items-center gap-1 text-xs bg-purple-600  p-2 text-white font-medium lg:text-sm"
+                  className="flex items-center gap-2 text-xs bg-purple-600  p-2 text-white font-medium lg:text-sm"
                 >
                   <FaShoppingBag /> <span>Add to cart</span>
                 </button>

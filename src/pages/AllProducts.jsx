@@ -4,9 +4,18 @@ import { shortenText } from "../utils";
 import { productData } from "../data";
 import { addToCart } from "../redux/features/cartSlice";
 import { useDispatch } from "react-redux";
+import { FaShoppingBag } from "react-icons/fa";
 
 const AllProducts = () => {
-  const category = ["All", "Tops", "Trouser", "Bags", "Hats", "Jackets"];
+  const category = [
+    "All",
+    "Tops",
+    "Trouser",
+    "Shoes",
+    "Bags",
+    "Hats",
+    "Jackets",
+  ];
 
   const dispatch = useDispatch();
 
@@ -15,12 +24,12 @@ const AllProducts = () => {
   };
   return (
     <div className=" py-10 lg:py-16">
-      <div className=" w-[95%] lg:w-[85%]  mx-auto">
+      <div className=" w-[95%] lg:w-[85%]  mx-auto mb-5">
         <Swiper slidesPerView={4.8}>
           {category.map((cat) => {
             return (
               <SwiperSlide key={cat}>
-                <button className=" text-xs bg-purple-600 p-2 capitalize text-white font-medium rounded">
+                <button className=" border border-purple-600 text-xs bg-purple-300 p-2 capitalize text-white font-medium rounded">
                   {cat}
                 </button>
               </SwiperSlide>
@@ -58,9 +67,9 @@ const AllProducts = () => {
                       quantity: 1,
                     })
                   }
-                  className=" text-xs bg-purple-600  p-2 text-white font-medium lg:text-sm"
+                  className="flex items-center gap-2 text-xs bg-purple-600  p-2 text-white font-medium lg:text-sm"
                 >
-                  Add to cart
+                  <FaShoppingBag /> <span>Add to cart</span>
                 </button>
               </div>
             </div>
