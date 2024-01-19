@@ -4,7 +4,7 @@ import { shortenText } from "../utils";
 import { productData } from "../data";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../redux/features/cartSlice";
-import { FaShoppingBag } from "react-icons/fa";
+// import { FaShoppingBag } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Team = () => {
@@ -30,12 +30,14 @@ const Team = () => {
         </p>
       </div>
 
-      <Link
-        className=" text-xs my-10 font-medium text-purple-600 uppercase"
-        to={"/products"}
-      >
-        sell all
-      </Link>
+      <div className=" flex justify-end my-4">
+        <Link
+          className=" text-xs font-medium text-purple-600 uppercase"
+          to={"/products"}
+        >
+          sell all
+        </Link>
+      </div>
 
       <div className=" w-[90%] lg:w-[85%]  mx-auto grid grid-cols-2 gap-4 lg:grid-cols-5 lg:gap-8">
         {productData.map((slide, index) => {
@@ -48,11 +50,11 @@ const Team = () => {
                 alt=""
               />
 
-              <p className="  text-center text-xs lg:text-sm  font-medium">
+              <p className=" mt-1  text-center text-xs lg:text-sm  font-medium">
                 {shortenText(name)}
               </p>
 
-              <p className=" my-1.5 text-center text-xs lg:text-sm  font-medium">
+              <p className=" my-1 text-center text-xs lg:text-sm  font-medium">
                 {price}
               </p>
 
@@ -68,7 +70,7 @@ const Team = () => {
                   }
                   className=" bg-purple-600 rounded p-1  lg:p-2 text-white font-medium text-sm"
                 >
-                  <FaShoppingBag />
+                  Add to cart
                 </button>
               </div>
             </div>
@@ -78,7 +80,7 @@ const Team = () => {
 
       <div className=" flex justify-center items-center  mt-10">
         <Link to={"/products"}>
-          <button className=" text-xs lg:text-sm px-2 rounded border border-purple-600 uppercase bg-white text-purple-600  hover:bg-purple-600 hover:text-white ease-in-out duration-300">
+          <button className=" font-medium text-xs lg:text-sm p-2  border border-purple-600 uppercase bg-white text-purple-600  hover:bg-purple-600 hover:text-white ease-in-out duration-300">
             view more
           </button>
         </Link>

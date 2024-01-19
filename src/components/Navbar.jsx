@@ -101,19 +101,17 @@ const Navbar = () => {
       {showMenu && (
         <div
           onClick={hideMenu}
-          className=" z-40  bg-purple-100 fixed lg:hidden top-0 right-0  w-full h-60"
+          className=" z-40 shadow-lg  bg-purple-50 fixed lg:hidden top-0 right-0  w-full h-64 p-4"
         >
-          <div className=" w-[60%] h-full p-4">
-            <div className=" flex justify-between items-center">
-              {logo} <FaTimes onClick={hideMenu} size={20} />
-            </div>
-
-            <ul>
-              <li className=" mb-5 pb-1.5">
-                <NavLink to="/shop">Shop</NavLink>
-              </li>
-            </ul>
+          <div className=" flex justify-between items-center">
+            {logo} <FaTimes onClick={hideMenu} size={20} />
           </div>
+
+          <ul className=" my-10">
+            <li className="">
+              <NavLink to="/products">Shop</NavLink>
+            </li>
+          </ul>
         </div>
       )}
     </header>
