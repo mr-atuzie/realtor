@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { shortenText } from "../utils";
+import { formatter, shortenText } from "../utils";
 import { productData } from "../data";
 import { addToCart } from "../redux/features/cartSlice";
 import { useDispatch } from "react-redux";
@@ -26,13 +26,13 @@ const AllProducts = () => {
     dispatch(addToCart(product));
   };
   return (
-    <div className=" py-10 lg:py-16">
-      <div className=" w-[95%] lg:w-[85%]  mx-auto mb-5">
+    <div className=" py-6 lg:py-16">
+      <div className=" w-[95%] lg:w-[85%]  mx-auto mb-8">
         <Swiper slidesPerView={4.8}>
           {category.map((cat) => {
             return (
               <SwiperSlide key={cat}>
-                <button className=" border border-purple-600 text-xs bg-purple-300 p-2 capitalize text-white font-medium rounded">
+                <button className=" w-16  text-xs bg-purple-50 p-2 capitalize text-white font-medium rounded">
                   {cat}
                 </button>
               </SwiperSlide>
@@ -57,7 +57,7 @@ const AllProducts = () => {
               </p>
 
               <p className=" my-1 text-center text-xs lg:text-sm  font-medium">
-                {price}
+                ₦{formatter(price)}
               </p>
 
               <div className=" flex justify-center items-center rounded">
@@ -65,10 +65,11 @@ const AllProducts = () => {
                   onClick={() =>
                     handleClick({
                       id,
+                      name,
                       price,
-                      imageurl,
-                      quantity: 1,
-                      totalPrice: Number(price) * 1,
+                      img: imageurl,
+                      // quantity: 1,
+                      // totalPrice: Number(price) * 1,
                     })
                   }
                   className="flex rounded items-center gap-2 text-xs bg-purple-600  p-2 text-white font-medium lg:text-sm"

@@ -56,7 +56,7 @@ const Team = () => {
                 </p>
 
                 <p className=" my-1 text-center text-xs lg:text-sm  font-medium">
-                  {price}
+                  ₦{price}
                 </p>
 
                 <div className=" flex justify-center items-center rounded">
@@ -65,9 +65,10 @@ const Team = () => {
                       handleClick({
                         id,
                         price,
-                        imageurl,
-                        quantity: 1,
-                        totalPrice: Number(price) * 1,
+                        name,
+                        img: imageurl,
+                        // quantity: 1,
+                        // totalPrice: Number(price) * 1,
                       })
                     }
                     className="flex items-center gap-2 text-xs bg-purple-600  p-2 text-white font-medium lg:text-sm"
