@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FaShoppingBag, FaTimes } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { selectCart } from "../redux/features/cartSlice";
+import { selectQuantity } from "../redux/features/cartSlice";
 import { useSelector } from "react-redux";
 import logoImg from "../assets/logo.png";
 
@@ -16,7 +16,7 @@ const activeLink = ({ isActive }) =>
   isActive ? "text-purple-600" : "text-black";
 
 const Navbar = () => {
-  const cartQty = useSelector(selectCart);
+  const cartQty = useSelector(selectQuantity);
 
   const cart = (
     <span className="  ">
@@ -24,7 +24,7 @@ const Navbar = () => {
         <div className=" ml-1 relative flex items-center ">
           <FaShoppingBag size={20} />
           <p className=" bg-purple-600 text-white h-4 w-4  font-medium text-xs text-center flex justify-center items-center rounded-full absolute -top-1 left-3">
-            {cartQty?.length}
+            {cartQty}
           </p>
         </div>
       </Link>
