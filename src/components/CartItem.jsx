@@ -1,7 +1,8 @@
 import React from "react";
 import { IoCloseOutline } from "react-icons/io5";
-import { removeFromCart } from "../redux/features/cart/cartSlice";
+// import { removeFromCart } from "../redux/features/cartSlice";
 import { useDispatch } from "react-redux";
+import { removeFromCart } from "../redux/features/cartSlice";
 
 const CartItem = ({ id, name, price, img, quantity }) => {
   const dispatch = useDispatch();
