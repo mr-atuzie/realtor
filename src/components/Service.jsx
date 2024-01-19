@@ -67,8 +67,10 @@ const Service = () => {
             <div key={id}>
               <img className=" rounded" src={img} alt="" />
 
-              <h2 className="font-semibold text-center my-2">{title}</h2>
-              <p className=" text-sm lg:text-base text-center">{desc}</p>
+              <h2 className="font-semibold text-sm lg:text-base text-center my-2">
+                {title}
+              </h2>
+              <p className=" text-xs lg:text-sm text-center">{desc}</p>
             </div>
           );
         })}
