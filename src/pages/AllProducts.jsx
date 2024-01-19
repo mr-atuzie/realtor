@@ -10,7 +10,7 @@ const AllProducts = () => {
           {category.map((cat) => {
             return (
               <SwiperSlide key={cat}>
-                <button className=" text-xs bg-purple-600  px-4 py-2 capitalize text-white font-medium rounded-lg">
+                <button className=" text-xs bg-purple-600 p-2 capitalize text-white font-medium rounded-lg">
                   {cat}
                 </button>
               </SwiperSlide>
