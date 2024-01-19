@@ -107,9 +107,17 @@ const Navbar = () => {
             {logo} <FaTimes onClick={hideMenu} size={20} />
           </div>
 
-          <ul className=" my-10">
+          <ul className=" font-medium px-2 my-3">
+            <li className="">
+              <NavLink to="/">Home</NavLink>
+            </li>
             <li className="">
               <NavLink to="/products">Shop</NavLink>
+            </li>
+            <li>
+              <button className=" text-xs bg-purple-600 rounded p-2 text-white font-medium lg:text-sm">
+                Book appointment
+              </button>
             </li>
           </ul>
         </div>

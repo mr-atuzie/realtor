@@ -26,7 +26,7 @@ const Team = () => {
 
         <p className=" text-xs lg:text-base text-center text-gray-600">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
-          harum quisquam itaque quas? Nam provident voluptatum reprehenderit?
+          harum quisquam itaque quas?
         </p>
       </div>
 
@@ -68,7 +68,7 @@ const Team = () => {
                       quantity: 1,
                     })
                   }
-                  className=" bg-purple-600 rounded p-1  lg:p-2 text-white font-medium text-sm"
+                  className=" text-xs bg-purple-600 rounded p-2 text-white font-medium lg:text-sm"
                 >
                   Add to cart
                 </button>
@@ -80,7 +80,7 @@ const Team = () => {
 
       <div className=" flex justify-center items-center  mt-10">
         <Link to={"/products"}>
-          <button className=" font-medium text-xs lg:text-sm px-4 py-2  border border-purple-600 uppercase bg-white text-purple-600  hover:bg-purple-600 hover:text-white ease-in-out duration-300">
+          <button className=" font-medium text-xs lg:text-sm  p-2  border border-purple-600 uppercase bg-white text-purple-600  hover:bg-purple-600 hover:text-white ease-in-out duration-300">
             view more
           </button>
         </Link>

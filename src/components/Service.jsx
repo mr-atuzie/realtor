@@ -57,9 +57,10 @@ const Service = () => {
 
         <p className=" text-xs text-center text-gray-600">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
-          harum quisquam itaque quas? Nam provident voluptatum reprehenderit?
+          harum quisquam itaque quas?
         </p>
       </div>
+
       <div className=" w-[90%] lg:w-[85%] mt-10  mx-auto grid grid-cols-1 lg:grid-cols-4 gap-8">
         {services.map((service) => {
           const { id, title, img, desc } = service;
@@ -74,6 +75,12 @@ const Service = () => {
             </div>
           );
         })}
+      </div>
+
+      <div className=" flex justify-center items-center  mt-10">
+        <button className=" font-medium text-[12px] lg:text-sm px-4 py-2  border border-purple-600 uppercase bg-white text-purple-600  hover:bg-purple-600 hover:text-white ease-in-out duration-300">
+          book appointment
+        </button>
       </div>
     </div>
   );
