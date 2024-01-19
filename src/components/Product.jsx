@@ -28,7 +28,8 @@ const Team = () => {
           harum quisquam itaque quas? Nam provident voluptatum reprehenderit?
         </p>
       </div>
-      <div className=" w-[90%] lg:w-[85%]  mt-10  mx-auto grid grid-cols-2 lg:grid-cols-5 gap-8">
+      <p>sell all</p>
+      <div className=" w-[90%] lg:w-[85%]  mx-auto grid grid-cols-2 lg:grid-cols-5 gap-8">
         {productData.map((slide, index) => {
           const { imageurl, price, id, name } = slide;
           return (
