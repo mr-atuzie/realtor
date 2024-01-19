@@ -22,7 +22,7 @@ const About = () => {
           </h2>
 
           <div className=" lg:max-w-2xl">
-            <p className=" text-sm lg:text-base text-gray-600 mb-4">
+            <p className=" text-xs lg:text-base text-gray-600 mb-4">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
               quisquam voluptates eum laboriosam excepturi molestiae nulla nihil
               iste non labore.Lorem ipsum dolor sit amet consectetur adipisicing
