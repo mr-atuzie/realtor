@@ -42,7 +42,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className=" bg-white w-full sticky top-0  z-40  py-2   lg:py-3">
+    <header className=" bg-white w-full sticky top-0  z-40  py-1.5 shadow-lg   lg:py-3">
       <nav className=" w-[85%] mx-auto flex justify-between items-center">
         <RxHamburgerMenu
           className="lg:hidden cursor-pointer"

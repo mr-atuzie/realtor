@@ -1,9 +1,10 @@
 import React from "react";
 import "swiper/css";
-// import { shortenText } from "../utils";
+import { shortenText } from "../utils";
 import { productData } from "../data";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../redux/features/cartSlice";
+import { FaShoppingBag } from "react-icons/fa";
 
 const Team = () => {
   const dispatch = useDispatch();
@@ -29,7 +30,7 @@ const Team = () => {
       </div>
       <div className=" w-[90%] lg:w-[85%]  mt-10  mx-auto grid grid-cols-2 lg:grid-cols-5 gap-8">
         {productData.map((slide, index) => {
-          const { imageurl, price, id } = slide;
+          const { imageurl, price, id, name } = slide;
           return (
             <div key={index}>
               <img
@@ -37,7 +38,12 @@ const Team = () => {
                 src={imageurl}
                 alt=""
               />
-              <p className=" my-1.5 text-center text-sm  font-medium">
+
+              <p className=" my-1.5 text-center text-xs lg:text-sm  font-medium">
+                {shortenText(name)}
+              </p>
+
+              <p className=" text-center text-xs lg:text-sm  font-medium">
                 {price}
               </p>
 
@@ -51,9 +57,9 @@ const Team = () => {
                       quantity: 1,
                     })
                   }
-                  className=" bg-purple-600 p-2 text-white font-medium text-sm"
+                  className=" border border-purple-600 rounded p-1  lg:p-2 text-white font-medium text-sm"
                 >
-                  Add to cart
+                  <FaShoppingBag />
                 </button>
               </div>
             </div>

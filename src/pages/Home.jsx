@@ -13,10 +13,10 @@ const Home = () => {
       <Navbar />
       <Hero />
       <About />
-      <Service />
       <img className=" w-full" src={banner} alt="" />
-      <Product />
+      <Service />
       <img className=" w-full" src={banner2} alt="" />
+      <Product />
     </div>
   );
 };
