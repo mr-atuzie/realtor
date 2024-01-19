@@ -9,16 +9,16 @@ const Team = () => {
   };
 
   return (
-    <div className="w-full bg-purple-100  py-8 flex flex-col  justify-center items-center lg:py-16">
+    <div className="w-full   py-8 flex flex-col  justify-center items-center lg:py-16">
       <div className=" text-center">
         <h4 className=" text-4xl font-semibold text-center text-purple-600 ">
           Boutique
         </h4>
-        <h2 className=" text-center text-4xl font-extrabold capitalize ">
+        <h2 className=" text-center text-2xl lg:text-4xl font-extrabold capitalize ">
           our Collections
         </h2>
 
-        <p className=" text-center text-gray-600">
+        <p className=" text-xs lg:text-base text-center text-gray-600">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
           harum quisquam itaque quas? Nam provident voluptatum reprehenderit?
         </p>

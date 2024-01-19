@@ -14,7 +14,7 @@ const activeLink = ({ isActive }) =>
 
 const Navbar = () => {
   return (
-    <header className=" w-full absolute top-0  z-40    py-3">
+    <header className=" bg-white w-full sticky top-0  z-40    py-3">
       <nav className=" w-[85%] mx-auto flex justify-between items-center">
         {logo}
 
@@ -45,7 +45,7 @@ const Navbar = () => {
 
           <li>
             <NavLink className={activeLink} to={"/about"}>
-              Botique
+              Boutique
             </NavLink>
           </li>
 

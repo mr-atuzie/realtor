@@ -51,9 +51,11 @@ const Service = () => {
         <h4 className=" text-4xl font-semibold text-center text-purple-600 ">
           What we do
         </h4>
-        <h2 className=" text-center text-4xl font-extrabold ">Our Service</h2>
+        <h2 className=" text-center text-2xl lg:text-4xl font-extrabold ">
+          Our Service
+        </h2>
 
-        <p className=" text-center text-gray-600">
+        <p className=" text-xs text-center text-gray-600">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
           harum quisquam itaque quas? Nam provident voluptatum reprehenderit?
         </p>
@@ -66,7 +68,7 @@ const Service = () => {
               <img className=" rounded" src={img} alt="" />
 
               <h2 className="font-semibold text-center my-2">{title}</h2>
-              <p className=" text-center">{desc}</p>
+              <p className=" text-sm lg:text-base text-center">{desc}</p>
             </div>
           );
         })}
