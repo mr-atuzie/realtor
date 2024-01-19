@@ -103,12 +103,10 @@ const Navbar = () => {
           onClick={hideMenu}
           className=" z-40  bg-purple-100 fixed lg:hidden top-0 right-0  w-full h-60"
         >
-          <div className=" w-[60%] bg-black h-screen p-4">
+          <div className=" w-[60%] h-full p-4">
             <div className=" flex justify-between items-center">
               {logo} <FaTimes onClick={hideMenu} size={20} />
             </div>
-
-            <hr className=" my-5" />
 
             <ul>
               <li className=" mb-5 pb-1.5">

@@ -46,7 +46,7 @@ const Service = () => {
     },
   ];
   return (
-    <div className="w-full bg-purple-100  py-8 flex flex-col  justify-center items-center lg:py-16">
+    <div className="w-full bg-purple-100  py-10 flex flex-col  justify-center items-center lg:py-16">
       <div className=" text-center">
         <h4 className=" text-4xl font-semibold text-center text-purple-600 ">
           What we do
