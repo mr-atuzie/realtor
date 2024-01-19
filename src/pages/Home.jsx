@@ -5,7 +5,7 @@ import About from "../components/About";
 import Service from "../components/Service";
 import banner from "../assets/luxe salon.png";
 import banner2 from "../assets/1.png";
-import Team from "../components/Team";
+import Product from "../components/Product";
 
 const Home = () => {
   return (
@@ -15,7 +15,7 @@ const Home = () => {
       <About />
       <Service />
       <img className=" w-full" src={banner} alt="" />
-      <Team />
+      <Product />
       <img className=" w-full" src={banner2} alt="" />
     </div>
   );

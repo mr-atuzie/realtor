@@ -4,6 +4,10 @@ import "swiper/css";
 import { productData } from "../data";
 
 const Team = () => {
+  const handleClick = (product) => {
+    console.log(product);
+  };
+
   return (
     <div className="w-full bg-purple-100  py-8 flex flex-col  justify-center items-center lg:py-16">
       <div className=" text-center">
@@ -21,7 +25,7 @@ const Team = () => {
       </div>
       <div className=" w-[90%] lg:w-[85%]  mt-10  mx-auto grid grid-cols-2 lg:grid-cols-5 gap-8">
         {productData.map((slide, index) => {
-          const { imageurl, price } = slide;
+          const { imageurl, price, id } = slide;
           return (
             <div key={index}>
               <img
@@ -33,14 +37,21 @@ const Team = () => {
                 {price}
               </p>
 
-              {/* <div className=" flex justify-center items-center rounded">
+              <div className=" flex justify-center items-center rounded">
                 <button
-                  onClick={console.log({ id, name })}
+                  onClick={() =>
+                    handleClick({
+                      id,
+                      price,
+                      imageurl,
+                      quantity: 1,
+                    })
+                  }
                   className=" bg-purple-600 p-2 text-white font-medium text-sm"
                 >
                   Add to cart
                 </button>
-              </div> */}
+              </div>
             </div>
           );
         })}
