@@ -5,6 +5,7 @@ import { productData } from "../data";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../redux/features/cartSlice";
 import { FaShoppingBag } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Team = () => {
   const dispatch = useDispatch();
@@ -14,7 +15,7 @@ const Team = () => {
   };
 
   return (
-    <div className="w-full   py-8 flex flex-col  justify-center items-center lg:py-16">
+    <div className="w-full   py-10 flex flex-col  justify-center items-center lg:py-16">
       <div className=" text-center">
         <h4 className=" text-4xl font-semibold text-center text-purple-600 ">
           Boutique
@@ -28,7 +29,13 @@ const Team = () => {
           harum quisquam itaque quas? Nam provident voluptatum reprehenderit?
         </p>
       </div>
-      <p>sell all</p>
+      <Link
+        className=" text-xs font-medium text-purple-600 uppercase"
+        to={"/products"}
+      >
+        sell all
+      </Link>
+
       <div className=" w-[90%] lg:w-[85%]  mx-auto grid grid-cols-2 lg:grid-cols-5 gap-8">
         {productData.map((slide, index) => {
           const { imageurl, price, id, name } = slide;
@@ -66,6 +73,14 @@ const Team = () => {
             </div>
           );
         })}
+      </div>
+
+      <div className=" flex justify-center items-center  mt-10">
+        <Link to={"/products"}>
+          <button className=" border border-purple-600 uppercase bg-white text-purple-600  hover:bg-purple-600 hover:text-white ease-in-out duration-300">
+            view more
+          </button>
+        </Link>
       </div>
     </div>
   );
