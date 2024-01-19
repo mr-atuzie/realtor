@@ -4,7 +4,7 @@ import { shortenText } from "../utils";
 import { productData } from "../data";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../redux/features/cartSlice";
-// import { FaShoppingBag } from "react-icons/fa";
+import { FaShoppingBag } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Team = () => {
@@ -30,15 +30,13 @@ const Team = () => {
         </p>
       </div>
 
-      <div className=" flex justify-end items-end my-4">
-        <p>
-          <Link
-            className=" text-xs font-medium text-purple-600 uppercase"
-            to={"/products"}
-          >
-            sell all
-          </Link>
-        </p>
+      <div className=" w-full flex justify-end items-end my-4">
+        <Link
+          className=" text-xs font-medium text-purple-600 uppercase"
+          to={"/products"}
+        >
+          sell all
+        </Link>
       </div>
 
       <div className=" w-[90%] lg:w-[85%]  mx-auto grid grid-cols-2 gap-4 lg:grid-cols-5 lg:gap-8">
@@ -70,9 +68,9 @@ const Team = () => {
                       quantity: 1,
                     })
                   }
-                  className=" text-xs bg-purple-600  p-2 text-white font-medium lg:text-sm"
+                  className="flex items-center gap-1 text-xs bg-purple-600  p-2 text-white font-medium lg:text-sm"
                 >
-                  Add to cart
+                  <FaShoppingBag /> <span>Add to cart</span>
                 </button>
               </div>
             </div>
