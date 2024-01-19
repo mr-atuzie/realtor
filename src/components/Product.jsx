@@ -31,12 +31,14 @@ const Team = () => {
       </div>
 
       <div className=" flex justify-end items-end my-4">
-        <Link
-          className=" text-xs font-medium text-purple-600 uppercase"
-          to={"/products"}
-        >
-          sell all
-        </Link>
+        <p>
+          <Link
+            className=" text-xs font-medium text-purple-600 uppercase"
+            to={"/products"}
+          >
+            sell all
+          </Link>
+        </p>
       </div>
 
       <div className=" w-[90%] lg:w-[85%]  mx-auto grid grid-cols-2 gap-4 lg:grid-cols-5 lg:gap-8">
@@ -51,7 +53,7 @@ const Team = () => {
               />
 
               <p className=" mt-1  text-center text-xs lg:text-sm  font-medium">
-                {shortenText(name)}
+                {shortenText(name, 23)}
               </p>
 
               <p className=" my-1 text-center text-xs lg:text-sm  font-medium">
@@ -68,7 +70,7 @@ const Team = () => {
                       quantity: 1,
                     })
                   }
-                  className=" text-xs bg-purple-600 rounded p-2 text-white font-medium lg:text-sm"
+                  className=" text-xs bg-purple-600  p-2 text-white font-medium lg:text-sm"
                 >
                   Add to cart
                 </button>
