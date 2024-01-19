@@ -1,4 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,11 +10,10 @@
 
 @layer base {
   html {
-    font-family: "Rubik", sans-serif;
-    background-color: black;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: "Montserrat", sans-serif;
   }
-}
-
-.react-tel-input .form-control {
-  @apply !w-full py-6 !text-base;
+  h4 {
+    font-family: "Tangerine", cursive;
+  }
 }

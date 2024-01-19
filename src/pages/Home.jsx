@@ -1,33 +1,22 @@
 import React from "react";
-
-import Agents from "../components/Agents";
-// import Blogs from "../components/Blogs";
-import Contact from "../components/Contact";
-import Packages from "../components/Packages";
-import Review from "../components/Review";
-// import WhyUs from "../components/WhyUs";
-// import Location from "../components/Location";
-import Footer from "../components/Footer";
-// import Properties from "../components/Properties";
+import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
-// import Hero from "../components/Hero";
-import HeroII from "../components/HeroII";
 import About from "../components/About";
+import Service from "../components/Service";
+import banner from "../assets/luxe salon.png";
+import banner2 from "../assets/1.png";
+import Team from "../components/Team";
 
 const Home = () => {
   return (
     <div>
       <Navbar />
-      <HeroII />
+      <Hero />
       <About />
-      <Review />
-      {/* <WhyUs /> */}
-      {/* <Location /> */}
-      <Packages />
-      <Agents />
-      {/* <Blogs /> */}
-      <Contact />
-      <Footer />
+      <Service />
+      <img className=" w-full" src={banner} alt="" />
+      <Team />
+      <img className=" w-full" src={banner2} alt="" />
     </div>
   );
 };
