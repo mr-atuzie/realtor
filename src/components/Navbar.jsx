@@ -8,7 +8,7 @@ import logoImg from "../assets/logo.png";
 
 const logo = (
   <Link to="/">
-    <img width={80} src={logoImg} alt="" />
+    <img width={60} src={logoImg} alt="" />
   </Link>
 );
 
