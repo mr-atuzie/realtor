@@ -30,7 +30,7 @@ const Team = () => {
         </p>
       </div>
 
-      <div className=" flex justify-end my-4">
+      <div className=" flex justify-end items-end my-4">
         <Link
           className=" text-xs font-medium text-purple-600 uppercase"
           to={"/products"}
@@ -80,7 +80,7 @@ const Team = () => {
 
       <div className=" flex justify-center items-center  mt-10">
         <Link to={"/products"}>
-          <button className=" font-medium text-xs lg:text-sm p-2  border border-purple-600 uppercase bg-white text-purple-600  hover:bg-purple-600 hover:text-white ease-in-out duration-300">
+          <button className=" font-medium text-xs lg:text-sm px-4 py-2  border border-purple-600 uppercase bg-white text-purple-600  hover:bg-purple-600 hover:text-white ease-in-out duration-300">
             view more
           </button>
         </Link>
