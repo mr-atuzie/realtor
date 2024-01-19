@@ -4,13 +4,11 @@ import { FaShoppingBag, FaTimes } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { selectCart } from "../redux/features/cartSlice";
 import { useSelector } from "react-redux";
+import logoImg from "../assets/logo.png";
 
 const logo = (
   <Link to="/">
-    <h2 className=" text-center text-4xl font-semibold">
-      Luxe <br /> Lueur
-      <span className=" text-purple-600">.</span>
-    </h2>
+    <img width={80} src={logoImg} alt="" />
   </Link>
 );
 
