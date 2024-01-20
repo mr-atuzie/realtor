@@ -17,7 +17,7 @@ const Cart = () => {
 
   return (
     <div className=" py-10 lg:py-16 bg-purple-50">
-      {/* cartSlice:{formatter(cartTotal)} */}
+      cartSlice:{formatter(cartTotal)}
       <div className=" w-[90%] lg:w-[85%]  mx-auto">
         {cart.length > 0 && (
           <div className=" w-full flex justify-end items-end mb-5">
