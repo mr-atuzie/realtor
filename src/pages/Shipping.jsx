@@ -55,77 +55,85 @@ const Shipping = () => {
     console.log(userData);
   };
   return (
-    <div>
-      <div className=" w-full my-12 lg:w-[45%] lg:mx-auto bg-white pt-2 pb-12 ">
+    <>
+      <div className=" w-full  lg:mx-auto bg-white  ">
         <div className=" w-[90%]  mx-auto">
-          <form onSubmit={handleSubmit}>
-            <div className="w-full my-7">
-              <div className=" flex justify-between items-center">
-                <h1 className=" font-medium  text-2xl lg:text-4xl">
-                  Delivery Form
-                </h1>
-                <IoCloseOutline
-                  onClick={() => navigate(-1)}
-                  size={30}
-                  className=" text-gray-500 lg:hidden"
-                />
-              </div>
-
-              <div className="  mb-5 lg:mb-7">
-                <label
-                  className=" text-gray-500 text-sm lg:text-[18px]"
-                  htmlFor="text"
-                >
-                  Full name
-                </label>
-                <input
-                  className=" border w-full p-2.5 lg:p-3.5 mt-1 lg:mt-3"
-                  type="text"
-                  name="shippingname"
-                  value={shippingname}
-                  onChange={handleInputChange}
-                />
-              </div>
-              <div className="  mb-5 lg:mb-7">
-                <label
-                  className=" text-gray-500 text-sm lg:text-[18px]"
-                  htmlFor="email"
-                >
-                  Email address
-                </label>
-                <input
-                  className=" border w-full p-2.5 lg:p-3.5 mt-1 lg:mt-3"
-                  type="email"
-                  name="shippingemail"
-                  value={shippingemail}
-                  onChange={handleInputChange}
-                />
-              </div>
-              <div className=" mb-4">
-                <label
-                  className=" text-gray-500 text-sm lg:text-[18px]"
-                  htmlFor="text"
-                >
-                  Phone number
-                </label>
-                <input
-                  className=" border w-full p-2.5 lg:p-3.5 mt-1 lg:mt-3"
-                  type="t"
-                  name="shippingphone"
-                  value={shippingphone}
-                  onChange={handleInputChange}
-                />
-              </div>
+          <div className=" flex justify-between items-center mt-5">
+            <h1 className=" font-semibold text-purple-600  text-lg">
+              Delivery Form
+            </h1>
+            <IoCloseOutline
+              onClick={() => navigate(-1)}
+              size={20}
+              className=" text-red-500 "
+            />
+          </div>
+          <form className="w-full my-7" onSubmit={handleSubmit}>
+            {/* name */}
+            <div className="  mb-4 ">
+              <label
+                className=" text-gray-500 text-xs lg:text-sm "
+                htmlFor="shippingname"
+              >
+                Full name
+              </label>
+              <input
+                className=" rounded border border-purple-300 w-full p-2.5 lg:p-3.5 mt-1 lg:mt-3"
+                type="text"
+                name="shippingname"
+                id="shippingname"
+                value={shippingname}
+                onChange={handleInputChange}
+              />
             </div>
-
+            {/* email */}
+            <div className="  mb-4 ">
+              <label
+                className=" text-gray-500  text-xs lg:text-sm"
+                htmlFor="shippingemail"
+              >
+                Email address
+              </label>
+              <input
+                className=" rounded border border-purple-300 w-full p-2.5 lg:p-3.5 mt-1 lg:mt-3"
+                type="email"
+                name="shippingemail"
+                id="shippingemail"
+                value={shippingemail}
+                onChange={handleInputChange}
+              />
+            </div>
+            {/* number */}
+            <div className=" mb-4">
+              <label
+                className=" text-gray-500  text-xs lg:text-sm"
+                htmlFor="shippingphone"
+              >
+                Phone number
+              </label>
+              <input
+                className=" rounded border border-purple-300 w-full p-2.5 lg:p-3.5 mt-1 lg:mt-3"
+                type="text"
+                name="shippingphone"
+                id="shippingphone"
+                value={shippingphone}
+                onChange={handleInputChange}
+              />
+            </div>
             {/* state */}
-            <div className=" mb-5 lg:mb-7">
+            <div className=" mb-4">
+              <label
+                className=" text-gray-500  text-xs lg:text-sm"
+                htmlFor="state"
+              >
+                State
+              </label>
               <select
                 name="state"
                 value={state}
                 onChange={handleInputChange}
                 id="state"
-                className="  w-full  mt-1 lg:mt-3   border text-gray-700  p-3 lg:p-4.5 "
+                className="  w-full  mt-1 lg:mt-3   rounded border border-purple-300 text-gray-700  p-3 "
               >
                 <option>Select Country</option>
                 {states.map((state) => {
@@ -137,25 +145,26 @@ const Shipping = () => {
                 })}
               </select>
             </div>
-
-            <div className="mb-5  lg:mb-7">
+            {/* address */}
+            <div className="mb-4  ">
               <label
-                className=" text-gray-500 text-sm lg:text-[18px]"
-                htmlFor="text"
+                className=" text-gray-500  text-xs lg:text-sm"
+                htmlFor="address"
               >
                 Address
               </label>
               <input
-                className="border w-full p-2.5 lg:p-3.5 mt-1 lg:mt-3"
+                className="rounded border border-purple-300 w-full p-2.5 lg:p-3.5 mt-1 lg:mt-3"
                 type="text"
                 name="address"
                 value={address}
+                id="address"
                 onChange={handleInputChange}
               />
             </div>
 
             <button
-              className="mt-9 rounded w-full items-center gap-2 text-xs bg-purple-600  p-2.5 text-white font-medium lg:text-sm"
+              className="mt-3 rounded w-full items-center gap-2 text-xs bg-purple-600  p-3 text-white font-medium lg:text-sm"
               disabled={loading}
             >
               Continue
@@ -163,7 +172,7 @@ const Shipping = () => {
           </form>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
