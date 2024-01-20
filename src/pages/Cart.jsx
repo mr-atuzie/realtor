@@ -8,6 +8,7 @@ import {
 } from "../redux/features/cartSlice";
 import { formatter } from "../utils";
 import cartImg from "../assets/cart.svg";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const dispatch = useDispatch();
@@ -63,6 +64,11 @@ const Cart = () => {
                 />
               );
             })}
+            <Link to={"/shipping"}>
+              <button className=" mt-9 rounded w-full items-center gap-2 text-xs bg-purple-600  p-2.5 text-white font-medium lg:text-sm">
+                CHECKOUT
+              </button>
+            </Link>
           </div>
         )}
       </div>

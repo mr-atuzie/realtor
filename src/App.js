@@ -5,6 +5,7 @@ import AllProducts from "./pages/AllProducts";
 import Navbar from "./components/Navbar";
 import Order from "./pages/Order";
 import ScrollTop from "./components/ScrollTop";
+import Shipping from "./pages/Shipping";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/products" element={<AllProducts />} />
           <Route path="/orders" element={<Order />} />
+          <Route path="/shipping" element={<Shipping />} />
         </Routes>
       </BrowserRouter>
     </>
