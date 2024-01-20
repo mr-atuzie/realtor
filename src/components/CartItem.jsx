@@ -36,7 +36,7 @@ const CartItem = ({ id, name, price, img }) => {
           }
           className=""
         >
-          <IoCloseOutline className=" text-gray-500 ml-2" size={25} />
+          <IoCloseOutline className=" text-red-600 ml-2" size={20} />
         </div>
       </div>
     </div>

@@ -17,10 +17,9 @@ const Cart = () => {
 
   return (
     <div className=" py-10 lg:py-16 bg-purple-50">
-      cartSlice:{formatter(cartTotal)}
       <div className=" w-[90%] lg:w-[85%]  mx-auto">
         {cart.length > 0 && (
-          <div className=" w-full flex justify-end items-end mb-5">
+          <div className=" w-full flex justify-end items-end ">
             <button
               onClick={() => dispatch(clearCart())}
               className=" font-medium text-xs lg:text-sm fon  p-2  border border-purple-600 uppercase bg-white text-purple-600  hover:bg-purple-600 hover:text-white ease-in-out duration-300"
@@ -29,6 +28,7 @@ const Cart = () => {
             </button>
           </div>
         )}
+
         {cart.length === 0 && (
           <div className=" min-h-screen flex justify-center items-center flex-col">
             <img width={180} src={cartImg} alt="" />
@@ -37,9 +37,20 @@ const Cart = () => {
             </p>
           </div>
         )}
-
         {cart.length > 0 && (
           <div className=" min-h-screen">
+            <div className=" bg-white  py-4 px-2 my-6">
+              <p className=" text-sm uppercase text-purple-600 font-medium">
+                cart summary
+              </p>
+              <div className="  flex items-center justify-between">
+                <p className=" text-xs font-medium">Subtotal</p>
+
+                <p className=" font-semibold"> ₦ {formatter(cartTotal)}</p>
+              </div>
+
+              <p className=" text-[10px]">Delivery fees not included</p>
+            </div>
             {cart?.map((ca) => {
               const { id, name, price, img } = ca;
               return (

@@ -39,7 +39,7 @@ const AllProducts = () => {
                     currentCategory === cat
                       ? "bg-purple-600 text-white"
                       : "bg-gray-100 "
-                  } w-14 text-xs  p-2 capitalize flex items-center gap-2  font-medium rounded`}
+                  } w-14 text-xs  p-2 capitalize  text-center  gap-2  font-medium rounded`}
                 >
                   {cat}
                 </button>
