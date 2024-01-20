@@ -71,7 +71,7 @@ const Team = () => {
                         // totalPrice: Number(price) * 1,
                       })
                     }
-                    className="flex items-center gap-2 text-xs bg-purple-600  p-2 text-white font-medium lg:text-sm"
+                    className="flex rounded items-center gap-2 text-xs bg-purple-600  p-2 text-white font-medium lg:text-sm"
                   >
                     <FaShoppingBag /> <span>Add to cart</span>
                   </button>

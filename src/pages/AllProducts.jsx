@@ -20,6 +20,8 @@ const AllProducts = () => {
     "Jackets",
   ];
 
+  const currentCategory = "All";
+
   const dispatch = useDispatch();
 
   const handleClick = (product) => {
@@ -28,11 +30,17 @@ const AllProducts = () => {
   return (
     <div className=" py-6 lg:py-16">
       <div className=" w-[95%] lg:w-[85%]  mx-auto mb-8">
-        <Swiper slidesPerView={4.8}>
+        <Swiper spaceBetween={6} slidesPerView={5.5}>
           {category.map((cat) => {
             return (
               <SwiperSlide key={cat}>
-                <button className=" w-16  text-xs bg-purple-50 p-2 capitalize text-white font-medium rounded">
+                <button
+                  className={`${
+                    currentCategory === cat
+                      ? "bg-purple-600 text-white"
+                      : "bg-gray-100 "
+                  } w-14 text-xs  p-2 capitalize flex items-center gap-2  font-medium rounded`}
+                >
                   {cat}
                 </button>
               </SwiperSlide>

@@ -101,13 +101,13 @@ const Navbar = () => {
       {showMenu && (
         <div
           onClick={hideMenu}
-          className=" z-40 shadow-lg  bg-purple-50 fixed lg:hidden top-0 right-0  w-full h-64 p-4"
+          className=" z-40 shadow-lg  bg-purple-50 fixed lg:hidden top-0 right-0  w-full min-h-64 p-4"
         >
           <div className=" flex justify-between items-center">
             {logo} <FaTimes onClick={hideMenu} size={20} />
           </div>
 
-          <ul className=" text-sm  font-medium px-2 flex flex-col gap-3">
+          <ul className=" text-sm  font-medium px-2 flex flex-col gap-4">
             <li className="">
               <NavLink to="/">Home</NavLink>
             </li>
@@ -116,6 +116,9 @@ const Navbar = () => {
             </li>
             <li className="">
               <NavLink to="/cart">Cart</NavLink>
+            </li>
+            <li className="">
+              <NavLink to="/orders">Orders</NavLink>
             </li>
             <li>
               <button className="  bg-purple-600 rounded p-2 text-white font-medium ">
