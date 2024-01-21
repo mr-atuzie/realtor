@@ -4,11 +4,9 @@ import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
 // import { useNavigate } from 'react-router-dom';
 
-const Register = () => {
+const Login = () => {
   const initialState = {
-    name: "",
     email: "",
-    phone: "",
     password: "",
   };
 
@@ -17,7 +15,7 @@ const Register = () => {
   const [formData, setFormData] = useState(initialState);
   const [loading, setLoading] = useState(false);
 
-  const { name, phone, email, password } = formData;
+  const { email, password } = formData;
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -29,7 +27,7 @@ const Register = () => {
     e.preventDefault();
     setLoading(true);
 
-    if (!name || !email || !phone || !password) {
+    if (!email || !password) {
       setLoading(false);
       return toast.error("All fields are required");
     }
@@ -39,7 +37,7 @@ const Register = () => {
       return toast.error("Password must be up to 6 characters");
     }
 
-    const userData = { name, email, phone, password };
+    const userData = { email, password };
 
     console.log(userData);
 
@@ -74,30 +72,9 @@ const Register = () => {
         <div className=" flex gap-2 items-center justify-center mb-4">
           <img src={logo} alt="" width={80} />
         </div>
-        <h2 className="text-xl  font-semibold  text-center mb-6 ">
-          Create Account
-        </h2>
+        <h2 className="text-xl  font-semibold  text-center mb-6 ">Login</h2>
         <form onSubmit={handleSubmit}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-6">
-            <div className=" w-full ">
-              <label
-                className=" font-medium  text-xs lg:text-sm mb-2"
-                htmlFor="name"
-              >
-                Name
-              </label>
-
-              <input
-                className="border border-purple-300 p-2  rounded-lg  block w-full placeholder:text-sm "
-                type="text"
-                placeholder="Enter your Name"
-                name="name"
-                value={name}
-                onChange={handleInputChange}
-                id="name"
-              />
-            </div>
-
             <div className=" ">
               <label
                 className=" font-medium  text-xs lg:text-sm mb-2"
@@ -114,25 +91,6 @@ const Register = () => {
                 value={email}
                 onChange={handleInputChange}
                 id="email"
-              />
-            </div>
-
-            <div className=" ">
-              <label
-                className=" font-medium  text-xs lg:text-sm"
-                htmlFor="phone"
-              >
-                Phone Number
-              </label>
-
-              <input
-                className="border p-2   rounded-lg  block w-full  placeholder:text-sm "
-                type="text"
-                name="phone"
-                placeholder="Enter your Phone number"
-                value={phone}
-                onChange={handleInputChange}
-                id="phone"
               />
             </div>
 
@@ -168,9 +126,9 @@ const Register = () => {
             </button>
 
             <p className="text-xs text-center  font-medium mt-6  capitalize  text-gray-500">
-              Already have an account?
-              <Link to={"/login"}>
-                <span className=" text-purple-600 ml-1 ">Login</span>
+              Don't have an account?
+              <Link to={"/register"}>
+                <span className=" text-purple-600 ml-1 ">Register</span>
               </Link>
             </p>
           </div>
@@ -180,4 +138,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default Login;

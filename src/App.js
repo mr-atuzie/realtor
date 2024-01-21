@@ -7,6 +7,8 @@ import Order from "./pages/Order";
 import ScrollTop from "./components/ScrollTop";
 import Shipping from "./pages/Shipping";
 import { Toaster } from "react-hot-toast";
+import Register from "./pages/Register";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/products" element={<AllProducts />} />
           <Route path="/orders" element={<Order />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/shipping" element={<Shipping />} />
         </Routes>
       </BrowserRouter>
