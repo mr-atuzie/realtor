@@ -6,11 +6,13 @@ import Navbar from "./components/Navbar";
 import Order from "./pages/Order";
 import ScrollTop from "./components/ScrollTop";
 import Shipping from "./pages/Shipping";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <Toaster position="top-center" reverseOrder={false} />
         <ScrollTop />
         <Navbar />
         <Routes>
