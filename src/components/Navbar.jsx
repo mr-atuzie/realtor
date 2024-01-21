@@ -107,7 +107,7 @@ const Navbar = () => {
             {logo} <FaTimes onClick={hideMenu} size={20} />
           </div>
 
-          <ul className=" text-sm  font-medium px-2 flex flex-col gap-4">
+          <ul className=" text-sm  px-2 flex flex-col gap-4">
             <li className="">
               <NavLink to="/">Home</NavLink>
             </li>
@@ -119,6 +119,9 @@ const Navbar = () => {
             </li>
             <li className="">
               <NavLink to="/orders">Orders</NavLink>
+            </li>
+            <li className="">
+              <NavLink to="/login">Login/Register</NavLink>
             </li>
             <li>
               <button className="  bg-purple-600 rounded p-2 text-white font-medium ">
