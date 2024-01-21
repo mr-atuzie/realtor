@@ -67,8 +67,8 @@ const Login = () => {
     //   }
   };
   return (
-    <div className=" w-full min-h-screen flex justify-center flex-col items-center bg-purple-200 py-10">
-      <div className=" bg-white w-[90%] lg:w-[43%] mx-auto shadow-md rounded-lg px-7   py-14">
+    <div className=" w-full min-h-screen flex justify-center flex-col items-center bg-purple-100 py-10">
+      <div className=" bg-white w-[90%] lg:w-[43%] mx-auto shadow-md rounded-lg p-5  ">
         <div className=" flex gap-2 items-center justify-center mb-4">
           <img src={logo} alt="" width={80} />
         </div>
@@ -110,9 +110,6 @@ const Login = () => {
                 onChange={handleInputChange}
                 id="password"
               />
-              <small className=" text-xs text-gray-400">
-                Must be 8 character long, Uppercase inclusive
-              </small>
             </div>
           </div>
 

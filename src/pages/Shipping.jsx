@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { states } from "../data";
-import { IoCloseOutline } from "react-icons/io5";
+import { MdKeyboardDoubleArrowLeft } from "react-icons/md";
 
 const Shipping = () => {
   const navigate = useNavigate();
@@ -56,17 +56,17 @@ const Shipping = () => {
   };
   return (
     <div className=" w-full bg-purple-100">
-      <div className=" h-fit w-[90%] lg:w-[45%] p-5  my-32   bg-white  mx-auto">
-        <div className=" flex justify-between items-center mt-5">
-          <h1 className=" font-semibold text-purple-600  text-lg">
-            Delivery Form
-          </h1>
-          <IoCloseOutline
-            onClick={() => navigate(-1)}
-            size={20}
-            className=" text-red-500 "
-          />
-        </div>
+      <div className=" h-fit w-[90%] lg:w-[45%] p-5    bg-white  mx-auto">
+        <button
+          onClick={() => navigate(-1)}
+          className=" text-xs text-gray-500 flex items-center gap-1"
+        >
+          <MdKeyboardDoubleArrowLeft /> <span>back</span>
+        </button>
+        <h1 className=" mb-4 font-semibold text-purple-600  text-lg">
+          Delivery Form
+        </h1>
+
         <form className="w-full my-7" onSubmit={handleSubmit}>
           {/* name */}
           <div className="  mb-4 ">
