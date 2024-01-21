@@ -19,7 +19,7 @@ const Cart = () => {
   return (
     <>
       <div className=" py-10 lg:py-16 bg-purple-50">
-        <div className=" w-[90%] lg:w-[85%]  mx-auto">
+        <div className=" w-[90%] lg:w-[45%]  mx-auto">
           {cart.length > 0 && (
             <div className=" w-full flex justify-end items-end ">
               <button
