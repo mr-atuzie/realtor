@@ -32,8 +32,12 @@ const Cart = () => {
           )}
 
           {cart.length === 0 && (
-            <div className=" min-h-screen flex flex-col items-center ">
-              <img className=" mt-8" width={180} src={cartImg} alt="" />
+            <div className=" min-h-screen flex flex-col items-center justify-center ">
+              <img
+                className=" mt-8 w-[180px] lg:w-[400px]"
+                src={cartImg}
+                alt=""
+              />
               <p className=" text-gray-500 font-mono mt-1 text-sm">
                 Cart is Empty{" "}
               </p>

@@ -29,7 +29,7 @@ const AllProducts = () => {
   };
   return (
     <div className=" py-6 lg:py-16">
-      <div className=" w-[95%] lg:w-[85%]  mx-auto mb-8">
+      <div className=" w-[95%] lg:w-[35%]  mx-auto mb-8">
         <Swiper spaceBetween={6} slidesPerView={5.5}>
           {category.map((cat) => {
             return (

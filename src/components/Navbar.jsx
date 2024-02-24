@@ -72,12 +72,6 @@ const Navbar = () => {
           </li>
 
           <li>
-            <NavLink className={activeLink} to={"/orders"}>
-              Orders
-            </NavLink>
-          </li>
-
-          <li>
             <NavLink className={activeLink} to={"/register"}>
               Register / login
             </NavLink>
