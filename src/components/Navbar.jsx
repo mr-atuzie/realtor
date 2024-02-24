@@ -60,32 +60,26 @@ const Navbar = () => {
           </li>
 
           <li>
-            <NavLink className={activeLink} to={"/about"}>
-              About
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink className={activeLink} to={"/services"}>
-              Service
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink className={activeLink} to={"/teams"}>
-              Team
-            </NavLink>
-          </li>
-
-          <li>
             <NavLink className={activeLink} to={"/products"}>
               Boutique
             </NavLink>
           </li>
 
           <li>
-            <NavLink className={activeLink} to={"/contact"}>
-              Contact
+            <NavLink className={activeLink} to={"/cart"}>
+              Cart
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink className={activeLink} to={"/orders"}>
+              Orders
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink className={activeLink} to={"/register"}>
+              Register / login
             </NavLink>
           </li>
 
