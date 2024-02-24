@@ -66,25 +66,25 @@ const Navbar = () => {
           </li>
 
           <li>
-            <NavLink className={activeLink} to={"/about"}>
+            <NavLink className={activeLink} to={"/services"}>
               Service
             </NavLink>
           </li>
 
           <li>
-            <NavLink className={activeLink} to={"/about"}>
+            <NavLink className={activeLink} to={"/teams"}>
               Team
             </NavLink>
           </li>
 
           <li>
-            <NavLink className={activeLink} to={"/about"}>
+            <NavLink className={activeLink} to={"/products"}>
               Boutique
             </NavLink>
           </li>
 
           <li>
-            <NavLink className={activeLink} to={"/about"}>
+            <NavLink className={activeLink} to={"/contact"}>
               Contact
             </NavLink>
           </li>
