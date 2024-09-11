@@ -29,7 +29,7 @@ const Hero = () => {
     // },
   ];
   return (
-    <div className=" bg-gray-100   w-full">
+    <div className=" bg-gray-100 min-h-screen  w-full">
       <Swiper
         modules={[Pagination, Autoplay]}
         pagination={{ clickable: true }}
@@ -43,7 +43,7 @@ const Hero = () => {
           return (
             <SwiperSlide key={id}>
               <img
-                className="  w-full lg:hidden object-cover"
+                className="  w-full h-full lg:hidden object-cover"
                 src={img}
                 alt=""
               />
