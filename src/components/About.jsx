@@ -3,7 +3,7 @@ import img from "../assets/luxe 2.png";
 
 const About = () => {
   return (
-    <div className="w-full lg:h-[90vh] py-10 flex justify-center items-center lg:py-16">
+    <div className="w-full bg-purple-100 lg:h-[90vh] py-10 flex justify-center items-center lg:py-16">
       <div className=" w-[90%] lg:w-[85%]  mx-auto  flex lg:justify-between  lg:items-center flex-col lg:flex-row">
         <div className="text-center lg:hidden">
           <h4 className=" text-4xl font-semibold text-purple-600 ">About us</h4>
