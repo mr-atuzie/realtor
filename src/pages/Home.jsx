@@ -10,29 +10,30 @@ import bgVid from "../assets/pageantry.mp4";
 const Home = () => {
   return (
     <>
-      <div class="relative h-screen overflow-hidden">
+      <div className="relative h-screen overflow-hidden">
         {/* Video Background */}
         <video
           autoplay
           muted
           loop
-          class="absolute inset-0 w-full h-full object-cover"
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
         >
           <source src={bgVid} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
         {/* Content on top of the video */}
-        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-          <h1 class="text-4xl md:text-6xl font-bold mb-4">
+        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">
             Welcome to [Your Pageant Name]
           </h1>
-          <p class="text-lg md:text-2xl mb-6">
+          <p className="text-lg md:text-2xl mb-6">
             Vote for your favorite contestant and make them win!
           </p>
           <a
             href="#contestants"
-            class="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 px-6 rounded-lg transition-all"
+            className="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 px-6 rounded-lg transition-all"
           >
             View Contestants
           </a>
