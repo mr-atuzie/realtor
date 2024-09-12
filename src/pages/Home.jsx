@@ -9,7 +9,7 @@ import banner from "../assets/luxe salon.png";
 const Home = () => {
   return (
     <>
-      <div class="relative w-full h-screen overflow-hidden">
+      <div className="relative w-full h-screen overflow-hidden">
         {/* <iframe
           class="absolute top-1/2 left-1/2 w-screen h-screen -translate-x-1/2 -translate-y-1/2 pointer-events-none"
           src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1&mute=1&controls=0&loop=1&playlist=VIDEO_ID"
@@ -28,9 +28,9 @@ const Home = () => {
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
         ></iframe>
-        <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white z-10">
-          <h1 class="text-5xl font-bold mb-4">Welcome to the Pageant</h1>
-          <p class="text-xl">Vote for your favorite contestant!</p>
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white z-10">
+          <h1 className="text-5xl font-bold mb-4">Welcome to the Pageant</h1>
+          <p className="text-xl">Vote for your favorite contestant!</p>
         </div>
       </div>
       <About />
