@@ -29,7 +29,7 @@ const Hero = () => {
     // },
   ];
   return (
-    <div className=" bg-gray-100 min-h-screen  w-full">
+    <div className=" bg-gray-100 h-screen  w-full">
       <Swiper
         modules={[Pagination, Autoplay]}
         pagination={{ clickable: true }}
