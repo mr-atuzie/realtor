@@ -74,7 +74,7 @@ const Home = () => {
 
         {/* Content on top of the video */}
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-          <h1 className="text-2xl md:text-6xl font-bold ">
+          <h1 className="text-4xl md:text-6xl font-bold ">
             MISS UNIVERSE 2024
           </h1>
           <p className="text-sm lg:text-lg md:text-2xl ">
