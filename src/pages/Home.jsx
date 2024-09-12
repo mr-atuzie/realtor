@@ -85,7 +85,7 @@ const Home = () => {
           </div>
           <a
             href="#contestants"
-            className="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-2 px-4 text-sm lg:py-3 lg:px-6 rounded-lg transition-all"
+            className="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 px-6 rounded-lg transition-all"
           >
             View Contestants
           </a>
