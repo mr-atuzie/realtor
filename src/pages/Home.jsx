@@ -13,7 +13,7 @@ const Home = () => {
       <div className="relative h-screen overflow-hidden">
         {/* Video Background */}
         <video
-          autoplay
+          autoPlay
           muted
           loop
           playsInline
@@ -40,7 +40,7 @@ const Home = () => {
         </div>
 
         {/* Overlay  */}
-        <div class="absolute inset-0 bg-black opacity-50 z-0"></div>
+        <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
       </div>
       <About />
       <img className=" w-full" src={banner} alt="" />
