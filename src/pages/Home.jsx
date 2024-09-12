@@ -5,38 +5,44 @@ import About from "../components/About";
 import banner from "../assets/luxe salon.png";
 // import banner2 from "../assets/1.png";
 // import Product from "../components/Product";
+import bgVid from "../assets/pageantry.mp4";
 
 const Home = () => {
   return (
     <>
-      <div className="relative w-full h-screen overflow-hidden">
-        {/* <iframe
-          class="absolute top-1/2 left-1/2 w-screen h-screen -translate-x-1/2 -translate-y-1/2 pointer-events-none"
-          src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1&mute=1&controls=0&loop=1&playlist=VIDEO_ID"
-          frameborder="0"
-          allow="autoplay; encrypted-media"
-          allowfullscreen
-          title="rex"
-        ></iframe> */}
+      <div class="relative h-screen overflow-hidden">
+        {/* Video Background */}
+        <video
+          autoplay
+          muted
+          loop
+          class="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src={bgVid} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
-        <iframe
-          className="absolute top-1/2 left-1/2 w-screen h-screen -translate-x-1/2 -translate-y-1/2 pointer-events-none"
-          src="https://www.youtube.com/embed/C4O0EfvKxFQ?si=FmLTZpyxxwg1KlTC&amp;controls=0"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white z-10">
-          <h1 className="text-5xl font-bold mb-4">Welcome to the Pageant</h1>
-          <p className="text-xl">Vote for your favorite contestant!</p>
+        {/* Content on top of the video */}
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
+          <h1 class="text-4xl md:text-6xl font-bold mb-4">
+            Welcome to [Your Pageant Name]
+          </h1>
+          <p class="text-lg md:text-2xl mb-6">
+            Vote for your favorite contestant and make them win!
+          </p>
+          <a
+            href="#contestants"
+            class="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 px-6 rounded-lg transition-all"
+          >
+            View Contestants
+          </a>
         </div>
+
+        {/* Overlay  */}
+        <div class="absolute inset-0 bg-black opacity-50 z-0"></div>
       </div>
       <About />
       <img className=" w-full" src={banner} alt="" />
-
-      {/* <img className=" w-full" src={banner2} alt="" /> */}
     </>
   );
 };
