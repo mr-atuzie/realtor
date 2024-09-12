@@ -49,7 +49,7 @@ const Home = () => {
         key={interval}
         className="flex flex-col justify-center items-center bg-gray-900/60 text-white w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-lg mx-2"
       >
-        <span className="text-3xl font-bold md:text-4xl lg:text-5xl">
+        <span className="text-lg font-bold md:text-4xl lg:text-5xl">
           {timeLeft[interval]}
         </span>
         <span className="uppercase text-sm mt-1">{interval}</span>
@@ -74,10 +74,10 @@ const Home = () => {
 
         {/* Content on top of the video */}
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-          <h1 className="text-2xl md:text-6xl font-bold mb-4">
+          <h1 className="text-2xl md:text-6xl font-bold ">
             MISS UNIVERSE 2024
           </h1>
-          <p className="text-sm lg:text-lg md:text-2xl mb-6">
+          <p className="text-sm lg:text-lg md:text-2xl ">
             Vote for your favorite contestant and make them win!
           </p>
           <div className="flex justify-center items-center">
