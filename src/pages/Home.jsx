@@ -52,7 +52,7 @@ const Home = () => {
         <span className="text-2xl font-bold md:text-4xl lg:text-5xl">
           {timeLeft[interval]}
         </span>
-        <span className="uppercase text-sm mt-1">{interval}</span>
+        <span className="uppercase text-xs lg:text-sm mt-1">{interval}</span>
       </div>
     );
   });
@@ -74,7 +74,9 @@ const Home = () => {
 
         {/* Content on top of the video */}
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-          <h1 className="text-6xl font-bold ">MISS UNIVERSE 2024</h1>
+          <h1 className="text-4xl md:text-6xl font-extrabold ">
+            MISS UNIVERSE 2024
+          </h1>
           <p className="text-sm lg:text-lg md:text-2xl ">
             Vote for your favorite contestant and make them win!
           </p>
