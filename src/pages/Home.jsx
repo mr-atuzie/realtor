@@ -47,7 +47,7 @@ const Home = () => {
     timerComponents.push(
       <div
         key={interval}
-        className="flex flex-col justify-center items-center bg-gray-900/60 text-white w-16 h-16 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-lg mx-2"
+        className="flex flex-col justify-center items-center p-1 bg-gray-900/60 text-white w-16 h-16 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-lg mx-2"
       >
         <span className="text-2xl font-bold md:text-4xl lg:text-5xl">
           {timeLeft[interval]}
@@ -74,18 +74,16 @@ const Home = () => {
 
         {/* Content on top of the video */}
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-          <h1 className="text-4xl md:text-6xl font-extrabold ">
-            MISS UNIVERSE 2024
-          </h1>
+          <h1 className="text-6xl font-extrabold ">MISS UNIVERSE 2024</h1>
           <p className="text-sm lg:text-lg md:text-2xl ">
             Vote for your favorite contestant and make them win!
           </p>
-          <div className="flex justify-center mx-auto items-center">
+          <div className="flex justify-center mx-auto my-2 items-center">
             {timerComponents.length ? timerComponents : <span>Time's up!</span>}
           </div>
           <a
             href="#contestants"
-            className="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 px-6 rounded-lg transition-all"
+            className="bg-pink-500 hover:bg-pink-600  text-white font-semibold py-3 px-6 rounded-lg transition-all"
           >
             View Contestants
           </a>
