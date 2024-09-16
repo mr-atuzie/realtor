@@ -9,7 +9,7 @@ import bgVid from "../assets/pageantry.mp4";
 
 const Home = () => {
   const calculateTimeLeft = () => {
-    const targetDate = new Date("2024-09-14T23:59:59").getTime(); // Set your target date here
+    const targetDate = new Date("2024-10-14T23:59:59").getTime(); // Set your target date here
     const now = new Date().getTime();
     const difference = targetDate - now;
 
@@ -47,9 +47,9 @@ const Home = () => {
     timerComponents.push(
       <div
         key={interval}
-        className="flex flex-col justify-center items-center bg-gray-900/60 text-white w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-lg mx-2"
+        className="flex flex-col justify-center items-center bg-gray-900/60 text-white w-16 h-16 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-lg mx-2"
       >
-        <span className="text-lg font-bold md:text-4xl lg:text-5xl">
+        <span className="text-2xl font-bold md:text-4xl lg:text-5xl">
           {timeLeft[interval]}
         </span>
         <span className="uppercase text-sm mt-1">{interval}</span>
@@ -74,13 +74,11 @@ const Home = () => {
 
         {/* Content on top of the video */}
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-          <h1 className="text-4xl md:text-6xl font-bold ">
-            MISS UNIVERSE 2024
-          </h1>
+          <h1 className="text-6xl font-bold ">MISS UNIVERSE 2024</h1>
           <p className="text-sm lg:text-lg md:text-2xl ">
             Vote for your favorite contestant and make them win!
           </p>
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center mx-auto items-center">
             {timerComponents.length ? timerComponents : <span>Time's up!</span>}
           </div>
           <a
