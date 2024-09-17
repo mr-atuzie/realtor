@@ -160,7 +160,7 @@ const Home = () => {
               {logos.map((logo, index) => {
                 return (
                   <img
-                    className=" w-14 lg:w-24"
+                    className=" w-10 lg:w-24"
                     key={index}
                     src={logo.img}
                     alt=""
