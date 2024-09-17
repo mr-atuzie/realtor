@@ -35,7 +35,7 @@ const ZoopText = ({ text }) => {
         {letters.map((letter, index) => (
           <motion.h1
             key={index}
-            className="text-6xl md:text-7xl text-center font-extrabold text-white"
+            className="text-5xl md:text-7xl text-center font-extrabold text-white"
             variants={letterVariants}
           >
             {letter === " " ? "\u00A0" : letter}
