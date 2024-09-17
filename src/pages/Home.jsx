@@ -6,6 +6,7 @@ import React, { useState, useEffect } from "react";
 // import banner2 from "../assets/1.png";
 // import Product from "../components/Product";
 import bgVid from "../assets/pageantry.mp4";
+import { motion } from "framer-motion";
 
 const Home = () => {
   const calculateTimeLeft = () => {
@@ -73,19 +74,34 @@ const Home = () => {
 
       {/* Content on top of the video */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-        <h1 className="text-6xl font-extrabold ">MISS UNIVERSE 2024</h1>
+        <motion.h1
+          initial="initial"
+          whileHover="hovered"
+          className=" text-6xl font-extrabold relative block overflow-hidden"
+        >
+          <motion.div
+            variants={{ initial: { y: 0 }, hovered: { y: "-100%" } }}
+            className=""
+          >
+            MISS UNIVERSE 2024
+          </motion.div>
+          <motion.div
+            variants={{ initial: { y: "100%" }, hovered: { y: 0 } }}
+            className=" absolute inset-0"
+          >
+            MISS UNIVERSE 2024
+          </motion.div>
+        </motion.h1>
         <p className="text-sm lg:text-lg md:text-2xl ">
-          Don’t miss your opportunity to be part of the biggest beauty pageantry
-          contest of the year. Register now for a chance to win exciting cash
-          prizes and showcase your beauty, talent, and confidence on the grand
-          stage
+          Register now for a chance to win exciting cash prizes and showcase
+          your beauty, talent on the grand stage
         </p>
         <div className="flex justify-center mx-auto my-4 items-center">
           {timerComponents.length ? timerComponents : <span>Time's up!</span>}
         </div>
         <a
           href="#contestants"
-          className="bg-pink-500 hover:bg-pink-600  text-white font-medium py-3 px-6 rounded-lg transition-all"
+          className="bg-pink-500 hover:bg-pink-600 sm:text-sm lg:text-basea  text-white font-medium py-3 px-6 rounded-lg transition-all"
         >
           View Contestants
         </a>
