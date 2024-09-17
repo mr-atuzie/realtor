@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../assets/logo.png";
+
 import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
 // import { useNavigate } from 'react-router-dom';
@@ -70,10 +70,7 @@ const Register = () => {
   };
   return (
     <div className=" w-full min-h-screen flex justify-center flex-col items-center bg-purple-100 py-10">
-      <div className=" bg-white w-[90%] lg:w-[43%] mx-auto shadow-md rounded-lg p-5">
-        <div className=" flex gap-2 items-center justify-center mb-4">
-          <img src={logo} alt="" width={80} />
-        </div>
+      <div className=" bg-white w-[95%] lg:w-[43%] mx-auto shadow-md rounded-lg p-5">
         <h2 className="text-xl  font-semibold  text-center mb-6 ">
           Create Account
         </h2>
@@ -88,7 +85,7 @@ const Register = () => {
               </label>
 
               <input
-                className="border border-purple-300 p-2  rounded-lg  block w-full placeholder:text-sm "
+                className="border bg-gray-100   p-2  rounded-lg  block w-full placeholder:text-sm "
                 type="text"
                 placeholder="Enter your Name"
                 name="name"
@@ -107,7 +104,7 @@ const Register = () => {
               </label>
 
               <input
-                className="border p-2  border-purple-300  rounded-lg   block w-full placeholder:text-sm"
+                className="border p-2  bg-gray-100   rounded-lg   block w-full placeholder:text-sm"
                 type="email"
                 placeholder="Enter your Email"
                 name="email"
@@ -126,7 +123,7 @@ const Register = () => {
               </label>
 
               <input
-                className="border p-2   rounded-lg  block w-full  placeholder:text-sm "
+                className="border p-2 bg-gray-100     rounded-lg  block w-full  placeholder:text-sm "
                 type="text"
                 name="phone"
                 placeholder="Enter your Phone number"
@@ -144,7 +141,7 @@ const Register = () => {
                 Password
               </label>
               <input
-                className="border p-2  block w-full  rounded-lg   placeholder:text-sm "
+                className="border p-2 bg-gray-100    block w-full  rounded-lg   placeholder:text-sm "
                 type="password"
                 name="password"
                 placeholder="Enter your Password"
