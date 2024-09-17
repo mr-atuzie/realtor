@@ -13,16 +13,16 @@ const ZoopText = ({ text }) => {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-900">
+    <>
       <motion.h1
-        className="text-5sxl md:text-7xl font-extrabold text-white"
+        className="text-6xl md:text-7xl font-extrabold text-white"
         variants={zoopVariants}
         initial="hidden"
         animate="visible"
       >
         {text}
       </motion.h1>
-    </div>
+    </>
   );
 };
 
