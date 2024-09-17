@@ -10,22 +10,28 @@ const ZoopText = ({ text }) => {
     hidden: {},
     visible: {
       transition: {
-        staggerChildren: 0.2, // Stagger each letter by 0.1s
+        staggerChildren: 0.05, // Stagger each letter by 0.05s for a smoother wave
       },
     },
   };
 
   const letterVariants = {
-    hidden: { scale: 0, opacity: 0 },
+    hidden: { scale: 0, opacity: 0, color: "#ffffff" },
     visible: {
-      scale: [0, 1.5, 1],
+      scale: [0, 1.3, 1],
       opacity: 1,
-      transition: { duration: 0.6, ease: "easeInOut" },
+      color: ["#ff0000", "#00ff00", "#0000ff", "#ffffff"], // Wave of colors (red, green, blue, white)
+      transition: {
+        duration: 1.5, // Color wave will last 1.5 seconds for each letter
+        ease: "easeInOut",
+        repeat: Infinity,
+        repeatType: "mirror", // Repeats in a mirroring way for back-and-forth animation
+      },
     },
   };
 
   return (
-    <>
+    <div className="flex justify-center items-center  overflow-hidden">
       <motion.div
         className="flex flex-wrap justify-center items-center space-x-2 max-w-full overflow-visible"
         variants={containerVariants}
@@ -33,16 +39,17 @@ const ZoopText = ({ text }) => {
         animate="visible"
       >
         {letters.map((letter, index) => (
-          <motion.h1
+          <motion.span
             key={index}
-            className="text-5xl md:text-7xl text-center font-extrabold text-white"
+            className="text-5xl md:text-7xl font-bold"
             variants={letterVariants}
+            style={{ display: "inline-block" }} // Ensures each letter is treated separately
           >
             {letter === " " ? "\u00A0" : letter}
-          </motion.h1>
+          </motion.span>
         ))}
       </motion.div>
-    </>
+    </div>
   );
 };
 
