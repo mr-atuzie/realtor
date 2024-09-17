@@ -6,8 +6,8 @@ import React, { useState, useEffect } from "react";
 // import banner2 from "../assets/1.png";
 // import Product from "../components/Product";
 import bgVid from "../assets/pageantry.mp4";
-// import { motion } from "framer-motion";
-import ZoopText from "../components/ZoopText";
+import { motion } from "framer-motion";
+// import ZoopText from "../components/ZoopText";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -61,7 +61,13 @@ const Home = () => {
   });
 
   return (
-    <div className="relative h-screen overflow-hidden">
+    <motion.div
+      className="relative h-screen overflow-hidden"
+      initial={{ opacity: 0, x: -200 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: 200 }}
+      transition={{ duration: 0.5 }}
+    >
       {/* Video Background */}
       <video
         autoPlay
@@ -94,7 +100,10 @@ const Home = () => {
             MISS UNIVERSE 2024
           </motion.div>
         </motion.h1> */}
-        <ZoopText text="MISS UNIVERSE 2024 " />
+        {/* <ZoopText text="MISS UNIVERSE 2024 " /> */}
+        <h1 className=" text-6xl font-extrabold relative block overflow-hidden">
+          MISS UNIVERSE 2024
+        </h1>
 
         <p className="text-sm lg:text-lg md:text-2xl ">
           Register now for a chance to win exciting cash prizes and showcase
@@ -113,7 +122,7 @@ const Home = () => {
 
       {/* Overlay  */}
       <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
-    </div>
+    </motion.div>
   );
 };
 

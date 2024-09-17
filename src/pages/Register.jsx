@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
 // import { useNavigate } from 'react-router-dom';
+import { motion } from "framer-motion";
 
 const Register = () => {
   const initialState = {
@@ -69,7 +70,13 @@ const Register = () => {
     //   }
   };
   return (
-    <div className=" w-full min-h-screen flex justify-center flex-col items-center bg-purple-100 py-10">
+    <motion.div
+      initial={{ opacity: 0, x: -200 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: 200 }}
+      transition={{ duration: 0.5 }}
+      className=" w-full min-h-screen flex justify-center flex-col items-center bg-purple-100 py-10"
+    >
       <div className=" bg-white w-[95%] lg:w-[43%] mx-auto shadow-md rounded-lg p-5">
         <h2 className="text-xl  font-semibold  text-center mb-6 ">
           Create Account
@@ -173,7 +180,7 @@ const Register = () => {
           </div>
         </form>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
