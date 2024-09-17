@@ -6,7 +6,8 @@ import React, { useState, useEffect } from "react";
 // import banner2 from "../assets/1.png";
 // import Product from "../components/Product";
 import bgVid from "../assets/pageantry.mp4";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
+import ZoopText from "../components/ZoopText";
 
 const Home = () => {
   const calculateTimeLeft = () => {
@@ -74,7 +75,7 @@ const Home = () => {
 
       {/* Content on top of the video */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-        <motion.h1
+        {/* <motion.h1
           initial="initial"
           whileHover="hovered"
           className=" text-6xl font-extrabold relative block overflow-hidden"
@@ -91,7 +92,8 @@ const Home = () => {
           >
             MISS UNIVERSE 2024
           </motion.div>
-        </motion.h1>
+        </motion.h1> */}
+        <ZoopText text="MISS UNIVERSE 2024" />
         <p className="text-sm lg:text-lg md:text-2xl ">
           Register now for a chance to win exciting cash prizes and showcase
           your beauty, talent on the grand stage
