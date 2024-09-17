@@ -8,6 +8,7 @@ import React, { useState, useEffect } from "react";
 import bgVid from "../assets/pageantry.mp4";
 // import { motion } from "framer-motion";
 import ZoopText from "../components/ZoopText";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const calculateTimeLeft = () => {
@@ -101,12 +102,12 @@ const Home = () => {
         <div className="flex justify-center mx-auto my-4 items-center">
           {timerComponents.length ? timerComponents : <span>Time's up!</span>}
         </div>
-        <a
-          href="#contestants"
-          className="bg-pink-500 hover:bg-pink-600 sm:text-sm lg:text-basea  text-white font-medium py-3 px-6 rounded-lg transition-all"
+        <Link
+          to={"/register"}
+          className="bg-pink-500 hover:bg-pink-600 text-sm lg:text-base  text-white font-medium py-3 px-6 rounded-lg transition-all"
         >
-          View Contestants
-        </a>
+          Register now
+        </Link>
       </div>
 
       {/* Overlay  */}
