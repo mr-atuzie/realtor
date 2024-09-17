@@ -10,7 +10,7 @@ const ZoopText = ({ text }) => {
     hidden: {},
     visible: {
       transition: {
-        staggerChildren: 0.1, // Stagger each letter by 0.1s
+        staggerChildren: 0.2, // Stagger each letter by 0.1s
       },
     },
   };
@@ -27,19 +27,19 @@ const ZoopText = ({ text }) => {
   return (
     <>
       <motion.div
-        className="flex space-x-2"
+        className="flex flex-wrap justify-center items-center space-x-2 max-w-full overflow-visible"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
       >
         {letters.map((letter, index) => (
-          <motion.span
+          <motion.h1
             key={index}
-            className="text-6xl md:text-7xl font-bold text-white"
+            className="text-6xl md:text-7xl text-center font-extrabold text-white"
             variants={letterVariants}
           >
             {letter === " " ? "\u00A0" : letter}
-          </motion.span>
+          </motion.h1>
         ))}
       </motion.div>
     </>
