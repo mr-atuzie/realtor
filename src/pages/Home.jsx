@@ -94,9 +94,8 @@ const Home = () => {
             MISS UNIVERSE 2024
           </motion.div>
         </motion.h1> */}
-        <ZoopText text="MISS " />
-        <ZoopText text="UNIVERSE" />
-        <ZoopText text="2024" />
+        <ZoopText text="MISS UNIVERSE 2024 " />
+
         <p className="text-sm lg:text-lg md:text-2xl ">
           Register now for a chance to win exciting cash prizes and showcase
           your beauty, talent on the grand stage
