@@ -1,13 +1,5 @@
 import React, { useState, useEffect } from "react";
-// import Hero from "../components/Hero";
-// import About from "../components/About";
-// import Service from "../components/Service";
-// import banner from "../assets/luxe salon.png";
-// import banner2 from "../assets/1.png";
-// import Product from "../components/Product";
 import bgVid from "../assets/pageantry.mp4";
-import { motion } from "framer-motion";
-// import ZoopText from "../components/ZoopText";
 import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee";
 
@@ -95,13 +87,7 @@ const Home = () => {
   ];
 
   return (
-    <motion.div
-      className="relative h-screen overflow-hidden"
-      initial={{ opacity: 0, x: -200 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: 200 }}
-      transition={{ duration: 0.5 }}
-    >
+    <div className="relative h-screen overflow-hidden">
       {/* Video Background */}
       <video
         autoPlay
@@ -153,14 +139,14 @@ const Home = () => {
           Register now
         </Link>
 
-        <div className=" w-[70%] mx-auto">
+        <div className=" w-[90%] my-4 mx-auto">
           <h1 className=" text-center font-extrabold">Our Partners</h1>
           <Marquee direction="right" speed={70} gradient={false} pauseOnHover>
-            <div className=" grid gap-4 mb-1 items-center grid-cols-5 ">
+            <div className="flex gap-3">
               {logos.map((logo, index) => {
                 return (
                   <img
-                    className=" w-10 lg:w-24"
+                    className=" w-14 object-contain lg:w-24"
                     key={index}
                     src={logo.img}
                     alt=""
@@ -174,7 +160,7 @@ const Home = () => {
 
       {/* Overlay  */}
       <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
-    </motion.div>
+    </div>
   );
 };
 
