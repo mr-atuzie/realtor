@@ -157,7 +157,7 @@ const Home = () => {
           <h1 className=" text-center font-extrabold">Our Partners</h1>
           <Marquee direction="right" speed={70} gradient={false} pauseOnHover>
             <div className=" grid gap-4 mb-1 items-center grid-cols-5 ">
-              {logos.slice(0, 5).map((logo, index) => {
+              {logos.map((logo, index) => {
                 return (
                   <img
                     className=" w-14 lg:w-24"
