@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
 
@@ -14,7 +15,7 @@ const Register = () => {
   const [formData, setFormData] = useState(initialState);
   const [loading, setLoading] = useState(false);
 
-  const { name, phone, email, password } = formData;
+  const { name, email, password } = formData;
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -65,9 +66,11 @@ const Register = () => {
     //     toast.error(message);
     //   }
   };
+
+  const [phone, setPhone] = useState("");
   return (
-    <div className=" w-full min-h-screen flex justify-center flex-col items-center bg-purple-100 py-10">
-      <div className=" bg-white w-[95%] lg:w-[43%] mx-auto shadow-md rounded-lg p-5">
+    <div className=" w-full min-h-screen flex justify-center flex-col items-center  py-10">
+      <div className="  w-[95%] lg:w-[43%] mx-auto  p-5">
         <h2 className="text-xl  font-semibold  text-center mb-6 ">
           Create Account
         </h2>
@@ -78,13 +81,13 @@ const Register = () => {
                 className=" font-medium  text-xs lg:text-sm mb-2"
                 htmlFor="name"
               >
-                Name
+                Enter fullname
               </label>
 
               <input
                 className="border bg-gray-100   p-2  rounded-lg  block w-full placeholder:text-sm "
                 type="text"
-                placeholder="Enter your Name"
+                // placeholder="Enter your Name"
                 name="name"
                 value={name}
                 onChange={handleInputChange}
@@ -97,13 +100,13 @@ const Register = () => {
                 className=" font-medium  text-xs lg:text-sm mb-2"
                 htmlFor="email"
               >
-                Email
+                Enter your Email
               </label>
 
               <input
                 className="border p-2  bg-gray-100   rounded-lg   block w-full placeholder:text-sm"
                 type="email"
-                placeholder="Enter your Email"
+                // placeholder="Enter your Email"
                 name="email"
                 value={email}
                 onChange={handleInputChange}
@@ -119,7 +122,27 @@ const Register = () => {
                 Phone Number
               </label>
 
-              <input
+              <div className="border p-2 bg-gray-100 rounded-lg block w-full">
+                <PhoneInput
+                  country={"ng"} // Default country set to Nigeria
+                  value={phone}
+                  onChange={setPhone}
+                  inputStyle={{
+                    backgroundColor: "transparent", // Make the background transparent to let the wrapper style show
+                    border: "none", // Remove the default border
+                    width: "100%",
+                    fontSize: "14px", // Adjust font size to placeholder's size
+                    padding: "0", // Remove default padding, as the wrapper handles it
+                  }}
+                  buttonStyle={{
+                    borderRadius: "0px",
+                    border: "none",
+                  }}
+                  containerClass="w-full"
+                />
+              </div>
+
+              {/* <input
                 className="border p-2 bg-gray-100     rounded-lg  block w-full  placeholder:text-sm "
                 type="text"
                 name="phone"
@@ -127,7 +150,7 @@ const Register = () => {
                 value={phone}
                 onChange={handleInputChange}
                 id="phone"
-              />
+              /> */}
             </div>
 
             <div className=" ">
@@ -135,13 +158,13 @@ const Register = () => {
                 className=" font-medium text-xs lg:text-sm"
                 htmlFor="password"
               >
-                Password
+                Enter your Password
               </label>
               <input
                 className="border p-2 bg-gray-100    block w-full  rounded-lg   placeholder:text-sm "
                 type="password"
                 name="password"
-                placeholder="Enter your Password"
+                // placeholder="Enter your Password"
                 value={password}
                 onChange={handleInputChange}
                 id="password"
