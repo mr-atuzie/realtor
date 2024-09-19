@@ -75,17 +75,14 @@ const Register = () => {
           Create Account
         </h2>
         <form onSubmit={handleSubmit}>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
             <div className=" w-full ">
-              <label
-                className=" font-medium  text-xs lg:text-sm mb-2"
-                htmlFor="name"
-              >
+              <label className=" font-medium  text-sm mb-2" htmlFor="name">
                 Enter fullname
               </label>
 
               <input
-                className="border bg-gray-100   p-2  rounded-lg  block w-full placeholder:text-sm "
+                className="border    p-2.5  rounded-lg  block w-full placeholder:text-sm "
                 type="text"
                 // placeholder="Enter your Name"
                 name="name"
@@ -96,15 +93,12 @@ const Register = () => {
             </div>
 
             <div className=" ">
-              <label
-                className=" font-medium  text-xs lg:text-sm mb-2"
-                htmlFor="email"
-              >
+              <label className=" font-medium text-sm mb-2" htmlFor="email">
                 Enter your Email
               </label>
 
               <input
-                className="border p-2  bg-gray-100   rounded-lg   block w-full placeholder:text-sm"
+                className="border p-2.5     rounded-lg   block w-full placeholder:text-sm"
                 type="email"
                 // placeholder="Enter your Email"
                 name="email"
@@ -115,14 +109,11 @@ const Register = () => {
             </div>
 
             <div className=" ">
-              <label
-                className=" font-medium  text-xs lg:text-sm"
-                htmlFor="phone"
-              >
+              <label className=" font-medium  text-sm" htmlFor="phone">
                 Phone Number
               </label>
 
-              <div className="border p-2 bg-gray-100 rounded-lg block w-full">
+              <div className="border p-2  rounded-lg block w-full">
                 <PhoneInput
                   country={"ng"} // Default country set to Nigeria
                   value={phone}
@@ -132,7 +123,7 @@ const Register = () => {
                     border: "none", // Remove the default border
                     width: "100%",
                     fontSize: "14px", // Adjust font size to placeholder's size
-                    padding: "0", // Remove default padding, as the wrapper handles it
+                    padding: "5px", // Remove default padding, as the wrapper handles it
                   }}
                   buttonStyle={{
                     borderRadius: "0px",
@@ -141,27 +132,14 @@ const Register = () => {
                   containerClass="w-full"
                 />
               </div>
-
-              {/* <input
-                className="border p-2 bg-gray-100     rounded-lg  block w-full  placeholder:text-sm "
-                type="text"
-                name="phone"
-                placeholder="Enter your Phone number"
-                value={phone}
-                onChange={handleInputChange}
-                id="phone"
-              /> */}
             </div>
 
             <div className=" ">
-              <label
-                className=" font-medium text-xs lg:text-sm"
-                htmlFor="password"
-              >
+              <label className=" font-medium text-sm" htmlFor="password">
                 Enter your Password
               </label>
               <input
-                className="border p-2 bg-gray-100    block w-full  rounded-lg   placeholder:text-sm "
+                className="border p-2.5    block w-full  rounded-lg   placeholder:text-sm "
                 type="password"
                 name="password"
                 // placeholder="Enter your Password"
@@ -178,7 +156,7 @@ const Register = () => {
           <div className=" flex justify-center items-center flex-col">
             <button
               disabled={loading}
-              className=" text-sm lg:text-base max-w-lg rounded-lg w-full text-center py-2  mt-10 bg-purple-600 disabled:bg-purple-300 text-white "
+              className=" text-sm lg:text-base max-w-lg rounded-lg w-full text-center py-3  mt-10 bg-pink-600 disabled:bg-purple-300 text-white "
               type="submit"
             >
               {loading ? "Loading" : "Register"}
