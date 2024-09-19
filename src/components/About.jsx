@@ -1,5 +1,4 @@
 import React from "react";
-import img from "../assets/luxe 2.png";
 
 const About = () => {
   return (
@@ -10,7 +9,11 @@ const About = () => {
             About us
           </h4>
         </div>
-        <img src={img} alt="" className=" rounded w-[500px]" />
+        <img
+          src="https://www.womanandhomemagazine.co.za/wp-content/uploads/2024/08/Snapinsta.app_454840032_18450252382052984_7286448054781192942_n_1080.jpg"
+          alt=""
+          className=" rounded w-[500px]"
+        />
 
         <div>
           <h4 className=" hidden lg:block text-4xl font-semibold text-purple-600 ">
