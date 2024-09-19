@@ -36,14 +36,16 @@ const Partners = () => {
   return (
     <div className="  py-4 lg:py-8">
       <div className=" w-[90%] lg:w-[60%] mx-auto">
-        <h1 className="text-center font-extrabold mb-2">Our Partners</h1>
+        <h4 className="text-center text-4xl font-extrabold mb-4 text-pink-500">
+          Our partners
+        </h4>
 
         <Marquee direction="right" speed={70} gradient={false} pauseOnHover>
-          <div className=" flex gap-4 mb-1 i ">
+          <div className=" flex gap-5 ">
             {logos.map((logo, index) => {
               return (
                 <img
-                  className=" w-10 lg:w-24"
+                  className=" w-12 object-contain lg:w-24"
                   key={index}
                   src={logo.img}
                   alt=""
