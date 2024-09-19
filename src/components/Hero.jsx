@@ -72,9 +72,9 @@ const Hero = () => {
 
       {/* Content on top of the video */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-        <h1 className=" text-6xl font-extrabold relative block overflow-hidden">
+        <h4 className=" text-6xl font-extrabold relative block overflow-hidden">
           MISS UNIVERSE 2024
-        </h1>
+        </h4>
 
         <p className="text-sm lg:text-lg md:text-2xl ">
           Register now for a chance to win exciting cash prizes and showcase

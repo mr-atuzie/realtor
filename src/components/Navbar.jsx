@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { FaShoppingBag, FaTimes } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { selectQuantity } from "../redux/features/cartSlice";
-import { useSelector } from "react-redux";
+// import { selectQuantity } from "../redux/features/cartSlice";
+// import { useSelector } from "react-redux";
 import logoImg from "../assets/logo.png";
 
 const logo = (
@@ -12,24 +12,24 @@ const logo = (
   </Link>
 );
 
-const activeLink = ({ isActive }) =>
-  isActive ? "text-purple-600" : "text-black";
+// const activeLink = ({ isActive }) =>
+//   isActive ? "text-purple-600" : "text-black";
 
 const Navbar = () => {
-  const cartQty = useSelector(selectQuantity);
+  // const cartQty = useSelector(selectQuantity);
 
-  const cart = (
-    <span className="  ">
-      <Link className=" flex" to={"/cart"}>
-        <div className=" ml-1 relative flex items-center ">
-          <FaShoppingBag size={20} />
-          <p className=" bg-purple-600 text-white h-4 w-4  font-medium text-xs text-center flex justify-center items-center rounded-full absolute -top-1 left-3">
-            {cartQty}
-          </p>
-        </div>
-      </Link>
-    </span>
-  );
+  // const cart = (
+  //   <span className="  ">
+  //     <Link className=" flex" to={"/cart"}>
+  //       <div className=" ml-1 relative flex items-center ">
+  //         <FaShoppingBag size={20} />
+  //         <p className=" bg-purple-600 text-white h-4 w-4  font-medium text-xs text-center flex justify-center items-center rounded-full absolute -top-1 left-3">
+  //           {cartQty}
+  //         </p>
+  //       </div>
+  //     </Link>
+  //   </span>
+  // );
 
   const [showMenu, setShowMenu] = useState(false);
 
@@ -52,7 +52,7 @@ const Navbar = () => {
 
         {logo}
 
-        <ul className="hidden  font-medium text-gray-400 lg:flex gap-8 items-center">
+        {/* <ul className="hidden  font-medium text-gray-400 lg:flex gap-8 items-center">
           <li>
             <NavLink className={activeLink} to={"/"}>
               Home
@@ -82,9 +82,9 @@ const Navbar = () => {
               Book
             </button>
           </li>
-        </ul>
+        </ul> */}
 
-        {cart}
+        {/* {cart} */}
       </nav>
       {showMenu && (
         <div

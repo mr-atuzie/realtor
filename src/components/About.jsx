@@ -17,9 +17,6 @@ const About = () => {
           <h4 className=" hidden lg:block text-4xl font-semibold text-purple-600 ">
             About us
           </h4>
-          <h2 className=" hidden lg:block text-2xl lg:text-4xl font-extrabold mb-4">
-            About Luxe Lueur
-          </h2>
 
           <div className=" mt-2 lg:mt-0 lg:max-w-2xl">
             <p className=" text-xs lg:text-base text-gray-600 mb-4">
