@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { GiQueenCrown } from "react-icons/gi";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -28,10 +29,15 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center space-x-2 text-pink-500">
-          <GiQueenCrown size={30} />
-          <h4 className="text-3xl font-semibold ">The Grand Stage</h4>
-        </div>
+        <motion.div
+          className="flex items-center space-x-4 text-pink-500"
+          initial={{ scale: 1 }}
+          animate={{ scale: [1, 1.1, 1] }}
+          transition={{ duration: 1.5, repeat: Infinity }}
+        >
+          <GiQueenCrown size={35} />
+          <h4 className="text-4xl font-semibold">The Grand Stage</h4>
+        </motion.div>
 
         {/* Links */}
         <div className="space-x-8 hidden md:flex">

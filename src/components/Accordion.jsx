@@ -14,11 +14,11 @@ const Accordion = ({ title, answer }) => {
 
         {accordion ? (
           <span className=" text-pink-500">
-            <RiVipCrownLine size={15} />
+            <RiVipCrownLine size={20} />
           </span>
         ) : (
           <span className=" text-pink-500">
-            <TbCrown size={15} />
+            <TbCrown size={20} />
           </span>
         )}
       </button>
