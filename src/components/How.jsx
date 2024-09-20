@@ -3,7 +3,7 @@ import { PiCrown } from "react-icons/pi";
 
 const How = () => {
   return (
-    <div className=" py-8">
+    <div className=" ">
       <div className=" w-[90%] mx-auto">
         <h4 className="  text-4xl text-pink-500 capitalize text-center font-bold">
           how it works
@@ -12,11 +12,29 @@ const How = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
 
-        <div className=" w-full shadow-md bg-pink-50 py-2.5">
+        <div className=" flex w-full shadow-md bg-pink-50 mb-4 py-2.5">
           <div className=" text-white bg-pink-500 p-2 rounded">
             <PiCrown />
           </div>
-          <p>
+          <p className=" text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, non
+            ab. Sapiente!
+          </p>
+        </div>
+        <div className=" flex w-full shadow-md bg-pink-50 mb-4 py-2.5">
+          <div className=" text-white bg-pink-500 p-2 rounded">
+            <PiCrown />
+          </div>
+          <p className=" text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, non
+            ab. Sapiente!
+          </p>
+        </div>
+        <div className=" flex w-full shadow-md bg-pink-50 mb-4 py-2.5">
+          <div className=" text-white bg-pink-500 p-2 rounded">
+            <PiCrown />
+          </div>
+          <p className=" text-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, non
             ab. Sapiente!
           </p>

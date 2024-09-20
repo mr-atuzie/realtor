@@ -3,7 +3,7 @@ import Accordion from "./Accordion";
 
 const Faq = () => {
   return (
-    <div className=" bg-orange-50  py-8">
+    <div className=" bg-orange-50 ">
       <div className=" w-[90%] mx-auto">
         <h4 className="  text-4xl capitalize text-center font-bold">
           frequently asked questions
