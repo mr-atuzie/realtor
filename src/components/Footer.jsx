@@ -9,7 +9,7 @@ const Footer = () => {
         {/* Column 1: Logo Section */}
         <div className="flex items-center space-x-2">
           <div className="text-white">
-            <GiQueenCrown size={30} />
+            <GiQueenCrown size={20} />
           </div>
           <h4 className="text-2xl font-semibold">The Grand Stage</h4>
         </div>
@@ -45,17 +45,26 @@ const Footer = () => {
                 Contestants
               </a>
             </li>
-            <li className="mb-2">
+            <li className="mb-2 flex items-center gap-2">
+              <span>
+                <RiVipCrownLine />
+              </span>
               <a href="#how-it-works" className="hover:text-purple-500">
                 How It Works
               </a>
             </li>
-            <li className="mb-2">
+            <li className="mb-2 flex items-center gap-2">
+              <span>
+                <RiVipCrownLine />
+              </span>
               <a href="#contact" className="hover:text-purple-500">
                 Contact Us
               </a>
             </li>
-            <li className="mb-2">
+            <li className="mb-2 flex items-center gap-2">
+              <span>
+                <RiVipCrownLine />
+              </span>
               <a href="#faq" className="hover:text-purple-500">
                 FAQs
               </a>

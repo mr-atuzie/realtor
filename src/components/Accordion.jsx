@@ -5,7 +5,7 @@ import { RiVipCrownLine } from "react-icons/ri";
 const Accordion = ({ title, answer }) => {
   const [accordion, setAccordion] = useState(false);
   return (
-    <div className="p-4 rounded-sm bg-white shadow-sm mb-4">
+    <div className=" p-2 lg:p-4 rounded-sm bg-white shadow-sm mb-4">
       <button
         className="  w-full flex justify-between  text-base items-center"
         onClick={() => setAccordion(!accordion)}
@@ -14,11 +14,11 @@ const Accordion = ({ title, answer }) => {
 
         {accordion ? (
           <span className=" text-pink-500">
-            <RiVipCrownLine />
+            <RiVipCrownLine size={15} />
           </span>
         ) : (
           <span className=" text-pink-500">
-            <TbCrown />
+            <TbCrown size={15} />
           </span>
         )}
       </button>
