@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import Partners from "../components/Partners";
 import Faq from "../components/Faq";
 import Footer from "../components/Footer";
+import How from "../components/How";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Hero />
       <Partners />
       <About />
+      <How />
       <Faq />
       <Footer />
     </>
