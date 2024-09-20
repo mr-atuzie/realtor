@@ -69,16 +69,16 @@ const Register = () => {
 
   return (
     <div className=" w-full   min-h-screen bg-orange-50  ">
-      <div className="flex  mb-8 space-x-4">
-        <div className="text-pink-500">
-          <GiQueenCrown size={25} />
+      <div className="  w-[90%] lg:w-[43%] mx-auto bg-white rounded-md shadow-md p-4  lg:p-5">
+        <div className="flex  mb-8 space-x-2">
+          <div className="text-pink-500">
+            <GiQueenCrown size={25} />
+          </div>
+
+          {/* Text with color wave animation */}
+          <h4 className="text-2xl font-semibold">The Grand Stage</h4>
         </div>
 
-        {/* Text with color wave animation */}
-        <h4 className="text-2xl font-semibold">The Grand Stage</h4>
-      </div>
-
-      <div className="  w-[90%] lg:w-[43%] mx-auto bg-white rounded-md shadow-md p-4  lg:p-5">
         <div className=" flex flex-col items-center justify-center text-pink-500 ">
           <span>
             <GiJewelCrown size={35} />

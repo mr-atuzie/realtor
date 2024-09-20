@@ -41,10 +41,10 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
-        <motion.div className="flex items-center space-x-4">
+        <motion.div className="flex items-center space-x-2">
           {/* Solid crown icon */}
           <div className="text-pink-500">
-            <GiQueenCrown size={35} />
+            <GiQueenCrown size={30} />
           </div>
 
           {/* Text with color wave animation */}
