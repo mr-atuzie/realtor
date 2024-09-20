@@ -81,7 +81,7 @@ const Register = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-6">
             <div className=" w-full ">
               <label className=" font-medium   text-sm mb-2" htmlFor="name">
-                Enter your Fullname
+                Fullname
               </label>
 
               <input
@@ -93,11 +93,14 @@ const Register = () => {
                 onChange={handleInputChange}
                 id="name"
               />
+              <small className=" text-xs text-gray-400">
+                Enter name as you'd like it to appear in the contest
+              </small>
             </div>
 
             <div className=" ">
               <label className=" font-medium text-sm mb-2" htmlFor="email">
-                Enter your Email
+                Email
               </label>
 
               <input
@@ -109,11 +112,14 @@ const Register = () => {
                 onChange={handleInputChange}
                 id="email"
               />
+              <small className=" text-xs text-gray-400">
+                Make sure your email addresss is correct
+              </small>
             </div>
 
             <div className=" ">
               <label className=" font-medium   text-sm" htmlFor="phone">
-                Enter your Phone number
+                Phone Number
               </label>
 
               <input
@@ -129,7 +135,7 @@ const Register = () => {
 
             <div className=" ">
               <label className=" font-medium text-sm" htmlFor="password">
-                Enter your Password
+                Password
               </label>
               <input
                 className="border p-2.5  bg-gray-50   block w-full  rounded-lg   placeholder:text-sm "
