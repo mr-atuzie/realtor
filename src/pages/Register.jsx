@@ -78,15 +78,15 @@ const Register = () => {
           <h4 className="text-xl font-semibold">The Grand Stage</h4>
         </div>
 
-        <div className=" flex flex-col items-center justify-center text-pink-500 ">
-          <span>
-            <GiJewelCrown size={35} />
-          </span>
-          <h4 className="text-4xl  font-extrabold  text-center mb-6 ">
-            Registration Form
-          </h4>
-        </div>
-        <form onSubmit={handleSubmit}>
+        <form className=" my-10" onSubmit={handleSubmit}>
+          <div className=" flex flex-col items-center justify-center text-pink-500 ">
+            <span>
+              <GiJewelCrown size={35} />
+            </span>
+            <h4 className="text-4xl  font-extrabold  text-center mb-6 ">
+              Registration Form
+            </h4>
+          </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-6">
             <div className=" w-full ">
               <label className=" font-medium   text-sm mb-2" htmlFor="name">
