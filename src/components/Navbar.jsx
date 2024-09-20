@@ -1,47 +1,75 @@
-import React, { useState } from "react";
-// import { NavLink } from "react-router-dom";
-
+import React, { useState, useEffect } from "react";
 import { GiQueenCrown } from "react-icons/gi";
 
-// const activeLink = ({ isActive }) =>
-//   isActive ? "text-purple-600" : "text-black";
-
 const Navbar = () => {
-  const [showMenu, setShowMenu] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-  const toggleMenu = () => {
-    setShowMenu(!showMenu);
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      if (offset > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
 
-  // const hideMenu = () => {
-  //   setShowMenu(false);
-  // };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <div className=" absolute top-0 w-full z-50">
-      <div className=" flex items-center justify-between py-2.5 w-[90%] mx-auto">
-        <div className=" text-pink-500">
+    <nav
+      className={`fixed w-full top-0 left-0 z-50 transition-all duration-300 ease-in-out ${
+        scrolled ? "bg-gray-900 shadow-lg" : "bg-transparent"
+      }`}
+    >
+      <div className="container mx-auto px-4 py-3 flex items-center justify-between">
+        {/* Logo */}
+        <div className="flex items-center space-x-2 text-pink-500">
           <GiQueenCrown size={30} />
+          <span className="text-2xl font-semibold text-white">
+            The Grand Stage
+          </span>
         </div>
 
-        <button className=" text-pink-500" onClick={toggleMenu}>
+        {/* Links */}
+        <div className="space-x-8 hidden md:flex">
+          <a href="#home" className="text-white hover:text-purple-500">
+            Home
+          </a>
+          <a href="#contestants" className="text-white hover:text-purple-500">
+            Contestants
+          </a>
+          <a href="#about" className="text-white hover:text-purple-500">
+            About
+          </a>
+          <a href="#contact" className="text-white hover:text-purple-500">
+            Contact
+          </a>
+        </div>
+
+        {/* Hamburger Menu for mobile */}
+        <div className="md:hidden text-white">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            strokeWidth={1.5}
+            strokeWidth={2}
             stroke="currentColor"
             className="w-6 h-6"
           >
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
-              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              d="M4 6h16M4 12h16m-7 6h7"
             />
           </svg>
-        </button>
+        </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

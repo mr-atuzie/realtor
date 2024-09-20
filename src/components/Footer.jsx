@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Column 1: Logo Section */}
         <div className="flex items-center space-x-2">
-          <div className="text-pink-500">
+          <div className="text-white">
             <GiQueenCrown size={30} />
           </div>
           <span className="text-2xl font-semibold">The Grand Stage</span>
