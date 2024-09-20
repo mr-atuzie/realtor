@@ -34,11 +34,12 @@ const Partners = () => {
     },
   ];
   return (
-    <div className="  py-4 lg:py-8">
+    <div className="  py-2 lg:py-8">
       <div className=" w-[90%] lg:w-[60%] mx-auto">
-        <h4 className="text-center capitalize text-4xl font-extrabold mb-4 text-pink-500">
+        {/* <h4 className="text-center capitalize text-4xl font-extrabold mb-4 text-pink-500">
           partners
-        </h4>
+        </h4> */}
+        {/* <h1>SPONSOR</h1> */}
 
         <Marquee direction="right" speed={70} gradient={false} pauseOnHover>
           <div className=" flex gap-5  mx-2">

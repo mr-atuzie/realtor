@@ -4,7 +4,7 @@ import { PiCrown } from "react-icons/pi";
 const How = () => {
   const rules = [1, 2, 3, 5, 6, 7];
   return (
-    <div className=" py-4 ">
+    <div className=" py-8 ">
       <div className=" w-[90%] mx-auto">
         <h4 className="  text-4xl text-pink-500 capitalize text-center font-bold">
           how it works
@@ -17,14 +17,13 @@ const How = () => {
           return (
             <div
               key={rule}
-              className=" flex gap-2 items-center w-full shadow-md bg-pink-50 mb-4 p-2"
+              className=" flex gap-3 items-center w-full shadow-md bg-pink-50 mb-4 p-2"
             >
               <div className=" text-white flex justify-center items-center  bg-pink-500 p-2 rounded">
                 <PiCrown />
               </div>
-              <p className=" text-sm leading-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
-                non ab. Sapiente!
+              <p className=" text-sm leading-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
             </div>
           );
