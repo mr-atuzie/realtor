@@ -71,12 +71,12 @@ const Register = () => {
   const [phone, setPhone] = useState("");
   return (
     <div className=" w-full justify-center h-screen items-center bg-orange-50  flex">
-      <div className="  w-[90%] lg:w-[43%] mx-auto bg-white rounded-sm shadow-md p-2  lg:p-5">
+      <div className="  w-[90%] lg:w-[43%] mx-auto bg-white rounded-sm shadow-md p-3  lg:p-5">
         <div className=" flex justify-center text-pink-500 ">
           <span>
             <GiJewelCrown size={30} />
           </span>
-          <h4 className="text-4xl  font-extrabold  text-center mb-6 ">
+          <h4 className="text-6xl  font-extrabold  text-center mb-6 ">
             Registration Form
           </h4>
         </div>
@@ -88,7 +88,7 @@ const Register = () => {
               </label>
 
               <input
-                className="border    p-2.5  rounded-lg  block w-full placeholder:text-sm "
+                className="border    p-2.5 bg-gray-50  rounded-lg  block w-full placeholder:text-sm "
                 type="text"
                 // placeholder="Enter your Name"
                 name="name"
@@ -104,7 +104,7 @@ const Register = () => {
               </label>
 
               <input
-                className="border p-2.5     rounded-lg   block w-full placeholder:text-sm"
+                className="border p-2.5 bg-gray-50    rounded-lg   block w-full placeholder:text-sm"
                 type="email"
                 // placeholder="Enter your Email"
                 name="email"
@@ -120,7 +120,7 @@ const Register = () => {
               </label>
 
               <PhoneInput
-                country={"us"} // Default country code
+                country={"ng"} // Default country code
                 value={phone}
                 onChange={(phone) => setPhone(phone)}
                 inputStyle={{
@@ -131,7 +131,7 @@ const Register = () => {
                   border: "1px solid #F9FAFB",
                 }}
                 buttonStyle={{
-                  background: "white",
+                  background: "#F9FAFB",
                   borderRadius: "8px 0 0 8px",
                 }}
               />
@@ -142,7 +142,7 @@ const Register = () => {
                 Enter your Password
               </label>
               <input
-                className="border p-2.5    block w-full  rounded-lg   placeholder:text-sm "
+                className="border p-2.5  bg-gray-50   block w-full  rounded-lg   placeholder:text-sm "
                 type="password"
                 name="password"
                 // placeholder="Enter your Password"
