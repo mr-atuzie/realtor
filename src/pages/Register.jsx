@@ -71,12 +71,12 @@ const Register = () => {
   const [phone, setPhone] = useState("");
   return (
     <div className=" w-full justify-center h-screen items-center bg-orange-50  flex">
-      <div className="  w-[95%] lg:w-[43%] mx-auto bg-white rounded-sm shadow-md  p-5">
-        <div className=" flex text-pink-500 ">
+      <div className="  w-[90%] lg:w-[43%] mx-auto bg-white rounded-sm shadow-md p-2  lg:p-5">
+        <div className=" flex justify-center text-pink-500 ">
           <span>
             <GiJewelCrown size={30} />
           </span>
-          <h4 className="text-8xl  font-extrabold  text-center mb-6 ">
+          <h4 className="text-4xl  font-extrabold  text-center mb-6 ">
             Registration Form
           </h4>
         </div>
@@ -125,10 +125,10 @@ const Register = () => {
                 onChange={(phone) => setPhone(phone)}
                 inputStyle={{
                   width: "100%",
-                  padding: "10px",
+                  padding: "14px",
                   fontSize: "16px",
                   borderRadius: "8px",
-                  border: "1px solid #ccc",
+                  border: "1px solid #F9FAFB",
                 }}
                 buttonStyle={{
                   background: "white",
