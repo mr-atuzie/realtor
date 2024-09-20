@@ -42,29 +42,18 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
         <motion.div className="flex items-center space-x-4">
-          {/* Crown with color wave */}
-          <motion.div
-            className="text-pink-500"
-            style={{
-              backgroundImage:
-                "linear-gradient(to right, #ec4899, #f472b6, #db2777, #ec4899)", // Pink gradient
-              backgroundClip: "text",
-              WebkitBackgroundClip: "text",
-              color: "transparent", // Hide the default text color
-            }}
-            variants={colorWaveAnimation}
-            initial="hidden"
-            animate="visible"
-          >
+          {/* Solid crown icon */}
+          <div className="text-pink-500">
             <GiQueenCrown size={35} />
-          </motion.div>
+          </div>
 
-          {/* Text with color wave */}
+          {/* Text with color wave animation */}
           <motion.h4
             className="text-4xl font-semibold"
             style={{
               backgroundImage:
-                "linear-gradient(to right, #ec4899, #f472b6, #db2777, #ec4899)",
+                "linear-gradient(to right, #ec4899, #f472b6, #db2777, #ec4899)", // Pink gradient
+              backgroundSize: "200% 100%", // Allows smooth color wave transition
               backgroundClip: "text",
               WebkitBackgroundClip: "text",
               color: "transparent",

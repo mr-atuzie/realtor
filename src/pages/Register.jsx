@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
-import { GiJewelCrown } from "react-icons/gi";
+import { GiJewelCrown, GiQueenCrown } from "react-icons/gi";
+import Partners from "../components/Partners";
 
 const Register = () => {
   const initialState = {
@@ -67,7 +68,16 @@ const Register = () => {
   };
 
   return (
-    <div className=" w-full justify-center min-h-screen items-center bg-orange-50  flex">
+    <div className=" w-full   min-h-screen bg-orange-50  ">
+      <div className="flex  mb-8 space-x-4">
+        <div className="text-pink-500">
+          <GiQueenCrown size={25} />
+        </div>
+
+        {/* Text with color wave animation */}
+        <h4 className="text-2xl font-semibold">The Grand Stage</h4>
+      </div>
+
       <div className="  w-[90%] lg:w-[43%] mx-auto bg-white rounded-md shadow-md p-4  lg:p-5">
         <div className=" flex flex-col items-center justify-center text-pink-500 ">
           <span>
@@ -161,9 +171,14 @@ const Register = () => {
             <p className="text-xs text-center  font-medium mt-6  capitalize  text-gray-500">
               Already have an account?
               <Link to={"/login"}>
-                <span className=" text-purple-600 ml-1 ">Login</span>
+                <span className=" text-pink-500 ml-1 ">Login</span>
               </Link>
             </p>
+
+            <div className=" mb-6">
+              <h1 className=" text-xs">partner wuth</h1>
+              <Partners />
+            </div>
           </div>
         </form>
       </div>
