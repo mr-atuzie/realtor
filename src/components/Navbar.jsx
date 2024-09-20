@@ -6,18 +6,13 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
   const colorWaveAnimation = {
-    hidden: { opacity: 1 },
+    hidden: { backgroundPosition: "0%" },
     visible: {
-      background: [
-        "linear-gradient(to right, #ec4899, #db2777)", // Pink gradient
-        "linear-gradient(to right, #db2777, #f472b6)", // Lighter pink
-        "linear-gradient(to right, #f472b6, #ec4899)", // Reset gradient
-      ],
+      backgroundPosition: ["0%", "100%", "0%"],
       transition: {
-        duration: 3,
-        repeat: Infinity,
-        repeatType: "reverse",
+        duration: 5, // How long the animation lasts
         ease: "easeInOut",
+        repeat: Infinity, // Infinite loop
       },
     },
   };
@@ -46,29 +41,37 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
-        <motion.div
-          className="flex items-center space-x-4"
-          initial="hidden"
-          animate="visible"
-        >
-          {/* Crown with animated color wave */}
+        <motion.div className="flex items-center space-x-4">
+          {/* Crown with color wave */}
           <motion.div
             className="text-pink-500"
-            style={{ WebkitBackgroundClip: "text", backgroundClip: "text" }}
+            style={{
+              backgroundImage:
+                "linear-gradient(to right, #ec4899, #f472b6, #db2777, #ec4899)", // Pink gradient
+              backgroundClip: "text",
+              WebkitBackgroundClip: "text",
+              color: "transparent", // Hide the default text color
+            }}
             variants={colorWaveAnimation}
+            initial="hidden"
+            animate="visible"
           >
             <GiQueenCrown size={35} />
           </motion.div>
 
-          {/* Text with animated color wave */}
+          {/* Text with color wave */}
           <motion.h4
-            className="text-4xl font-semibold bg-clip-text text-transparent"
+            className="text-4xl font-semibold"
             style={{
-              backgroundImage: "linear-gradient(to right, #ec4899, #db2777)",
-              WebkitBackgroundClip: "text", // Ensures gradient applies only to text
+              backgroundImage:
+                "linear-gradient(to right, #ec4899, #f472b6, #db2777, #ec4899)",
               backgroundClip: "text",
+              WebkitBackgroundClip: "text",
+              color: "transparent",
             }}
             variants={colorWaveAnimation}
+            initial="hidden"
+            animate="visible"
           >
             The Grand Stage
           </motion.h4>
