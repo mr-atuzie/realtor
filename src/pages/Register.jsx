@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
 import { GiJewelCrown, GiQueenCrown } from "react-icons/gi";
-import Partners from "../components/Partners";
 
 const Register = () => {
   const initialState = {
@@ -174,11 +173,6 @@ const Register = () => {
                 <span className=" text-pink-500 ml-1 ">Login</span>
               </Link>
             </p>
-
-            <div className=" mb-6">
-              <h1 className=" text-xs">partner wuth</h1>
-              <Partners />
-            </div>
           </div>
         </form>
       </div>
