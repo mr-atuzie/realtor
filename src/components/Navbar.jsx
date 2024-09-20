@@ -5,6 +5,19 @@ import { motion } from "framer-motion";
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
+  const waveAnimation = {
+    hidden: { y: 0 },
+    visible: {
+      y: [0, -10, 0], // move crown and text up and down
+      transition: {
+        repeat: Infinity,
+        repeatType: "mirror", // smooth in both directions
+        duration: 1.5,
+        ease: "easeInOut",
+      },
+    },
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       const offset = window.scrollY;
@@ -30,13 +43,17 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
         <motion.div
-          className="flex items-center space-x-4 text-pink-500"
-          initial={{ scale: 1 }}
-          animate={{ scale: [1, 1.1, 1] }}
-          transition={{ duration: 1.5, repeat: Infinity }}
+          className="flex items-center space-x-4"
+          variants={waveAnimation}
+          initial="hidden"
+          animate="visible"
         >
-          <GiQueenCrown size={35} />
-          <h4 className="text-4xl font-semibold">The Grand Stage</h4>
+          <motion.div className="text-pink-500">
+            <GiQueenCrown size={35} />
+          </motion.div>
+          <motion.h4 className="text-4xl font-semibold bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 bg-clip-text text-transparent">
+            The Grand Stage
+          </motion.h4>
         </motion.div>
 
         {/* Links */}

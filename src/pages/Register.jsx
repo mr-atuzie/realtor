@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import PhoneInput from "react-phone-input-2";
-import "react-phone-input-2/lib/style.css";
 import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
 import { GiJewelCrown } from "react-icons/gi";
@@ -16,7 +14,7 @@ const Register = () => {
   const [formData, setFormData] = useState(initialState);
   const [loading, setLoading] = useState(false);
 
-  const { name, email, password } = formData;
+  const { name, email, password, phone } = formData;
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -68,11 +66,10 @@ const Register = () => {
     //   }
   };
 
-  const [phone, setPhone] = useState("");
   return (
     <div className=" w-full justify-center h-screen items-center bg-orange-50  flex">
       <div className="  w-[90%] lg:w-[43%] mx-auto bg-white rounded-sm shadow-md p-3  lg:p-5">
-        <div className=" flex justify-center text-pink-500 ">
+        <div className=" flex flex-col items-center justify-center text-pink-500 ">
           <span>
             <GiJewelCrown size={30} />
           </span>
@@ -119,21 +116,14 @@ const Register = () => {
                 Phone Number
               </label>
 
-              <PhoneInput
-                country={"ng"} // Default country code
+              <input
+                className="border    p-2.5 bg-gray-50  rounded-lg  block w-full placeholder:text-sm "
+                type="text"
+                // placeholder="Enter your Name"
+                name="name"
                 value={phone}
-                onChange={(phone) => setPhone(phone)}
-                inputStyle={{
-                  width: "100%",
-                  padding: "14px",
-                  fontSize: "16px",
-                  borderRadius: "8px",
-                  border: "1px solid #F9FAFB",
-                }}
-                buttonStyle={{
-                  background: "#F9FAFB",
-                  borderRadius: "8px 0 0 8px",
-                }}
+                onChange={handleInputChange}
+                id="name"
               />
             </div>
 
