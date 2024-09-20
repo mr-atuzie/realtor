@@ -1,5 +1,6 @@
 import React from "react";
 import { GiQueenCrown } from "react-icons/gi";
+import { RiVipCrownLine } from "react-icons/ri";
 
 const Footer = () => {
   return (
@@ -28,12 +29,18 @@ const Footer = () => {
         <div>
           <h2 className="lg:text-xl font-semibold mb-2 lg:mb-4">Quick Links</h2>
           <ul className=" text-sm">
-            <li className="mb-2">
+            <li className="mb-2 flex items-center gap-2">
+              <span>
+                <RiVipCrownLine />
+              </span>
               <a href="#home" className="hover:text-purple-500">
                 Home
               </a>
             </li>
-            <li className="mb-2">
+            <li className="mb-2 flex items-center gap-2">
+              <span>
+                <RiVipCrownLine />
+              </span>
               <a href="#contestants" className="hover:text-purple-500">
                 Contestants
               </a>
@@ -66,7 +73,7 @@ const Footer = () => {
           </p>
 
           {/* icon */}
-          <div className="flex mt-2 space-x-4">
+          <div className="flex mt-4 space-x-4">
             <a href="https://facebook.com" className="hover:text-purple-500">
               <svg
                 className="w-6 h-6"

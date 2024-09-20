@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { FaMinus } from "react-icons/fa6";
 import { TbCrown } from "react-icons/tb";
+import { RiVipCrownLine } from "react-icons/ri";
 
 const Accordion = ({ title, answer }) => {
   const [accordion, setAccordion] = useState(false);
@@ -14,7 +14,7 @@ const Accordion = ({ title, answer }) => {
 
         {accordion ? (
           <span className=" text-pink-500">
-            <FaMinus />
+            <RiVipCrownLine />
           </span>
         ) : (
           <span className=" text-pink-500">

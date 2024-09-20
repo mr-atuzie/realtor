@@ -30,7 +30,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center space-x-2 text-pink-500">
           <GiQueenCrown size={30} />
-          <h3 className="text-2xl font-semibold ">The Grand Stage</h3>
+          <h4 className="text-2xl font-semibold ">The Grand Stage</h4>
         </div>
 
         {/* Links */}

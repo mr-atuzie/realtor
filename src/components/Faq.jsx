@@ -29,6 +29,11 @@ const Faq = () => {
           title="J cole, Kendrick lamar or Drake?"
           answer="Depend on the mood you fins me,I can lie she is wonderful and all but most times she's a BITCH."
         />
+
+        <Accordion
+          title="Rihanna, Beyonce or Nicki minaj?"
+          answer="Depend on the mood you fins me,I can lie she is wonderful and all but most times she's a BITCH."
+        />
       </div>
     </div>
   );
