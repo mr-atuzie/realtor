@@ -15,7 +15,7 @@ const Footer = () => {
 
         {/* Column 2: About Section */}
         <div>
-          <h4 className="text-xl font-semibold mb-4">About Us</h4>
+          <h2 className="text-xl font-semibold mb-4">About Us</h2>
           <p className="text-sm">
             Welcome to The Grand Stage, where talented contestants showcase
             their skills and compete for exciting cash prizes. Join our
@@ -26,7 +26,7 @@ const Footer = () => {
 
         {/* Column 3: Quick Links */}
         <div>
-          <h4 className="text-xl font-semibold mb-4">Quick Links</h4>
+          <h2 className="text-xl font-semibold mb-4">Quick Links</h2>
           <ul>
             <li className="mb-2">
               <a href="#home" className="hover:text-purple-500">
@@ -58,7 +58,7 @@ const Footer = () => {
 
         {/* Column 4: Social Media & Contact */}
         <div>
-          <h4 className="text-xl font-semibold mb-4">Stay Connected</h4>
+          <h2 className="text-xl font-semibold mb-4">Stay Connected</h2>
           <p className="text-sm mb-4">
             Follow us on social media to stay updated with the latest news.
           </p>
