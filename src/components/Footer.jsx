@@ -15,8 +15,8 @@ const Footer = () => {
 
         {/* Column 2: About Section */}
         <div>
-          <h4 className="text-xl font-semibold mb-2 lg:mb-4">About Us</h4>
-          <p className=" text-xs lg:text-sm">
+          <h2 className="lg:text-xl font-semibold mb-2 lg:mb-4">About Us</h2>
+          <p className="text-sm">
             Welcome to The Grand Stage, where talented contestants showcase
             their skills and compete for exciting cash prizes. Join our
             community to vote, participate, and support your favorite
@@ -26,8 +26,8 @@ const Footer = () => {
 
         {/* Column 3: Quick Links */}
         <div>
-          <h2 className="text-xl font-semibold mb-2 lg:mb-4">Quick Links</h2>
-          <ul className=" text-xs lg:text-sm">
+          <h2 className="lg:text-xl font-semibold mb-2 lg:mb-4">Quick Links</h2>
+          <ul className=" text-sm">
             <li className="mb-2">
               <a href="#home" className="hover:text-purple-500">
                 Home
@@ -59,9 +59,10 @@ const Footer = () => {
         {/* Column 4: Social Media & Contact */}
         <div>
           <h2 className="text-xl font-semibold mb-2 lg:mb-4">Stay Connected</h2>
-          <p className="text-xs lg:text-sm">
+          <p className="text-sm">
             Follow us on social media to stay updated with the latest news.
           </p>
+
           <div className="flex space-x-4">
             <a href="https://facebook.com" className="hover:text-purple-500">
               <svg

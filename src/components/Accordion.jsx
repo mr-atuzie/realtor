@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { FaPlus, FaMinus } from "react-icons/fa6";
+import { FaMinus } from "react-icons/fa6";
+import { TbCrown } from "react-icons/tb";
 
 const Accordion = ({ title, answer }) => {
   const [accordion, setAccordion] = useState(false);
@@ -17,7 +18,7 @@ const Accordion = ({ title, answer }) => {
           </span>
         ) : (
           <span className=" text-pink-500">
-            <FaPlus />
+            <TbCrown size={10} />
           </span>
         )}
       </button>

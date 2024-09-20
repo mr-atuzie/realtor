@@ -17,9 +17,9 @@ const How = () => {
           return (
             <div
               key={rule}
-              className=" flex gap-3 items-center w-full shadow-md bg-pink-50 mb-4 p-2.5"
+              className=" flex gap-3  w-full shadow-md bg-pink-50 mb-4 p-2.5"
             >
-              <div className=" text-white flex justify-center   bg-pink-500 p-2 rounded">
+              <div className=" text-white flex justify-center items-center  bg-pink-500 p-2 rounded">
                 <PiCrown />
               </div>
               <p className=" text-sm text leading-4">
