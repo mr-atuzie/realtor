@@ -68,7 +68,7 @@ const Register = () => {
 
   return (
     <div className=" w-full justify-center h-screen items-center bg-orange-50  flex">
-      <div className="  w-[90%] lg:w-[43%] mx-auto bg-white rounded-sm shadow-md p-3  lg:p-5">
+      <div className="  w-[90%] lg:w-[43%] mx-auto bg-white rounded-md shadow-md py-8 p-4  lg:p-5">
         <div className=" flex flex-col items-center justify-center text-pink-500 ">
           <span>
             <GiJewelCrown size={30} />
@@ -112,8 +112,11 @@ const Register = () => {
             </div>
 
             <div className=" ">
-              <label className=" font-medium  text-sm" htmlFor="phone">
-                Phone Number
+              <label
+                className=" font-medium  text-gray-500 text-sm"
+                htmlFor="phone"
+              >
+                Enter your Phone Number
               </label>
 
               <input
