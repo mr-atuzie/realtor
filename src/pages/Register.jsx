@@ -3,7 +3,6 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
-import { GiQueenCrown } from "react-icons/gi";
 import Navbar from "../components/Navbar";
 
 const Register = () => {
@@ -73,10 +72,6 @@ const Register = () => {
   return (
     <>
       <Navbar />
-      <div className=" text-pink-500">
-        <GiQueenCrown size={30} />
-        <h2 className="font2">The Grand Stage</h2>
-      </div>
       <div className=" w-full   py-10">
         <div className="  w-[95%] lg:w-[43%] mx-auto  p-5">
           <h2 className="text-xl  font-semibold  text-center mb-6 ">
