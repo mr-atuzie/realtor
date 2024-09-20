@@ -17,12 +17,12 @@ const How = () => {
           return (
             <div
               key={rule}
-              className=" flex gap-4 items-center w-full shadow-md bg-pink-50 mb-4 py-2.5"
+              className=" flex gap-2 items-center w-full shadow-md bg-pink-50 mb-4 p-2"
             >
-              <div className=" text-white flex justify-center items-center w-12 h-12 bg-pink-500 p-2 rounded">
+              <div className=" text-white flex justify-center items-center  bg-pink-500 p-2 rounded">
                 <PiCrown />
               </div>
-              <p className=" text-sm leading-3">
+              <p className=" text-sm leading-5">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
                 non ab. Sapiente!
               </p>
