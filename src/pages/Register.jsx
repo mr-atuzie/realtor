@@ -68,7 +68,7 @@ const Register = () => {
 
   return (
     <div className=" w-full justify-center h-screen items-center bg-orange-50  flex">
-      <div className="  w-[90%] lg:w-[43%] mx-auto bg-white rounded-md shadow-md py-8 p-4  lg:p-5">
+      <div className="  w-[90%] lg:w-[43%] mx-auto bg-white rounded-md shadow-md p-4  lg:p-5">
         <div className=" flex flex-col items-center justify-center text-pink-500 ">
           <span>
             <GiJewelCrown size={35} />
@@ -93,9 +93,6 @@ const Register = () => {
                 onChange={handleInputChange}
                 id="name"
               />
-              <small className=" text-xs text-gray-400">
-                Enter name as you'd like it to appear in the contest
-              </small>
             </div>
 
             <div className=" ">
@@ -131,6 +128,9 @@ const Register = () => {
                 onChange={handleInputChange}
                 id="name"
               />
+              <small className=" text-xs text-gray-400">
+                Make sure your phone number is valid
+              </small>
             </div>
 
             <div className=" ">
@@ -146,9 +146,6 @@ const Register = () => {
                 onChange={handleInputChange}
                 id="password"
               />
-              <small className=" text-xs text-gray-400">
-                Password must be 8 character long
-              </small>
             </div>
           </div>
 
