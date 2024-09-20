@@ -6,9 +6,9 @@ const Partners = () => {
     // {
     //   img: "https://logomak.com/blog/wp-content/uploads/2023/09/Mastercard-logo-500x281-min.png",
     // },
-    // {
-    //   img: "https://logomak.com/blog/wp-content/uploads/2023/09/McDonalds-logo-500x281-min.png",
-    // },
+    {
+      img: "https://logomak.com/blog/wp-content/uploads/2023/09/McDonalds-logo-500x281-min.png",
+    },
     {
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqIqYQfNEDn3oCmqg9KCOhctlHVAusITKLDA&s",
     },
@@ -36,12 +36,12 @@ const Partners = () => {
   return (
     <div className="  py-4 lg:py-8">
       <div className=" w-[90%] lg:w-[60%] mx-auto">
-        <h4 className="text-center text-4xl font-extrabold mb-4 text-pink-500">
+        <h4 className="text-center capitalize text-4xl font-extrabold mb-4 text-pink-500">
           Our partners
         </h4>
 
         <Marquee direction="right" speed={70} gradient={false} pauseOnHover>
-          <div className=" flex gap-5 ">
+          <div className=" flex gap-5  mx-2">
             {logos.map((logo, index) => {
               return (
                 <img

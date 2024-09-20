@@ -11,7 +11,7 @@ function App() {
     <>
       <BrowserRouter>
         <Toaster position="top-center" reverseOrder={false} />
-        <ScrollTop />s
+        <ScrollTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/register" element={<Register />} />

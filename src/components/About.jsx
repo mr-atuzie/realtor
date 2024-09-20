@@ -2,12 +2,10 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="w-full  py-10 flex justify-center items-center lg:py-16">
+    <div className="w-full   flex justify-center items-center lg:py-16">
       <div className=" w-[90%] lg:w-[85%]  mx-auto  flex lg:justify-between  lg:items-center flex-col lg:flex-row">
         <div className="text-center lg:hidden">
-          <h4 className=" text-4xl font-semibold mb-4 text-purple-600 ">
-            About us
-          </h4>
+          <h4 className=" text-4xl font-semibold mb-4 text-pink-500 ">About</h4>
         </div>
         <img
           src="https://www.womanandhomemagazine.co.za/wp-content/uploads/2024/08/Snapinsta.app_454840032_18450252382052984_7286448054781192942_n_1080.jpg"
