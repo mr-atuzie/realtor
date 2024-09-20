@@ -72,11 +72,11 @@ const Register = () => {
   return (
     <div className=" w-full justify-center h-screen items-center bg-orange-50  flex">
       <div className="  w-[95%] lg:w-[43%] mx-auto bg-white rounded-sm shadow-md  p-5">
-        <div className=" flex">
+        <div className=" flex text-pink-500 ">
           <span>
-            <GiJewelCrown />
+            <GiJewelCrown size={30} />
           </span>
-          <h4 className="text-8xl text-pink-500  font-extrabold  text-center mb-6 ">
+          <h4 className="text-8xl  font-extrabold  text-center mb-6 ">
             Registration Form
           </h4>
         </div>
