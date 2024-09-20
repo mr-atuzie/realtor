@@ -3,20 +3,20 @@ import { GiQueenCrown } from "react-icons/gi";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-200 py-10">
+    <footer className="bg-black text-gray-200 py-10">
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Column 1: Logo Section */}
         <div className="flex items-center space-x-2">
           <div className="text-white">
             <GiQueenCrown size={30} />
           </div>
-          <span className="text-2xl font-semibold">The Grand Stage</span>
+          <h4 className="text-2xl font-semibold">The Grand Stage</h4>
         </div>
 
         {/* Column 2: About Section */}
         <div>
-          <h2 className="text-xl font-semibold mb-4">About Us</h2>
-          <p className="text-sm">
+          <h4 className="text-xl font-semibold mb-2 lg:mb-4">About Us</h4>
+          <p className=" text-xs lg:text-sm">
             Welcome to The Grand Stage, where talented contestants showcase
             their skills and compete for exciting cash prizes. Join our
             community to vote, participate, and support your favorite
@@ -26,8 +26,8 @@ const Footer = () => {
 
         {/* Column 3: Quick Links */}
         <div>
-          <h2 className="text-xl font-semibold mb-4">Quick Links</h2>
-          <ul>
+          <h2 className="text-xl font-semibold mb-2 lg:mb-4">Quick Links</h2>
+          <ul className=" text-xs lg:text-sm">
             <li className="mb-2">
               <a href="#home" className="hover:text-purple-500">
                 Home
@@ -58,8 +58,8 @@ const Footer = () => {
 
         {/* Column 4: Social Media & Contact */}
         <div>
-          <h2 className="text-xl font-semibold mb-4">Stay Connected</h2>
-          <p className="text-sm mb-4">
+          <h2 className="text-xl font-semibold mb-2 lg:mb-4">Stay Connected</h2>
+          <p className="text-xs lg:text-sm">
             Follow us on social media to stay updated with the latest news.
           </p>
           <div className="flex space-x-4">
@@ -101,7 +101,9 @@ const Footer = () => {
       </div>
 
       <div className="text-center py-4 mt-8 border-t border-gray-700">
-        <p className="text-sm">© 2024 The Grand Stage. All rights reserved.</p>
+        <p className="text-xs lg:text-sm">
+          © 2024 The Grand Stage. All rights reserved.
+        </p>
       </div>
     </footer>
   );
