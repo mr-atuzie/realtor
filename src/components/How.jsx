@@ -12,26 +12,8 @@ const How = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
 
-        <div className=" flex w-full shadow-md bg-pink-50 mb-4 py-2.5">
-          <div className=" text-white bg-pink-500 p-2 rounded">
-            <PiCrown />
-          </div>
-          <p className=" text-sm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, non
-            ab. Sapiente!
-          </p>
-        </div>
-        <div className=" flex w-full shadow-md bg-pink-50 mb-4 py-2.5">
-          <div className=" text-white bg-pink-500 p-2 rounded">
-            <PiCrown />
-          </div>
-          <p className=" text-sm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, non
-            ab. Sapiente!
-          </p>
-        </div>
-        <div className=" flex w-full shadow-md bg-pink-50 mb-4 py-2.5">
-          <div className=" text-white bg-pink-500 p-2 rounded">
+        <div className=" flex items-center w-full shadow-md bg-pink-50 mb-4 py-2.5">
+          <div className=" text-white w-12 h-12 bg-pink-500 p-2 rounded">
             <PiCrown />
           </div>
           <p className=" text-sm">

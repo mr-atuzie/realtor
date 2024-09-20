@@ -37,7 +37,7 @@ const Partners = () => {
     <div className="  py-4 lg:py-8">
       <div className=" w-[90%] lg:w-[60%] mx-auto">
         <h4 className="text-center capitalize text-4xl font-extrabold mb-4 text-pink-500">
-          Our partners
+          partners
         </h4>
 
         <Marquee direction="right" speed={70} gradient={false} pauseOnHover>
@@ -45,7 +45,7 @@ const Partners = () => {
             {logos.map((logo, index) => {
               return (
                 <img
-                  className=" w-12 object-contain lg:w-24"
+                  className=" w-10 rounded-sm object-contain lg:w-24"
                   key={index}
                   src={logo.img}
                   alt=""
