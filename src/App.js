@@ -4,15 +4,14 @@ import ScrollTop from "./components/ScrollTop";
 import { Toaster } from "react-hot-toast";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
-import Navbar from "./components/Navbar";
+// import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Toaster position="top-center" reverseOrder={false} />
-        <ScrollTop />
-        <Navbar />
+        <ScrollTop />s
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/register" element={<Register />} />

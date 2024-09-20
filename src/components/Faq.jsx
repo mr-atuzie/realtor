@@ -5,9 +5,9 @@ const Faq = () => {
   return (
     <div className=" bg-orange-50  py-8">
       <div className=" w-[90%] mx-auto">
-        <h1 className=" font2 text-4xl capitalize text-center font-bold">
+        <h4 className="  text-4xl capitalize text-center font-bold">
           frequently asked questions
-        </h1>
+        </h4>
         <p className=" text-gray-500 capitalize text-sm text-center mb-6"></p>
 
         <Accordion
