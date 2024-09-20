@@ -70,15 +70,15 @@ const Register = () => {
 
   const [phone, setPhone] = useState("");
   return (
-    <div className=" w-full justify-center items-center bg-orange-50   flex">
+    <div className=" w-full justify-center h-screen items-center bg-orange-50  flex">
       <div className="  w-[95%] lg:w-[43%] mx-auto bg-white rounded-sm shadow-md  p-5">
         <div className=" flex">
           <span>
             <GiJewelCrown />
-            <h4 className="text-xl text-pink-500  font-extrabold  text-center mb-6 ">
-              Registration Form
-            </h4>
           </span>
+          <h4 className="text-8xl text-pink-500  font-extrabold  text-center mb-6 ">
+            Registration Form
+          </h4>
         </div>
         <form onSubmit={handleSubmit}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
@@ -119,25 +119,22 @@ const Register = () => {
                 Phone Number
               </label>
 
-              <div className="border p-2  rounded-lg block w-full">
-                <PhoneInput
-                  country={"ng"} // Default country set to Nigeria
-                  value={phone}
-                  onChange={setPhone}
-                  inputStyle={{
-                    backgroundColor: "transparent", // Make the background transparent to let the wrapper style show
-                    border: "none", // Remove the default border
-                    width: "100%",
-                    fontSize: "14px", // Adjust font size to placeholder's size
-                    padding: "5px", // Remove default padding, as the wrapper handles it
-                  }}
-                  buttonStyle={{
-                    borderRadius: "0px",
-                    border: "none",
-                  }}
-                  containerClass="w-full"
-                />
-              </div>
+              <PhoneInput
+                country={"us"} // Default country code
+                value={phone}
+                onChange={(phone) => setPhone(phone)}
+                inputStyle={{
+                  width: "100%",
+                  padding: "10px",
+                  fontSize: "16px",
+                  borderRadius: "8px",
+                  border: "1px solid #ccc",
+                }}
+                buttonStyle={{
+                  background: "white",
+                  borderRadius: "8px 0 0 8px",
+                }}
+              />
             </div>
 
             <div className=" ">
