@@ -4,6 +4,7 @@ import "react-phone-input-2/lib/style.css";
 import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
 import { GiQueenCrown } from "react-icons/gi";
+import Navbar from "../components/Navbar";
 
 const Register = () => {
   const initialState = {
@@ -71,6 +72,7 @@ const Register = () => {
   const [phone, setPhone] = useState("");
   return (
     <>
+      <Navbar />
       <div className=" text-pink-500">
         <GiQueenCrown size={30} />
         <h2 className="font2">The Grand Stage</h2>
