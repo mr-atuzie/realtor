@@ -58,12 +58,15 @@ const Footer = () => {
 
         {/* Column 4: Social Media & Contact */}
         <div>
-          <h2 className="text-xl font-semibold mb-2 lg:mb-4">Stay Connected</h2>
+          <h2 className="lg:text-xl font-semibold mb-2 lg:mb-4">
+            Stay Connected
+          </h2>
           <p className="text-sm">
             Follow us on social media to stay updated with the latest news.
           </p>
 
-          <div className="flex space-x-4">
+          {/* icon */}
+          <div className="flex mt-2 space-x-4">
             <a href="https://facebook.com" className="hover:text-purple-500">
               <svg
                 className="w-6 h-6"

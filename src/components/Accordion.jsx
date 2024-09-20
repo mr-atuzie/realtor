@@ -18,7 +18,7 @@ const Accordion = ({ title, answer }) => {
           </span>
         ) : (
           <span className=" text-pink-500">
-            <TbCrown size={10} />
+            <TbCrown />
           </span>
         )}
       </button>

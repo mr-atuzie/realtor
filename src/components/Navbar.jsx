@@ -23,16 +23,14 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed w-full top-0 left-0 z-50 transition-all duration-300 ease-in-out ${
-        scrolled ? "bg-gray-900 shadow-lg" : "bg-transparent"
+        scrolled ? "bg-black shadow-lg" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-2 text-pink-500">
           <GiQueenCrown size={30} />
-          <span className="text-2xl font-semibold text-white">
-            The Grand Stage
-          </span>
+          <h3 className="text-2xl font-semibold ">The Grand Stage</h3>
         </div>
 
         {/* Links */}

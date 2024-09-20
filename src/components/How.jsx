@@ -19,12 +19,12 @@ const How = () => {
               key={rule}
               className=" flex gap-3  w-full shadow-md bg-pink-50 mb-4 p-2.5"
             >
-              <div className=" text-white flex justify-center items-center  bg-pink-500 p-2 rounded">
+              <div className=" text-white flex justify-center items-center h-fit  bg-pink-500 p-2 rounded">
                 <PiCrown />
               </div>
               <p className=" text-sm text leading-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-                similique ducimus optio rem tenetur non?
+                Lorem ipsum dolor sit amet elit. Nostrum similique ducimus optio
+                rem tenetur non?
               </p>
             </div>
           );
