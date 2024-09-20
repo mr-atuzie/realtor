@@ -67,7 +67,7 @@ const Register = () => {
   };
 
   return (
-    <div className=" w-full justify-center h-screen items-center bg-orange-50  flex">
+    <div className=" w-full justify-center min-h-screen items-center bg-orange-50  flex">
       <div className="  w-[90%] lg:w-[43%] mx-auto bg-white rounded-md shadow-md p-4  lg:p-5">
         <div className=" flex flex-col items-center justify-center text-pink-500 ">
           <span>
