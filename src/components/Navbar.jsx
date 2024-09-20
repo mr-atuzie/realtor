@@ -5,14 +5,18 @@ import { motion } from "framer-motion";
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
-  const waveAnimation = {
-    hidden: { y: 0 },
+  const colorWaveAnimation = {
+    hidden: { opacity: 1 },
     visible: {
-      y: [0, -10, 0], // move crown and text up and down
+      background: [
+        "linear-gradient(to right, #ec4899, #db2777)", // Pink gradient
+        "linear-gradient(to right, #db2777, #f472b6)", // Lighter pink
+        "linear-gradient(to right, #f472b6, #ec4899)", // Reset gradient
+      ],
       transition: {
+        duration: 3,
         repeat: Infinity,
-        repeatType: "mirror", // smooth in both directions
-        duration: 1.5,
+        repeatType: "reverse",
         ease: "easeInOut",
       },
     },
@@ -44,14 +48,28 @@ const Navbar = () => {
         {/* Logo */}
         <motion.div
           className="flex items-center space-x-4"
-          variants={waveAnimation}
           initial="hidden"
           animate="visible"
         >
-          <motion.div className="text-pink-500">
+          {/* Crown with animated color wave */}
+          <motion.div
+            className="text-pink-500"
+            style={{ WebkitBackgroundClip: "text", backgroundClip: "text" }}
+            variants={colorWaveAnimation}
+          >
             <GiQueenCrown size={35} />
           </motion.div>
-          <motion.h4 className="text-4xl font-semibold bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 bg-clip-text text-transparent">
+
+          {/* Text with animated color wave */}
+          <motion.h4
+            className="text-4xl font-semibold bg-clip-text text-transparent"
+            style={{
+              backgroundImage: "linear-gradient(to right, #ec4899, #db2777)",
+              WebkitBackgroundClip: "text", // Ensures gradient applies only to text
+              backgroundClip: "text",
+            }}
+            variants={colorWaveAnimation}
+          >
             The Grand Stage
           </motion.h4>
         </motion.div>

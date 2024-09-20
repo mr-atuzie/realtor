@@ -71,17 +71,17 @@ const Register = () => {
       <div className="  w-[90%] lg:w-[43%] mx-auto bg-white rounded-md shadow-md py-8 p-4  lg:p-5">
         <div className=" flex flex-col items-center justify-center text-pink-500 ">
           <span>
-            <GiJewelCrown size={30} />
+            <GiJewelCrown size={35} />
           </span>
-          <h4 className="text-6xl  font-extrabold  text-center mb-6 ">
+          <h4 className="text-4xl  font-extrabold  text-center mb-6 ">
             Registration Form
           </h4>
         </div>
         <form onSubmit={handleSubmit}>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-6">
             <div className=" w-full ">
-              <label className=" font-medium  text-sm mb-2" htmlFor="name">
-                Enter fullname
+              <label className=" font-medium   text-sm mb-2" htmlFor="name">
+                Enter your Fullname
               </label>
 
               <input
@@ -112,11 +112,8 @@ const Register = () => {
             </div>
 
             <div className=" ">
-              <label
-                className=" font-medium  text-gray-500 text-sm"
-                htmlFor="phone"
-              >
-                Enter your Phone Number
+              <label className=" font-medium   text-sm" htmlFor="phone">
+                Enter your Phone number
               </label>
 
               <input
