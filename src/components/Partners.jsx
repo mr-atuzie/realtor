@@ -3,12 +3,12 @@ import Marquee from "react-fast-marquee";
 
 const Partners = () => {
   const logos = [
-    {
-      img: "https://logomak.com/blog/wp-content/uploads/2023/09/Mastercard-logo-500x281-min.png",
-    },
-    {
-      img: "https://logomak.com/blog/wp-content/uploads/2023/09/McDonalds-logo-500x281-min.png",
-    },
+    // {
+    //   img: "https://logomak.com/blog/wp-content/uploads/2023/09/Mastercard-logo-500x281-min.png",
+    // },
+    // {
+    //   img: "https://logomak.com/blog/wp-content/uploads/2023/09/McDonalds-logo-500x281-min.png",
+    // },
     {
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqIqYQfNEDn3oCmqg9KCOhctlHVAusITKLDA&s",
     },
