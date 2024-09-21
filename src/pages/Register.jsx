@@ -69,13 +69,11 @@ const Register = () => {
   return (
     <div className=" w-full justify-center items-center  bg-white   min-h-screen bg- ">
       <div className="  w-[90%] lg:w-[43%] mx-auto  py-4  lg:p-5">
-        <div className="flex items-center text-pink-500   space-x-2">
+        <div className="flex items-center te space-x-2">
           <div className="">
             <GiQueenCrown size={20} />
           </div>
-
-          {/* Text with color wave animation */}
-          <h4 className="text-xl font-semibold">The Grand Stage</h4>
+          <h4 className="text-2xl font-semibold">The Grand Stage</h4>
         </div>
 
         <form className=" my-10" onSubmit={handleSubmit}>
@@ -83,7 +81,7 @@ const Register = () => {
             <span>
               <GiJewelCrown size={35} />
             </span>
-            <h4 className="text-4xl  font-extrabold  text-center mb-6 ">
+            <h4 className="text-6xl  font-extrabold  text-center mb-6 ">
               Registration Form
             </h4>
           </div>
