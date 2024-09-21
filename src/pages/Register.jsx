@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
-import { GiJewelCrown } from "react-icons/gi";
+import { GiQueenCrown } from "react-icons/gi";
 
 const Register = () => {
   const initialState = {
@@ -79,7 +79,7 @@ const Register = () => {
         <form onSubmit={handleSubmit}>
           <div className=" flex flex-col items-center justify-center text-pink-500 ">
             <span>
-              <GiJewelCrown size={40} />
+              <GiQueenCrown size={40} />
             </span>
             <h4 className="text-6xl  font-extrabold -mt-3  text-center mb-6 ">
               Registration Form
@@ -161,9 +161,9 @@ const Register = () => {
               </small>
             </div>
           </div>
-          <p className=" mt-5 text-center text-sm">
-            Pay the entry fee ₦5,000 to complete your registration and confirm
-            eligibility for voting.
+          <p className=" mt-5  text-sm">
+            Pay the entry fee <span className=" font-medium">₦5,000</span> to
+            complete your registration and confirm eligibility for voting.
           </p>
 
           <div className=" flex justify-center items-center  mb-16 flex-col">

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import toast from "react-hot-toast";
-import { GiQueenCrown } from "react-icons/gi";
+import { GiJewelCrown } from "react-icons/gi";
 import { Link } from "react-router-dom";
 // import { useNavigate } from 'react-router-dom';
 
@@ -79,13 +79,13 @@ const Login = () => {
         <form onSubmit={handleSubmit}>
           <div className=" flex flex-col items-center justify-center text-pink-500 mb-6">
             <span>
-              <GiQueenCrown size={40} />
+              <GiJewelCrown size={40} />
             </span>
             <h4 className="text-6xl  font-extrabold -mt-3  text-center  ">
               Welcome Back
             </h4>
-            <p className=" my-2 text-sm text-gray-500">
-              log into your dashbord
+            <p className=" -mt-3 text-sm text-gray-500">
+              Log into your dashbord
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-6">
