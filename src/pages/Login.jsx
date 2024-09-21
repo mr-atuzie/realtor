@@ -67,8 +67,8 @@ const Login = () => {
     //   }
   };
   return (
-    <div className="w-full flex justify-center items-center bg-gray-50 min-h-screen">
-      <div className="w-[90%] lg:w-[43%] mx-auto py-10 lg:py-12 lg:px-6 bg-white shadow-lg rounded-lg">
+    <div className="w-full flex justify-center items-center bg-white min-h-screen">
+      <div className="w-[90%] lg:w-[43%] mx-auto py-10 lg:py-12 lg:px-6 ">
         {/* Logo Section */}
         <div className="flex items-center justify-center space-x-2 mb-10">
           <div className="text-pink-500">
@@ -81,7 +81,7 @@ const Login = () => {
         <form onSubmit={handleSubmit}>
           <div className="flex flex-col items-center justify-center text-pink-500 mb-8">
             <GiJewelCrown size={40} />
-            <h4 className="text-4xl font-extrabold -mt-2">Welcome Back</h4>
+            <h4 className="text-6xl font-extrabold -mt-2">Welcome Back</h4>
             <p className="text-sm text-gray-500 mt-1">
               Log into your dashboard
             </p>
