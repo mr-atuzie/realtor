@@ -1,5 +1,5 @@
 import React from "react";
-import { GiQueenCrown } from "react-icons/gi";
+import { GiLaurelCrown } from "react-icons/gi";
 import { RiVipCrownLine } from "react-icons/ri";
 
 const Footer = () => {
@@ -9,7 +9,7 @@ const Footer = () => {
         {/* Column 1: Logo Section */}
         <div className="flex items-center space-x-2">
           <div className="text-white">
-            <GiQueenCrown size={20} />
+            <GiLaurelCrown size={20} />
           </div>
           <h4 className="text-2xl font-semibold">The Grand Stage</h4>
         </div>

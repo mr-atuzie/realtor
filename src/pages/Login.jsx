@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import toast from "react-hot-toast";
-import { GiJewelCrown } from "react-icons/gi";
+import { GiQueenCrown } from "react-icons/gi";
 import { Link } from "react-router-dom";
 // import { useNavigate } from 'react-router-dom';
 
@@ -77,13 +77,16 @@ const Login = () => {
         </div> */}
 
         <form onSubmit={handleSubmit}>
-          <div className=" flex flex-col items-center justify-center text-pink-500 ">
+          <div className=" flex flex-col items-center justify-center text-pink-500 mb-6">
             <span>
-              <GiJewelCrown size={40} />
+              <GiQueenCrown size={40} />
             </span>
-            <h4 className="text-6xl  font-extrabold -mt-3  text-center mb-6 ">
-              Login
+            <h4 className="text-6xl  font-extrabold -mt-3  text-center  ">
+              Welcome Back
             </h4>
+            <p className=" my-2 text-sm text-gray-500">
+              log into your dashbord
+            </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-6">
             <div className=" ">
@@ -100,9 +103,6 @@ const Login = () => {
                 onChange={handleInputChange}
                 id="email"
               />
-              <small className=" text-xs text-gray-400">
-                Make sure your email addresss is correct
-              </small>
             </div>
 
             <div className=" ">
@@ -118,17 +118,10 @@ const Login = () => {
                 onChange={handleInputChange}
                 id="password"
               />
-              <small className=" text-xs text-gray-400">
-                Password must be up 8 characters
-              </small>
             </div>
           </div>
-          <p className=" my-2 text-sm">
-            Pay the entry fee ₦5,000 to complete your registration and confirm
-            eligibility for voting.
-          </p>
 
-          <div className=" flex justify-center items-center flex-col">
+          <div className=" flex justify-center items-center flex-col mb-16">
             <button
               disabled={loading}
               className=" text-sm lg:text-base max-w-lg rounded-lg w-full text-center py-3  mt-10 bg-pink-600 disabled:bg-purple-300 text-white "

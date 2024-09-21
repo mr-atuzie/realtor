@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { GiQueenCrown } from "react-icons/gi";
+import { GiLaurelCrown } from "react-icons/gi";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
@@ -44,7 +44,7 @@ const Navbar = () => {
         <motion.div className="flex items-center space-x-2">
           {/* Solid crown icon */}
           <div className="text-pink-500">
-            <GiQueenCrown size={30} />
+            <GiLaurelCrown size={30} />
           </div>
 
           {/* Text with color wave animation */}

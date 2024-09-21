@@ -67,7 +67,7 @@ const Register = () => {
   };
 
   return (
-    <div className=" w-full justify-center items-center  bg-white   min-h-screen bg- ">
+    <div className=" w-full justify-center items-center  bg-white   min-h-screen b ">
       <div className="  w-[90%] lg:w-[43%] mx-auto  py-10  lg:p-5">
         {/* <div className="flex items-center te space-x-2">
           <div className="">
@@ -161,12 +161,12 @@ const Register = () => {
               </small>
             </div>
           </div>
-          <p className=" my-2 text-sm">
+          <p className=" mt-5 text-center text-sm">
             Pay the entry fee ₦5,000 to complete your registration and confirm
             eligibility for voting.
           </p>
 
-          <div className=" flex justify-center items-center flex-col">
+          <div className=" flex justify-center items-center  mb-16 flex-col">
             <button
               disabled={loading}
               className=" text-sm lg:text-base max-w-lg rounded-lg w-full text-center py-3  mt-10 bg-pink-600 disabled:bg-purple-300 text-white "
