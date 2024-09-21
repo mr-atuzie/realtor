@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
-import { GiJewelCrown, GiQueenCrown } from "react-icons/gi";
+import { GiJewelCrown } from "react-icons/gi";
 
 const Register = () => {
   const initialState = {
@@ -68,20 +68,20 @@ const Register = () => {
 
   return (
     <div className=" w-full justify-center items-center  bg-white   min-h-screen bg- ">
-      <div className="  w-[90%] lg:w-[43%] mx-auto  py-4  lg:p-5">
-        <div className="flex items-center te space-x-2">
+      <div className="  w-[90%] lg:w-[43%] mx-auto  py-10  lg:p-5">
+        {/* <div className="flex items-center te space-x-2">
           <div className="">
             <GiQueenCrown size={20} />
           </div>
           <h4 className="text-2xl font-semibold">The Grand Stage</h4>
-        </div>
+        </div> */}
 
-        <form className=" my-10" onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
           <div className=" flex flex-col items-center justify-center text-pink-500 ">
             <span>
-              <GiJewelCrown size={35} />
+              <GiJewelCrown size={40} />
             </span>
-            <h4 className="text-6xl  font-extrabold  text-center mb-6 ">
+            <h4 className="text-6xl  font-extrabold -mt-3  text-center mb-6 ">
               Registration Form
             </h4>
           </div>
