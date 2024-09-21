@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
-import { GiQueenCrown } from "react-icons/gi";
+import { GiLaurelCrown, GiQueenCrown } from "react-icons/gi";
 
 const Register = () => {
   const initialState = {
@@ -67,14 +67,14 @@ const Register = () => {
   };
 
   return (
-    <div className="w-full flex justify-center items-center bg-gray-50 min-h-screen">
-      <div className="w-[90%] lg:w-[43%] mx-auto py-10 lg:py-12 lg:px-6 bg-white shadow-lg rounded-lg">
+    <div className="w-full flex justify-center items-center bg-white min-h-screen">
+      <div className="w-[90%] lg:w-[43%] mx-auto py-10 lg:py-12 lg:px-6  ">
         {/* Logo and Title */}
         <div className="flex items-center justify-center space-x-2 mb-10">
           <div className="text-pink-500">
-            <GiQueenCrown size={30} />
+            <GiLaurelCrown size={20} />
           </div>
-          <h4 className="text-3xl font-bold text-gray-800">The Grand Stage</h4>
+          <h4 className="text-2xl font-bold text-gray-800">The Grand Stage</h4>
         </div>
 
         {/* Registration Form */}
@@ -184,7 +184,7 @@ const Register = () => {
           {/* Entry Fee */}
           <p className="text-sm text-gray-700 mb-6">
             Pay the entry fee <span className="font-medium">₦5,000</span> to
-            complete your registration and confirm eligibility for voting.
+            complete your registration.
           </p>
 
           {/* Submit Button */}

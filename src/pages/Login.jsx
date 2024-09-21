@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import toast from "react-hot-toast";
 import { GiJewelCrown } from "react-icons/gi";
 import { Link } from "react-router-dom";
+import { GiLaurelCrown } from "react-icons/gi";
 // import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
@@ -72,16 +73,16 @@ const Login = () => {
         {/* Logo Section */}
         <div className="flex items-center justify-center space-x-2 mb-10">
           <div className="text-pink-500">
-            <GiJewelCrown size={30} />
+            <GiLaurelCrown size={20} />
           </div>
-          <h4 className="text-3xl font-bold text-gray-800">The Grand Stage</h4>
+          <h4 className="text-2xl font-bold text-gray-800">The Grand Stage</h4>
         </div>
 
         {/* Welcome Back Section */}
         <form onSubmit={handleSubmit}>
           <div className="flex flex-col items-center justify-center text-pink-500 mb-8">
             <GiJewelCrown size={40} />
-            <h4 className="text-6xl font-extrabold -mt-2">Welcome Back</h4>
+            <h4 className="text-4xl font-extrabold -mt-2">Welcome Back</h4>
             <p className="text-sm text-gray-500 mt-1">
               Log into your dashboard
             </p>
