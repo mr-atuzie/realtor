@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import toast from "react-hot-toast";
+import { GiJewelCrown } from "react-icons/gi";
 import { Link } from "react-router-dom";
 // import { useNavigate } from 'react-router-dom';
 
@@ -66,21 +67,32 @@ const Login = () => {
     //   }
   };
   return (
-    <div className=" w-full min-h-screen flex justify-center flex-col items-center  py-10">
-      <div className=" w-[95%] lg:w-[43%] mx-auto  p-5  ">
-        <h2 className="text-xl  font-semibold  text-center mb-6 ">Login</h2>
+    <div className=" w-full justify-center items-center  bg-white   min-h-screen bg- ">
+      <div className="  w-[90%] lg:w-[43%] mx-auto  py-10  lg:p-5">
+        {/* <div className="flex items-center te space-x-2">
+          <div className="">
+            <GiQueenCrown size={20} />
+          </div>
+          <h4 className="text-2xl font-semibold">The Grand Stage</h4>
+        </div> */}
+
         <form onSubmit={handleSubmit}>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-6">
+          <div className=" flex flex-col items-center justify-center text-pink-500 ">
+            <span>
+              <GiJewelCrown size={40} />
+            </span>
+            <h4 className="text-6xl  font-extrabold -mt-3  text-center mb-6 ">
+              Login
+            </h4>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-6">
             <div className=" ">
-              <label
-                className=" font-medium  text-xs lg:text-sm mb-2"
-                htmlFor="email"
-              >
+              <label className=" font-medium text-sm mb-2" htmlFor="email">
                 Email
               </label>
 
               <input
-                className="border p-2 bg-gray-100    rounded-lg   block w-full placeholder:text-sm"
+                className="border p-2.5 bg-gray-50    rounded-lg   block w-full placeholder:text-sm"
                 type="email"
                 // placeholder="Enter your Email"
                 name="email"
@@ -88,17 +100,17 @@ const Login = () => {
                 onChange={handleInputChange}
                 id="email"
               />
+              <small className=" text-xs text-gray-400">
+                Make sure your email addresss is correct
+              </small>
             </div>
 
             <div className=" ">
-              <label
-                className=" font-medium text-xs lg:text-sm"
-                htmlFor="password"
-              >
+              <label className=" font-medium text-sm" htmlFor="password">
                 Password
               </label>
               <input
-                className="border p-2  block w-full bg-gray-100    rounded-lg   placeholder:text-sm "
+                className="border p-2.5  bg-gray-50   block w-full  rounded-lg   placeholder:text-sm "
                 type="password"
                 name="password"
                 // placeholder="Enter your Password"
@@ -106,13 +118,20 @@ const Login = () => {
                 onChange={handleInputChange}
                 id="password"
               />
+              <small className=" text-xs text-gray-400">
+                Password must be up 8 characters
+              </small>
             </div>
           </div>
+          <p className=" my-2 text-sm">
+            Pay the entry fee ₦5,000 to complete your registration and confirm
+            eligibility for voting.
+          </p>
 
           <div className=" flex justify-center items-center flex-col">
             <button
               disabled={loading}
-              className=" text-sm lg:text-base max-w-lg rounded-lg w-full text-center py-2  mt-10 bg-purple-600 disabled:bg-purple-300 text-white "
+              className=" text-sm lg:text-base max-w-lg rounded-lg w-full text-center py-3  mt-10 bg-pink-600 disabled:bg-purple-300 text-white "
               type="submit"
             >
               {loading ? "Loading" : "Register"}
@@ -121,7 +140,7 @@ const Login = () => {
             <p className="text-xs text-center  font-medium mt-6  capitalize  text-gray-500">
               Don't have an account?
               <Link to={"/register"}>
-                <span className=" text-purple-600 ml-1 ">Register</span>
+                <span className=" text-pink-500 ml-1 ">Sign up</span>
               </Link>
             </p>
           </div>
