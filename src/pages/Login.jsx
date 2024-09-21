@@ -3,7 +3,7 @@ import toast from "react-hot-toast";
 import { GiJewelCrown } from "react-icons/gi";
 import { Link } from "react-router-dom";
 import { GiLaurelCrown } from "react-icons/gi";
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const initialState = {
@@ -11,7 +11,7 @@ const Login = () => {
     password: "",
   };
 
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const [formData, setFormData] = useState(initialState);
   const [loading, setLoading] = useState(false);
@@ -42,6 +42,8 @@ const Login = () => {
 
     console.log(userData);
 
+    navigate("/dashboard");
+
     //   try {
     //     await axios.post(
     //       `${process.env.REACT_APP_BACKEND_URL}/api/v1/pakam/register`,
@@ -71,7 +73,7 @@ const Login = () => {
     <div className="w-full  bg-white min-h-screen">
       <div className="w-[90%] lg:w-[43%] mx-auto py-10 lg:py-12 lg:px-6 ">
         {/* Logo Section */}
-        <div className="flex items-center justify-center space-x-2 mb-10">
+        <div className="flex items-center justify-center space-x-2 mb-5">
           <div className="text-pink-500">
             <GiLaurelCrown size={20} />
           </div>
@@ -82,7 +84,7 @@ const Login = () => {
         <form onSubmit={handleSubmit}>
           <div className="flex flex-col items-center justify-center text-pink-500 mb-8">
             <GiJewelCrown size={40} />
-            <h4 className="text-4xl font-extrabold -mt-2">Welcome Back</h4>
+            <h4 className="text-5xl font-extrabold -mt-2">Welcome Back</h4>
             <p className="text-sm text-gray-500 mt-1">
               Log into your dashboard
             </p>

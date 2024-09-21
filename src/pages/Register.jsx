@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import toast from "react-hot-toast";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { GiLaurelCrown, GiQueenCrown } from "react-icons/gi";
 
 const Register = () => {
@@ -15,6 +15,8 @@ const Register = () => {
   const [loading, setLoading] = useState(false);
 
   const { name, email, password, phone } = formData;
+
+  const navigate = useNavigate("/");
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -39,6 +41,8 @@ const Register = () => {
     const userData = { name, email, phone, password };
 
     console.log(userData);
+
+    navigate("/dashboard");
 
     //   try {
     //     await axios.post(
@@ -70,7 +74,7 @@ const Register = () => {
     <div className="w-full flex justify-center items-center bg-white min-h-screen">
       <div className="w-[90%] lg:w-[43%] mx-auto py-10 lg:py-12 lg:px-6  ">
         {/* Logo and Title */}
-        <div className="flex items-center justify-center space-x-2 mb-10">
+        <div className="flex items-center justify-center space-x-2 mb-5">
           <div className="text-pink-500">
             <GiLaurelCrown size={20} />
           </div>
@@ -81,7 +85,7 @@ const Register = () => {
         <form onSubmit={handleSubmit}>
           <div className="flex flex-col items-center justify-center text-pink-500 mb-8">
             <GiQueenCrown size={40} />
-            <h4 className="text-4xl font-extrabold -mt-2 mb-6">
+            <h4 className="text-5xl font-extrabold -mt-2 mb-6">
               Registration Form
             </h4>
           </div>
