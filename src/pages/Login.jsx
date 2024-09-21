@@ -67,73 +67,83 @@ const Login = () => {
     //   }
   };
   return (
-    <div className=" w-full justify-center items-center  bg-white   min-h-screen bg- ">
-      <div className="  w-[90%] lg:w-[43%] mx-auto  py-10  lg:p-5">
-        {/* <div className="flex items-center te space-x-2">
-          <div className="">
-            <GiQueenCrown size={20} />
+    <div className="w-full flex justify-center items-center bg-gray-50 min-h-screen">
+      <div className="w-[90%] lg:w-[43%] mx-auto py-10 lg:py-12 lg:px-6 bg-white shadow-lg rounded-lg">
+        {/* Logo Section */}
+        <div className="flex items-center justify-center space-x-2 mb-10">
+          <div className="text-pink-500">
+            <GiJewelCrown size={30} />
           </div>
-          <h4 className="text-2xl font-semibold">The Grand Stage</h4>
-        </div> */}
+          <h4 className="text-3xl font-bold text-gray-800">The Grand Stage</h4>
+        </div>
 
+        {/* Welcome Back Section */}
         <form onSubmit={handleSubmit}>
-          <div className=" flex flex-col items-center justify-center text-pink-500 mb-6">
-            <span>
-              <GiJewelCrown size={40} />
-            </span>
-            <h4 className="text-6xl  font-extrabold -mt-3  text-center  ">
-              Welcome Back
-            </h4>
-            <p className=" -mt-3 text-sm text-gray-500">
-              Log into your dashbord
+          <div className="flex flex-col items-center justify-center text-pink-500 mb-8">
+            <GiJewelCrown size={40} />
+            <h4 className="text-4xl font-extrabold -mt-2">Welcome Back</h4>
+            <p className="text-sm text-gray-500 mt-1">
+              Log into your dashboard
             </p>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-6">
-            <div className=" ">
-              <label className=" font-medium text-sm mb-2" htmlFor="email">
+
+          {/* Input Fields */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+            {/* Email */}
+            <div>
+              <label
+                className="block text-sm font-medium text-gray-700 mb-1"
+                htmlFor="email"
+              >
                 Email
               </label>
-
               <input
-                className="border p-2.5 bg-gray-50    rounded-lg   block w-full placeholder:text-sm"
+                className="border border-gray-300 p-2.5 bg-gray-50 rounded-lg block w-full text-sm focus:outline-none focus:ring-2 focus:ring-pink-500"
                 type="email"
-                // placeholder="Enter your Email"
                 name="email"
                 value={email}
                 onChange={handleInputChange}
                 id="email"
+                placeholder="Enter your Email"
+                required
               />
             </div>
 
-            <div className=" ">
-              <label className=" font-medium text-sm" htmlFor="password">
+            {/* Password */}
+            <div>
+              <label
+                className="block text-sm font-medium text-gray-700 mb-1"
+                htmlFor="password"
+              >
                 Password
               </label>
               <input
-                className="border p-2.5  bg-gray-50   block w-full  rounded-lg   placeholder:text-sm "
+                className="border border-gray-300 p-2.5 bg-gray-50 rounded-lg block w-full text-sm focus:outline-none focus:ring-2 focus:ring-pink-500"
                 type="password"
                 name="password"
-                // placeholder="Enter your Password"
                 value={password}
                 onChange={handleInputChange}
                 id="password"
+                placeholder="Enter your Password"
+                required
               />
             </div>
           </div>
 
-          <div className=" flex justify-center items-center flex-col mb-16">
+          {/* Submit Button */}
+          <div className="flex flex-col items-center">
             <button
               disabled={loading}
-              className=" text-sm lg:text-base max-w-lg rounded-lg w-full text-center py-3  mt-10 bg-pink-600 disabled:bg-purple-300 text-white "
+              className="text-sm lg:text-base w-full py-3 bg-pink-600 rounded-lg text-white font-semibold hover:bg-pink-700 transition-all disabled:bg-gray-300"
               type="submit"
             >
-              {loading ? "Loading" : "Register"}
+              {loading ? "Loading..." : "Login"}
             </button>
 
-            <p className="text-xs text-center  font-medium mt-6  capitalize  text-gray-500">
+            <p className="text-xs text-center font-medium mt-6 text-gray-500">
               Don't have an account?
-              <Link to={"/register"}>
-                <span className=" text-pink-500 ml-1 ">Sign up</span>
+              <Link to="/register" className="text-pink-500 ml-1">
+                Sign up
               </Link>
             </p>
           </div>
