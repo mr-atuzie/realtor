@@ -67,118 +67,140 @@ const Register = () => {
   };
 
   return (
-    <div className=" w-full justify-center items-center  bg-white   min-h-screen b ">
-      <div className="  w-[90%] lg:w-[43%] mx-auto  py-10  lg:p-5">
-        {/* <div className="flex items-center te space-x-2">
-          <div className="">
-            <GiQueenCrown size={20} />
+    <div className="w-full flex justify-center items-center bg-gray-50 min-h-screen">
+      <div className="w-[90%] lg:w-[43%] mx-auto py-10 lg:py-12 lg:px-6 bg-white shadow-lg rounded-lg">
+        {/* Logo and Title */}
+        <div className="flex items-center justify-center space-x-2 mb-10">
+          <div className="text-pink-500">
+            <GiQueenCrown size={30} />
           </div>
-          <h4 className="text-2xl font-semibold">The Grand Stage</h4>
-        </div> */}
+          <h4 className="text-3xl font-bold text-gray-800">The Grand Stage</h4>
+        </div>
 
+        {/* Registration Form */}
         <form onSubmit={handleSubmit}>
-          <div className=" flex flex-col items-center justify-center text-pink-500 ">
-            <span>
-              <GiQueenCrown size={40} />
-            </span>
-            <h4 className="text-6xl  font-extrabold -mt-3  text-center mb-6 ">
+          <div className="flex flex-col items-center justify-center text-pink-500 mb-8">
+            <GiQueenCrown size={40} />
+            <h4 className="text-4xl font-extrabold -mt-2 mb-6">
               Registration Form
             </h4>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-6">
-            <div className=" w-full ">
-              <label className=" font-medium   text-sm mb-2" htmlFor="name">
-                Fullname
-              </label>
 
+          {/* Input Fields */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+            {/* Full Name */}
+            <div>
+              <label
+                className="block text-sm font-medium text-gray-700 mb-1"
+                htmlFor="name"
+              >
+                Full Name
+              </label>
               <input
-                className="border    p-2.5 bg-gray-50  rounded-lg  block w-full placeholder:text-sm "
+                className="border border-gray-300 p-2.5 bg-gray-50 rounded-lg block w-full text-sm focus:outline-none focus:ring-2 focus:ring-pink-500"
                 type="text"
-                // placeholder="Enter your Name"
                 name="name"
                 value={name}
                 onChange={handleInputChange}
                 id="name"
+                placeholder="Enter your Name"
+                required
               />
-              <small className=" text-xs text-gray-400">
+              <small className="text-xs text-gray-400 mt-1 block">
                 Name as you'd like it to appear in the contest.
               </small>
             </div>
 
-            <div className=" ">
-              <label className=" font-medium text-sm mb-2" htmlFor="email">
+            {/* Email */}
+            <div>
+              <label
+                className="block text-sm font-medium text-gray-700 mb-1"
+                htmlFor="email"
+              >
                 Email
               </label>
-
               <input
-                className="border p-2.5 bg-gray-50    rounded-lg   block w-full placeholder:text-sm"
+                className="border border-gray-300 p-2.5 bg-gray-50 rounded-lg block w-full text-sm focus:outline-none focus:ring-2 focus:ring-pink-500"
                 type="email"
-                // placeholder="Enter your Email"
                 name="email"
                 value={email}
                 onChange={handleInputChange}
                 id="email"
+                placeholder="Enter your Email"
+                required
               />
-              <small className=" text-xs text-gray-400">
-                Make sure your email addresss is correct
+              <small className="text-xs text-gray-400 mt-1 block">
+                Make sure your email address is correct.
               </small>
             </div>
 
-            <div className=" ">
-              <label className=" font-medium   text-sm" htmlFor="phone">
+            {/* Phone Number */}
+            <div>
+              <label
+                className="block text-sm font-medium text-gray-700 mb-1"
+                htmlFor="phone"
+              >
                 Phone Number
               </label>
-
               <input
-                className="border    p-2.5 bg-gray-50  rounded-lg  block w-full placeholder:text-sm "
+                className="border border-gray-300 p-2.5 bg-gray-50 rounded-lg block w-full text-sm focus:outline-none focus:ring-2 focus:ring-pink-500"
                 type="text"
-                // placeholder="Enter your Name"
-                name="name"
+                name="phone"
                 value={phone}
                 onChange={handleInputChange}
-                id="name"
+                id="phone"
+                placeholder="Enter your Phone Number"
+                required
               />
-              <small className=" text-xs text-gray-400">
-                Make sure your phone number is valid
+              <small className="text-xs text-gray-400 mt-1 block">
+                Make sure your phone number is valid.
               </small>
             </div>
 
-            <div className=" ">
-              <label className=" font-medium text-sm" htmlFor="password">
+            {/* Password */}
+            <div>
+              <label
+                className="block text-sm font-medium text-gray-700 mb-1"
+                htmlFor="password"
+              >
                 Password
               </label>
               <input
-                className="border p-2.5  bg-gray-50   block w-full  rounded-lg   placeholder:text-sm "
+                className="border border-gray-300 p-2.5 bg-gray-50 rounded-lg block w-full text-sm focus:outline-none focus:ring-2 focus:ring-pink-500"
                 type="password"
                 name="password"
-                // placeholder="Enter your Password"
                 value={password}
                 onChange={handleInputChange}
                 id="password"
+                placeholder="Enter your Password"
+                required
               />
-              <small className=" text-xs text-gray-400">
-                Password must be up 8 characters
+              <small className="text-xs text-gray-400 mt-1 block">
+                Password must be at least 8 characters.
               </small>
             </div>
           </div>
-          <p className=" mt-5  text-sm">
-            Pay the entry fee <span className=" font-medium">₦5,000</span> to
+
+          {/* Entry Fee */}
+          <p className="text-sm text-gray-700 mb-6">
+            Pay the entry fee <span className="font-medium">₦5,000</span> to
             complete your registration and confirm eligibility for voting.
           </p>
 
-          <div className=" flex justify-center items-center  mb-16 flex-col">
+          {/* Submit Button */}
+          <div className="flex flex-col items-center">
             <button
               disabled={loading}
-              className=" text-sm lg:text-base max-w-lg rounded-lg w-full text-center py-3  mt-10 bg-pink-600 disabled:bg-purple-300 text-white "
+              className="text-sm lg:text-base w-full py-3 bg-pink-600 rounded-lg text-white font-semibold hover:bg-pink-700 transition-all disabled:bg-gray-300"
               type="submit"
             >
-              {loading ? "Loading" : "Register"}
+              {loading ? "Loading..." : "Register"}
             </button>
 
-            <p className="text-xs text-center  font-medium mt-6  capitalize  text-gray-500">
+            <p className="text-xs text-center font-medium mt-6 text-gray-500">
               Already have an account?
-              <Link to={"/login"}>
-                <span className=" text-pink-500 ml-1 ">Login</span>
+              <Link to="/login" className="text-pink-500 ml-1">
+                Login
               </Link>
             </p>
           </div>
