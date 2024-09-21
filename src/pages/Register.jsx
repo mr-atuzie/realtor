@@ -100,6 +100,9 @@ const Register = () => {
                 onChange={handleInputChange}
                 id="name"
               />
+              <small className=" text-xs text-gray-400">
+                Name as you'd like it to appear in the contest.
+              </small>
             </div>
 
             <div className=" ">
@@ -153,8 +156,15 @@ const Register = () => {
                 onChange={handleInputChange}
                 id="password"
               />
+              <small className=" text-xs text-gray-400">
+                Password must be up 8 characters
+              </small>
             </div>
           </div>
+          <p className=" my-2 text-sm">
+            Pay the entry fee ₦5,000 to complete your registration and confirm
+            eligibility for voting.
+          </p>
 
           <div className=" flex justify-center items-center flex-col">
             <button
