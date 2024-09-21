@@ -68,7 +68,7 @@ const Login = () => {
     //   }
   };
   return (
-    <div className="w-full flex justify-center items-center bg-white min-h-screen">
+    <div className="w-full  bg-white min-h-screen">
       <div className="w-[90%] lg:w-[43%] mx-auto py-10 lg:py-12 lg:px-6 ">
         {/* Logo Section */}
         <div className="flex items-center justify-center space-x-2 mb-10">
