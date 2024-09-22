@@ -13,7 +13,7 @@ const Dashboard = () => {
   return (
     <div className=" w-full p-6 bg-white shadow-md rounded-lg space-y-6">
       {/* Contestant Info */}
-      <div className="flex items-center justify-center space-x-2">
+      <div className="flex items-center justify-center space-x-2 mb-5">
         <GiLaurelCrown size={30} className="text-pink-500" />
         <h2 className="text-lg font-semibold capitalize">
           Contestant Dashboard
