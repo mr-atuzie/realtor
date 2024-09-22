@@ -94,7 +94,7 @@ const Dashboard = () => {
         </div>
       </div>
 
-      <div className="flex items-start text-smr space-x-2">
+      <div className="flex items-start text-sm space-x-2">
         <span className="text-pink-500">
           <RiCalendarLine />
         </span>
