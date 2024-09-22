@@ -58,7 +58,7 @@ const Dashboard = () => {
       </div>
 
       {/* Votes Count */}
-      <div className="flex items-center space-x-2">
+      <div className="flex items-start text-sm space-x-2">
         <span className="text-pink-500">
           <AiOutlineBarChart />
         </span>
@@ -71,7 +71,7 @@ const Dashboard = () => {
       </div>
 
       {/* Votes Rank */}
-      <div className="flex items-center space-x-2">
+      <div className="flex items-start text-sm space-x-2">
         <span className="text-pink-500">
           <AiOutlineTrophy />
         </span>
@@ -82,7 +82,7 @@ const Dashboard = () => {
       </div>
 
       {/* Votes Start and End */}
-      <div className="flex items-center space-x-2">
+      <div className="flex items-start text-sm space-x-2">
         <span className="text-pink-500">
           <RiCalendarCheckLine />
         </span>

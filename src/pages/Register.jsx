@@ -74,7 +74,7 @@ const Register = () => {
     <div className="w-full flex justify-center items-center bg-white min-h-screen">
       <div className="w-[90%] lg:w-[43%] mx-auto py-10 lg:py-12 lg:px-6  ">
         {/* Logo and Title */}
-        <div className="flex items-center justify-center space-x-2 mb-5">
+        <div className="flex items-center justify-center space-x-2 ">
           <div className="text-pink-500">
             <GiLaurelCrown size={20} />
           </div>
