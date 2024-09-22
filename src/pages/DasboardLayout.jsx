@@ -14,7 +14,7 @@ const DasboardLayout = () => {
           <h4 className="text-2xl font-bold text-gray-800">The Grand Stage</h4>
         </div>
       </div>
-      <div className="  w-[95%] md:w-[90%  mx-auto] lg:w-[85%]  flex justify-center items-center h-fit">
+      <div className="  w-[95%] md:w-[90%  mx-auto] lg:w-[85%]  flex justify-center items-center h-screen">
         {/* <div className=" mt-10 mb-24 lg:mb-0   "> */}
         <Outlet />
         {/* </div> */}
