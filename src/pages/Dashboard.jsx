@@ -15,7 +15,9 @@ const Dashboard = () => {
       {/* Contestant Info */}
       <div className="flex items-center space-x-4">
         <GiLaurelCrown size={40} className="text-pink-500" />
-        <h4 className="text-2xl font-bold capitalize">Contestant Dashboard</h4>
+        <h4 className="text-xl font-semibold capitalize">
+          Contestant Dashboard
+        </h4>
       </div>
 
       {/* Contestant's Name */}
