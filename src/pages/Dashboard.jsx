@@ -11,15 +11,15 @@ import {
 
 const Dashboard = () => {
   return (
-    <div className="p-6 bg-white shadow-md rounded-lg space-y-6">
+    <div className=" w-full p-6 bg-white shadow-md rounded-lg space-y-6">
       {/* Contestant Info */}
       <div className="flex items-center space-x-4">
         <GiLaurelCrown size={40} className="text-pink-500" />
-        <h2 className="text-2xl font-bold capitalize">Contestant Dashboard</h2>
+        <h4 className="text-2xl font-bold capitalize">Contestant Dashboard</h4>
       </div>
 
       {/* Contestant's Name */}
-      <div className="flex items-center space-x-2">
+      <div className="flex items-start text-sm space-x-2">
         <span className="text-pink-500">
           <FaUser />
         </span>
@@ -32,7 +32,7 @@ const Dashboard = () => {
       </div>
 
       {/* Contestant's Code */}
-      <div className="flex items-center space-x-2">
+      <div className="flex items-start text-sm space-x-2">
         <span className="text-pink-500">
           <RiBarcodeLine />
         </span>
@@ -45,7 +45,7 @@ const Dashboard = () => {
       </div>
 
       {/* Contestant's Status */}
-      <div className="flex items-center space-x-2">
+      <div className="flex items-start text-sm space-x-2">
         <span className="text-pink-500">
           <RiSignalWifiLine />
         </span>

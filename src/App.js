@@ -5,6 +5,7 @@ import { Toaster } from "react-hot-toast";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
+import DasboardLayout from "./pages/DasboardLayout";
 // import Navbar from "./components/Navbar";
 
 function App() {
@@ -17,7 +18,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/dashboard" element={<Dashboard />} />
+
+          <Route path="/dashboard" element={<DasboardLayout />}>
+            <Route index element={<Dashboard />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </>
