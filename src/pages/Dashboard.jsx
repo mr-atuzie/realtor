@@ -29,7 +29,7 @@ const Dashboard = () => {
           <h2 className="font-semibold capitalize text-gray-600">
             Contestant's Name
           </h2>
-          <p className="text-lg font-medium">ATUZIE REX HABINUCHI</p>
+          <p className=" font-medium">ATUZIE REX HABINUCHI</p>
         </div>
       </div>
 
@@ -42,7 +42,7 @@ const Dashboard = () => {
           <h2 className="font-semibold capitalize text-gray-600">
             Contestant's Code
           </h2>
-          <p className="font-mono text-lg">ART9085431</p>
+          <p className="font-mono">ART9085431</p>
         </div>
       </div>
 
@@ -55,7 +55,7 @@ const Dashboard = () => {
           <h2 className="font-semibold capitalize text-gray-600">
             Contestant's Status
           </h2>
-          <p className="font-mono text-lg">Active</p>
+          <p className="">Active</p>
         </div>
       </div>
 
@@ -68,7 +68,7 @@ const Dashboard = () => {
           <h2 className="font-semibold capitalize text-gray-600">
             Votes Count
           </h2>
-          <p className="font-mono text-lg">9,085,431</p>
+          <p className="font-mono">9,085,431</p>
         </div>
       </div>
 
@@ -90,17 +90,17 @@ const Dashboard = () => {
         </span>
         <div>
           <h2 className="font-semibold capitalize text-gray-600">Vote Start</h2>
-          <p className="font-mono text-lg">January 1, 2024</p>
+          <p className=" ">January 1, 2024</p>
         </div>
       </div>
 
-      <div className="flex items-center space-x-2">
+      <div className="flex items-start text-smr space-x-2">
         <span className="text-pink-500">
           <RiCalendarLine />
         </span>
         <div>
           <h2 className="font-semibold capitalize text-gray-600">Vote End</h2>
-          <p className="font-mono text-lg">January 31, 2024</p>
+          <p className="">January 31, 2024</p>
         </div>
       </div>
     </div>
