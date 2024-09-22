@@ -13,11 +13,11 @@ const Dashboard = () => {
   return (
     <div className=" w-full p-6 bg-white shadow-md rounded-lg space-y-6">
       {/* Contestant Info */}
-      <div className="flex items-center space-x-4">
-        <GiLaurelCrown size={40} className="text-pink-500" />
-        <h4 className="text-xl font-semibold capitalize">
+      <div className="flex items-center justify-center space-x-4">
+        <GiLaurelCrown size={30} className="text-pink-500" />
+        <h2 className="text-xl font-semibold capitalize">
           Contestant Dashboard
-        </h4>
+        </h2>
       </div>
 
       {/* Contestant's Name */}
