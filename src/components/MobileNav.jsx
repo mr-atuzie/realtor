@@ -91,7 +91,7 @@ const MobileNav = () => {
         </div>
       </NavLink> */}
 
-      <NavLink
+      {/* <NavLink
         to="/dashboard/test"
         className={({ isActive }) =>
           isActive ? " text-pink-500 font-medium" : "text-gray-500"
@@ -118,7 +118,7 @@ const MobileNav = () => {
           </span>
           <p className=" text-xs">Followers</p>
         </div>
-      </NavLink>
+      </NavLink> */}
 
       <NavLink
         to={`/dashboard/profile`}

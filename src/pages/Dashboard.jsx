@@ -1,5 +1,6 @@
 import React from "react";
 import { GiLaurelCrown } from "react-icons/gi";
+import avatar from "../assets/avatar.svg";
 
 const Dashboard = () => {
   const galleryImages = [
@@ -9,26 +10,26 @@ const Dashboard = () => {
     "https://media.istockphoto.com/id/1306514019/photo/beautiful-girl-with-curly-hairstyle.jpg?s=612x612&w=0&k=20&c=4roFL5l37zg8gDsPuCTisDbIMnzvSGyKLwf8sjzH9oo=",
   ];
   return (
-    <div className=" w-full  space-y-6 mt-10 mb-24 lg:mb-0">
+    <div className=" w-full  space-y-6 mb-24 lg:mb-0">
       {/* Contestant Info */}
       <div className="flex items-center justify-center space-x-2 mb-5">
         <GiLaurelCrown size={30} className="text-pink-500" />
-        <h2 className="text-lg font-semibold capitalize">Dashboard</h2>
+        <h2 className="text-xl font-semibold capitalize">Dashboard</h2>
       </div>
 
       {/* Header Section */}
       <div className="flex items-center space-x-4">
         <img
-          src="https://i.insider.com/5a0373d9ec1ade082e107b03?width=700"
+          src={avatar}
           alt="Contestant"
-          className=" w-20 h-20 lg:w-24 lg:h-24 rounded-full"
+          className="w-24 h-24 object-cover rounded-full"
         />
         <div>
           <h1 className=" text-xl lg:text-3xl font-semibold">Rex atuzie</h1>
-          <p className="text-gray-600 text-sm lg:text-base">
+          <p className="text-gray-600 mb-1 text-sm lg:text-base">
             Contestant Code: <span className="font-mono">ASR34567</span>
           </p>
-          <p className=" text-xs bg-green-50 rounded-md lg:text-sm text-green-600">
+          <p className=" text-xs w-fit p-2 bg-green-50 rounded-md lg:text-sm text-green-600">
             Status: Active
           </p>
         </div>
