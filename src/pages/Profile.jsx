@@ -1,14 +1,14 @@
 import React from "react";
-import { GiLaurelCrown } from "react-icons/gi";
+// import { GiLaurelCrown } from "react-icons/gi";
 
 const Profile = () => {
   return (
     <div className=" w-full  space-y-6  mb-24 lg:mb-0">
       {/* Contestant Info */}
-      <div className="flex items-center justify-center space-x-2 mb-5">
+      {/* <div className="flex items-center justify-center space-x-2 mb-5">
         <GiLaurelCrown size={30} className="text-pink-500" />
         <h2 className="text-xl font-semibold capitalize">Profile</h2>
-      </div>
+      </div> */}
 
       {/* Contestant's Name */}
       <div className="flex items-center text-sm space-x-2">

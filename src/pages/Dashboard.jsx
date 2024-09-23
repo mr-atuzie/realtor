@@ -1,6 +1,7 @@
 import React from "react";
-import { GiLaurelCrown } from "react-icons/gi";
+// import { GiLaurelCrown } from "react-icons/gi";
 import avatar from "../assets/avatar.svg";
+import { Link } from "react-router-dom";
 
 const Dashboard = () => {
   const galleryImages = [
@@ -11,10 +12,10 @@ const Dashboard = () => {
   return (
     <div className=" w-full  space-y-6 mb-24 lg:mb-0">
       {/* Contestant Info */}
-      <div className="flex items-center justify-center space-x-2 mb-5">
+      {/* <div className="flex items-center justify-center space-x-2 mb-5">
         <GiLaurelCrown size={30} className="text-pink-500" />
         <h2 className="text-xl font-semibold capitalize">Dashboard</h2>
-      </div>
+      </div> */}
 
       {/* Header Section */}
       <div className="flex items-center space-x-4">
@@ -46,18 +47,18 @@ const Dashboard = () => {
             <p className=" text-sm lg:text-base">Current Rank</p>
             <h3 className="text-xl font-bold">#23</h3>
           </div>
-          <div>
+          <Link to={"/vote/contestant/1234"}>
             <button className="bg-purple-600 text-sm lg:text-base text-white py-2 px-4 rounded">
               Vote Now
             </button>
-          </div>
+          </Link>
         </div>
         <div className="mt-4">
           {/* <p className="text-sm lg:text-base">
             Voting Ends In: <span className="text-red-600">Countdown</span>
           </p> */}
           {/* Votes Start and End */}
-          <div className="flex items-start text-sm space-x-2">
+          <div className="flex items-center text-sm space-x-2 mb-3">
             <span className="text-pink-500">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -76,13 +77,13 @@ const Dashboard = () => {
             </span>
             <div>
               <h2 className="font-semibold capitalize text-gray-600">
-                Vote Start
+                Voting Starts
               </h2>
               <p className=" ">January 1, 2024</p>
             </div>
           </div>
 
-          <div className="flex items-start text-sm space-x-2">
+          <div className="flex items-center text-sm space-x-2">
             <span className="text-pink-500">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +102,7 @@ const Dashboard = () => {
             </span>
             <div>
               <h2 className="font-semibold capitalize text-gray-600">
-                Vote End
+                Voting Ends
               </h2>
               <p className="">January 31, 2024</p>
             </div>
@@ -120,7 +121,7 @@ const Dashboard = () => {
 
       {/* Gallery Section */}
       <div className="my-6">
-        <h2 className=" text-xl lg:text-2xl font-semibold">Gallery</h2>
+        <h2 className=" text-xl lg:text-2xl font-semibold mb-3">Gallery</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {galleryImages.map((image, index) => (
             <img

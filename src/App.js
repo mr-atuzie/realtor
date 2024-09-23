@@ -7,6 +7,8 @@ import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import DasboardLayout from "./pages/DasboardLayout";
 import Profile from "./pages/Profile";
+import VotingLayout from "./pages/VotingLayout";
+import Vote from "./pages/Vote";
 // import Test from "./pages/test";
 // import Navbar from "./components/Navbar";
 
@@ -24,6 +26,10 @@ function App() {
           <Route path="/dashboard" element={<DasboardLayout />}>
             <Route index element={<Dashboard />} />
             <Route path="profile" element={<Profile />} />
+          </Route>
+
+          <Route path="/vote" element={<VotingLayout />}>
+            <Route path="contestant/:contestant_id" element={<Vote />} />
           </Route>
         </Routes>
       </BrowserRouter>
