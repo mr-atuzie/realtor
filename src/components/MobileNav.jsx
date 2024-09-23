@@ -3,11 +3,12 @@ import { NavLink } from "react-router-dom";
 
 const MobileNav = () => {
   return (
-    <div className=" bg-white border-t bottom-0 z-40  fixed w-full p-3 flex justify-between items-center  lg:hidden">
+    <div className=" bg-white border-t bottom-0 z-40  fixed w-full p-3 flex justify-around items-center  lg:hidden">
       <NavLink
         to="/dashboard"
+        end
         className={({ isActive }) =>
-          isActive ? " text-black font-medium" : "text-gray-500"
+          isActive ? " text-pink-500 font-medium" : "text-gray-500"
         }
       >
         <div className=" flex flex-col justify-center gap-1 items-center">
@@ -31,7 +32,7 @@ const MobileNav = () => {
         </div>
       </NavLink>
 
-      <NavLink
+      {/* <NavLink
         to="/search"
         className={({ isActive }) =>
           isActive ? " text-black font-medium" : "text-gray-500"
@@ -58,9 +59,9 @@ const MobileNav = () => {
           </span>
           <p className=" text-xs">Search</p>
         </div>
-      </NavLink>
+      </NavLink> */}
 
-      <NavLink
+      {/* <NavLink
         to="/notifications"
         className={({ isActive }) =>
           isActive ? " text-black font-medium" : "text-gray-500"
@@ -88,12 +89,12 @@ const MobileNav = () => {
           </span>
           <p className=" text-xs">Notifications</p>
         </div>
-      </NavLink>
+      </NavLink> */}
 
       <NavLink
-        to="/followers"
+        to="/dashboard/test"
         className={({ isActive }) =>
-          isActive ? " text-black font-medium" : "text-gray-500"
+          isActive ? " text-pink-500 font-medium" : "text-gray-500"
         }
       >
         <div className=" flex flex-col justify-center gap-1 items-center">
@@ -120,9 +121,9 @@ const MobileNav = () => {
       </NavLink>
 
       <NavLink
-        to={`/profile`}
+        to={`/dashboard/profile`}
         className={({ isActive }) =>
-          isActive ? " text-black font-medium" : "text-gray-500"
+          isActive ? " text-pink-500 font-medium" : "text-gray-500"
         }
       >
         <div className=" flex flex-col gap-1 justify-center items-center">

@@ -6,6 +6,8 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import DasboardLayout from "./pages/DasboardLayout";
+import Profile from "./pages/Profile";
+import Test from "./pages/test";
 // import Navbar from "./components/Navbar";
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
 
           <Route path="/dashboard" element={<DasboardLayout />}>
             <Route index element={<Dashboard />} />
+            <Route path="profile" element={<Profile />} />
+            <Route path="test" element={<Test />} />
           </Route>
         </Routes>
       </BrowserRouter>
