@@ -85,7 +85,7 @@ const Navbar = () => {
         </div>
 
         {/* Hamburger Menu for mobile */}
-        <button onClick={setMenu(!menu)} className="md:hidden text-white">
+        <button onClick={() => setMenu(!menu)} className="md:hidden text-white">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

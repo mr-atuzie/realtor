@@ -10,7 +10,7 @@ const Vote = () => {
         Vote for Rex atuzie
       </h3> */}
 
-      <div className="">
+      <div className=" mb-2">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {galleryImages.map((image, index) => (
             <img
@@ -53,7 +53,7 @@ const Vote = () => {
         </div>
 
         {/* Contestant's Code */}
-        <div className="flex items-center my-3 text-sm space-x-2">
+        <div className="flex items-center my-2 text-sm space-x-2">
           <span className="text-pink-500">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +93,7 @@ const Vote = () => {
 
       {/* Vote Information */}
       <div className=" my-3 lg:my-6">
-        {/* <h2 className=" text-xl lg:text-2xl font-semibold">Voting</h2> */}
+        <h2 className="lg:text-2xl font-semibold">Voting</h2>
         <div className="flex space-x-5 lg:space-x-8">
           <div>
             <p className=" text-sm lg:text-base">Total Votes</p>
@@ -111,8 +111,8 @@ const Vote = () => {
         </div> */}
       </div>
 
-      <form className=" border border-orange-50 py-4 px-2 shadow-sm rounded-lg">
-        <p className=" text-sm">
+      <form className=" border border-orange-50 my-8 py-8 px-2 shadow-sm rounded-lg">
+        <p className=" text-sm text-center">
           Ensure the contestant is who you wnat to vote for
         </p>
 
@@ -200,7 +200,7 @@ const Vote = () => {
 
           <button
             // disabled={loading}
-            className="text-sm my-4 uppercase lg:text-base w-full py-3 bg-pink-600 rounded-lg text-white font-semibold hover:bg-pink-700 transition-all disabled:bg-gray-300"
+            className="text-sm mt-4 uppercase lg:text-base w-full py-3 bg-pink-600 rounded-lg text-white font-semibold hover:bg-pink-700 transition-all disabled:bg-gray-300"
             type="submit"
           >
             Proceed to make payment
