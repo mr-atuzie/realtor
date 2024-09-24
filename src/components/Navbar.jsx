@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { GiLaurelCrown } from "react-icons/gi";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [menu, setMenu] = useState(false);
 
   const colorWaveAnimation = {
     hidden: { backgroundPosition: "0%" },
@@ -83,7 +85,7 @@ const Navbar = () => {
         </div>
 
         {/* Hamburger Menu for mobile */}
-        <div className="md:hidden text-white">
+        <button onClick={setMenu(!menu)} className="md:hidden text-white">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -98,8 +100,29 @@ const Navbar = () => {
               d="M4 6h16M4 12h16m-7 6h7"
             />
           </svg>
-        </div>
+        </button>
       </div>
+      {menu && (
+        <div className=" w-[80%] bg-orange-50 h-screen fixed z-50 top-0 left-0">
+          <div className=" flex flex-col gap-4">
+            <Link to={"/"}>
+              <span>Home</span>
+            </Link>
+            <Link to={"/about"}>
+              <span>About</span>
+            </Link>
+            <Link to={"/contestants"}>
+              <span>Contestant</span>
+            </Link>
+            <Link to={"/contact"}>
+              <span>Contact</span>
+            </Link>
+            <Link to={"/Register"}>
+              <span>Register</span>
+            </Link>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };

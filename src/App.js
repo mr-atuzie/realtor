@@ -9,6 +9,7 @@ import DasboardLayout from "./pages/DasboardLayout";
 import Profile from "./pages/Profile";
 import VotingLayout from "./pages/VotingLayout";
 import Vote from "./pages/Vote";
+import Contestants from "./pages/Contestants";
 // import Test from "./pages/test";
 // import Navbar from "./components/Navbar";
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/contestants" element={<Contestants />} />
 
           <Route path="/dashboard" element={<DasboardLayout />}>
             <Route index element={<Dashboard />} />
