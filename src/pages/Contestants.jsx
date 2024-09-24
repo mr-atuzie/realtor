@@ -9,14 +9,24 @@ const Contestants = () => {
       name: "ATUZIE REX HABINUCHI",
       code: "ART9085431",
       bio: "An enthusiastic and confident contestant with a passion for fashion and creative arts.",
-      image: "/path/to/contestant-image1.jpg", // Replace with actual image path
+      image:
+        "https://media.istockphoto.com/id/1182617710/photo/photo-of-cheerful-curly-girl-with-positive-emotions.jpg?s=612x612&w=0&k=20&c=HeCma1qBTyPS5NdvkEh-LD9rmxQSvDed_zOtmx7OYOg=",
     },
     {
       id: 2,
       name: "CHIOMA OKAFOR",
       code: "ART728374",
       bio: "A dynamic and vibrant individual who loves performing arts and cultural heritage.",
-      image: "/path/to/contestant-image2.jpg", // Replace with actual image path
+      image:
+        "https://media.istockphoto.com/id/1331637318/photo/portrait-of-young-afro-woman-with-bright-make-up.jpg?s=612x612&w=0&k=20&c=F6PSgaagZEabgAfTvxE78YPhKtK-5a8yYoA_oSbGNMM=",
+    },
+    {
+      id: 2,
+      name: "ADESUWA OKITIRAN",
+      code: "ART128654",
+      bio: "A dynamic and vibrant individual who loves performing arts and cultural heritage.",
+      image:
+        "https://media.istockphoto.com/id/1306514019/photo/beautiful-girl-with-curly-hairstyle.jpg?s=612x612&w=0&k=20&c=4roFL5l37zg8gDsPuCTisDbIMnzvSGyKLwf8sjzH9oo=",
     },
     // Add more contestants here
   ];
@@ -28,20 +38,21 @@ const Contestants = () => {
   );
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-10">
-      <h1 className="text-3xl font-bold text-gray-800 text-center mb-10">
-        All Contestants
-      </h1>
-
-      {/* Search Bar */}
-      <div className="mb-8">
-        <input
-          type="text"
-          placeholder="Search by name or contestant code"
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-purple-500"
-        />
+    <div className="max-w-7xl bg-orange-50 mx-auto ">
+      <div className=" bg-white">
+        <h1 className="text-3xl font-bold text-gray-800 text-center mb-4">
+          All Contestants
+        </h1>
+        {/* Search Bar */}
+        <div className="mb-8">
+          <input
+            type="text"
+            placeholder="Search by name or contestant code"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="w-full px-4 py-2 border border-gray-300 placeholder:text-sm bg-gray-50 rounded-md focus:outline-none focus:ring focus:border-purple-500"
+          />
+        </div>
       </div>
 
       {/* Contestant Grid */}
@@ -57,7 +68,7 @@ const Contestants = () => {
                 <img
                   src={contestant.image}
                   alt={contestant.name}
-                  className="w-24 h-24 rounded-full object-cover mb-4"
+                  className=" w-full rounded-full object-cover mb-4"
                 />
                 <h2 className="text-xl font-semibold text-gray-800">
                   {contestant.name}

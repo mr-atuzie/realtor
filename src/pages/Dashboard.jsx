@@ -41,11 +41,11 @@ const Dashboard = () => {
         <div className="flex space-x-5 lg:space-x-8">
           <div>
             <p className=" text-sm lg:text-base">Total Votes</p>
-            <h3 className="text-xl font-semibold">9,000</h3>
+            <h3 className="text-xl font-bold">9,000</h3>
           </div>
           <div>
             <p className=" text-sm lg:text-base">Current Rank</p>
-            <h3 className="text-xl font-semibold">#23</h3>
+            <h3 className="text-xl font-bold">#23</h3>
           </div>
           <Link to={"/vote/contestant/1234"}>
             <button className="bg-pink-500 font-medium text-sm lg:text-base text-white py-2 px-4 rounded-md">
@@ -76,7 +76,9 @@ const Dashboard = () => {
               </svg>
             </span>
             <div>
-              <h2 className="font-medium capitalize">Voting Starts</h2>
+              <h2 className="font-medium capitalize text-gray-600">
+                Voting Starts
+              </h2>
               <p className=" ">January 1, 2024</p>
             </div>
           </div>

@@ -98,11 +98,11 @@ const Vote = () => {
         <div className="flex space-x-5 lg:space-x-8">
           <div>
             <p className=" text-sm lg:text-base">Total Votes</p>
-            <h3 className="text-xl font-semibold">9,000</h3>
+            <h3 className="text-xl font-bold">9,000</h3>
           </div>
           <div>
             <p className=" text-sm lg:text-base">Current Rank</p>
-            <h3 className="text-xl font-semibold">#23</h3>
+            <h3 className="text-xl font-bold">#23</h3>
           </div>
         </div>
         {/* <div className="mt-4">
