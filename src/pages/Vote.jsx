@@ -10,7 +10,7 @@ const Vote = () => {
         Vote for Rex atuzie
       </h3> */}
 
-      <div className="my-6">
+      <div className="">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {galleryImages.map((image, index) => (
             <img
@@ -53,7 +53,7 @@ const Vote = () => {
         </div>
 
         {/* Contestant's Code */}
-        <div className="flex items-center text-sm space-x-2">
+        <div className="flex items-center my-3 text-sm space-x-2">
           <span className="text-pink-500">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -80,9 +80,15 @@ const Vote = () => {
             <p className="font-mono text-gray-600">ART9085431</p>
           </div>
         </div>
-        <p className=" text-xs w-fit p-2 bg-green-50 rounded-md lg:text-sm text-green-600">
-          Status: Active
-        </p>
+
+        {/* Contestant Bio */}
+        <div>
+          <h2 className=" lg:text-2xl font-semibold">About Rex atuzie</h2>
+          <p className=" text-sm lg:text-base">
+            An enthusiastic and confident contestant with a passion for fashion
+            and creative arts.
+          </p>
+        </div>
       </div>
 
       {/* Vote Information */}
@@ -105,9 +111,8 @@ const Vote = () => {
         </div> */}
       </div>
 
-      <form>
-        <p className=" text-start">
-          {" "}
+      <form className=" border border-orange-50 py-4 px-2 shadow-sm rounded-lg">
+        <p className=" text-sm">
           Ensure the contestant is who you wnat to vote for
         </p>
 
@@ -188,10 +193,18 @@ const Vote = () => {
             />
           </div>
 
-          <p className=" text-gray-600">
-            Ecach vote cost{" "}
+          <p className=" text-gray-600 text-center">
+            Each vote cost{" "}
             <span className=" font-semibold text-black">200NGN</span>
           </p>
+
+          <button
+            // disabled={loading}
+            className="text-sm my-4 uppercase lg:text-base w-full py-3 bg-pink-600 rounded-lg text-white font-semibold hover:bg-pink-700 transition-all disabled:bg-gray-300"
+            type="submit"
+          >
+            Proceed to make payment
+          </button>
         </div>
       </form>
       {/* </div> */}
