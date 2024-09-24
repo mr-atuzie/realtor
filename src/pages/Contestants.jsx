@@ -56,37 +56,35 @@ const Contestants = () => {
       </div>
 
       {/* Contestant Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 w-[90%] mx-auto md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredContestants.length > 0 ? (
           filteredContestants.map((contestant) => (
-            <div
-              key={contestant.id}
-              className="bg-white p-6 rounded-lg shadow-md"
-            >
+            <div key={contestant.id} className="bg-white rounded-lg shadow-md">
               {/* Contestant Info */}
               <div className="flex flex-col items-center text-center">
                 <img
                   src={contestant.image}
                   alt={contestant.name}
-                  className=" w-full rounded-full object-cover mb-4"
+                  className=" w-full object-cover mb-4"
                 />
-                <h2 className="text-xl font-semibold text-gray-800">
-                  {contestant.name}
-                </h2>
-                <p className="text-sm text-gray-600 font-mono">
-                  {contestant.code}
-                </p>
-                <p className="text-sm text-gray-600">{contestant.bio}</p>
-              </div>
-
-              {/* Vote Button */}
-              <div className="mt-6 text-center">
-                <a
-                  href={`/vote/contestant/${contestant.id}`}
-                  className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded-md transition duration-300"
-                >
-                  Vote Now
-                </a>
+                <div className=" px-4">
+                  <h2 className="lg:text-xl font-semibold text-gray-800">
+                    {contestant.name}
+                  </h2>
+                  <p className="text-sm text-gray-600 font-mono">
+                    {contestant.code}
+                  </p>
+                  <p className="text-sm text-gray-600">{contestant.bio}</p>
+                  {/* Vote Button */}
+                  <div className="my-4 text-center">
+                    <a
+                      href={`/vote/contestant/${contestant.id}`}
+                      className="inline-block bg-pink-500 hover:bg-pink-700 text-white font-semibold py-2 px-4 rounded-md transition duration-300"
+                    >
+                      Vote Now
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           ))
