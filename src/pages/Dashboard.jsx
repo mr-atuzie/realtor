@@ -37,18 +37,18 @@ const Dashboard = () => {
 
       {/* Vote Information */}
       <div className="my-6">
-        <h2 className="  lg:text-2xl font-semibold">Voting</h2>
+        <h2 className=" text-lg lg:text-2xl font-semibold">Voting</h2>
         <div className="flex space-x-5 lg:space-x-8">
           <div>
             <p className=" text-sm lg:text-base">Total Votes</p>
-            <h3 className="text-xl font-bold">9,000</h3>
+            <h3 className="text-xl font-semibold">9,000</h3>
           </div>
           <div>
             <p className=" text-sm lg:text-base">Current Rank</p>
-            <h3 className="text-xl font-bold">#23</h3>
+            <h3 className="text-xl font-semibold">#23</h3>
           </div>
           <Link to={"/vote/contestant/1234"}>
-            <button className="bg-pink-500 font-medium text-sm lg:text-base text-white py-2 px-4 rounded">
+            <button className="bg-pink-500 font-medium text-sm lg:text-base text-white py-2 px-4 rounded-md">
               Vote Now
             </button>
           </Link>
@@ -76,9 +76,7 @@ const Dashboard = () => {
               </svg>
             </span>
             <div>
-              <h2 className="font-medium capitalize text-gray-600">
-                Voting Starts
-              </h2>
+              <h2 className="font-medium capitalize">Voting Starts</h2>
               <p className=" ">January 1, 2024</p>
             </div>
           </div>
@@ -101,9 +99,7 @@ const Dashboard = () => {
               </svg>
             </span>
             <div>
-              <h2 className="font-medium capitalize text-gray-600">
-                Voting Ends
-              </h2>
+              <h2 className="font-medium capitalize ">Voting Ends</h2>
               <p className="">January 31, 2024</p>
             </div>
           </div>
@@ -112,7 +108,7 @@ const Dashboard = () => {
 
       {/* Contestant Bio */}
       <div className="my-6">
-        <h2 className=" lg:text-2xl font-semibold">About Rex atuzie</h2>
+        <h2 className=" text-lg lg:text-2xl font-semibold">About Rex atuzie</h2>
         <p className=" text-sm lg:text-base">
           An enthusiastic and confident contestant with a passion for fashion
           and creative arts.
@@ -121,7 +117,7 @@ const Dashboard = () => {
 
       {/* Gallery Section */}
       <div className="my-6">
-        <h2 className="lg:text-2xl font-semibold mb-3">Gallery</h2>
+        <h2 className=" text-lg lg:text-2xl font-semibold mb-3">Gallery</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {galleryImages.map((image, index) => (
             <img
@@ -136,7 +132,7 @@ const Dashboard = () => {
 
       {/* Footer Section */}
       <div className="my-6">
-        <h2 className=" lg:text-2xl font-semibold">Share</h2>
+        <h2 className=" text-lg lg:text-2xl font-semibold">Share</h2>
         <div className="flex text-sm space-x-4">
           <a href="*" className="text-blue-600">
             Facebook

@@ -83,7 +83,7 @@ const Register = () => {
 
         {/* Registration Form */}
         <form onSubmit={handleSubmit}>
-          <div className="flex flex-col items-center justify-center text-pink-500 mb-4">
+          <div className="flex flex-col items-center justify-center text-pink-500">
             <GiQueenCrown size={40} />
             <h4 className="text-5xl font-extrabold -mt-2 mb-6">
               Registration Form

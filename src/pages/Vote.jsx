@@ -1,4 +1,5 @@
 import React from "react";
+import { GiLaurelCrown } from "react-icons/gi";
 
 const Vote = () => {
   const galleryImages = [
@@ -10,7 +11,7 @@ const Vote = () => {
         Vote for Rex atuzie
       </h3> */}
 
-      <div className=" mb-2">
+      <div className=" mb-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {galleryImages.map((image, index) => (
             <img
@@ -53,7 +54,7 @@ const Vote = () => {
         </div>
 
         {/* Contestant's Code */}
-        <div className="flex items-center my-2 text-sm space-x-2">
+        <div className="flex items-center my-3 text-sm space-x-2">
           <span className="text-pink-500">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -92,16 +93,16 @@ const Vote = () => {
       </div>
 
       {/* Vote Information */}
-      <div className=" my-3 lg:my-6">
+      <div className=" my-4 lg:my-6">
         <h2 className="lg:text-2xl font-semibold">Voting</h2>
         <div className="flex space-x-5 lg:space-x-8">
           <div>
             <p className=" text-sm lg:text-base">Total Votes</p>
-            <h3 className="text-xl font-bold">9,000</h3>
+            <h3 className="text-xl font-semibold">9,000</h3>
           </div>
           <div>
             <p className=" text-sm lg:text-base">Current Rank</p>
-            <h3 className="text-xl font-bold">#23</h3>
+            <h3 className="text-xl font-semibold">#23</h3>
           </div>
         </div>
         {/* <div className="mt-4">
@@ -111,8 +112,14 @@ const Vote = () => {
         </div> */}
       </div>
 
-      <form className=" border border-orange-50 my-8 py-8 px-2 shadow-sm rounded-lg">
-        <p className=" text-sm text-center">
+      <form className=" border border-orange-50 my-8 py-8 px-4 shadow-sm rounded-lg">
+        <div className="flex items-center justify-center space-x-2 ">
+          <div className="text-pink-500">
+            <GiLaurelCrown size={20} />
+          </div>
+          <h4 className="text-xl font-bold text-gray-800">The Grand Stage</h4>
+        </div>
+        <p className=" text-sm text-center mb-5">
           Ensure the contestant is who you wnat to vote for
         </p>
 
