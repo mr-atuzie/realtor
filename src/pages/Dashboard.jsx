@@ -1,6 +1,6 @@
 import React from "react";
 // import { GiLaurelCrown } from "react-icons/gi";
-import avatar from "../assets/avatar.svg";
+import avatar from "../assets/award.svg";
 import { Link } from "react-router-dom";
 import CountUpAnimation from "../components/CountUpAnimation";
 
@@ -23,7 +23,7 @@ const Dashboard = () => {
         <img
           src={avatar}
           alt="Contestant"
-          className="w-24 h-24 object-cover rounded-full"
+          className="w-24 h-24 object-cover "
         />
         <div>
           <h1 className=" text-xl lg:text-3xl font-semibold">Rex atuzie</h1>
