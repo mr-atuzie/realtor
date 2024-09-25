@@ -1,5 +1,6 @@
 import React from "react";
 import { GiLaurelCrown } from "react-icons/gi";
+import CountUpAnimation from "../components/CountUpAnimation";
 
 const Vote = () => {
   const galleryImages = [
@@ -98,11 +99,23 @@ const Vote = () => {
         <div className="flex space-x-5 lg:space-x-8">
           <div>
             <p className=" text-sm lg:text-base">Total Votes</p>
-            <h3 className="text-xl font-bold">9,000</h3>
+            {/* <h3 className="text-xl font-bold">9,000</h3> */}
+            <CountUpAnimation
+              from={0}
+              to={1552}
+              duration={3}
+              // className="text-4xl font-bold text-purple-500"
+            />
           </div>
           <div>
             <p className=" text-sm lg:text-base">Current Rank</p>
-            <h3 className="text-xl font-bold">#23</h3>
+            {/* <h3 className="text-xl font-bold">#23</h3> */}
+            <CountUpAnimation
+              from={0}
+              to={23}
+              duration={3}
+              // className="text-4xl font-bold text-purple-500"
+            />
           </div>
         </div>
         {/* <div className="mt-4">

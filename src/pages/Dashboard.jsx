@@ -43,9 +43,10 @@ const Dashboard = () => {
           <div>
             <p className=" text-sm lg:text-base">Total Votes</p>
             {/* <h3 className="text-xl font-bold">9,000</h3> */}
+
             <CountUpAnimation
               from={0}
-              to={9000}
+              to={1552}
               duration={3}
               // className="text-4xl font-bold text-purple-500"
             />

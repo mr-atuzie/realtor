@@ -7,7 +7,7 @@ const DasboardLayout = () => {
   return (
     <div className=" min-h-screen ">
       {/* Dashboard header */}
-      <div className=" bg-white   p-4">
+      <div className=" bg-white border-b border-orange-50   p-4">
         <div className="flex items-center  space-x-2 ">
           <div className="text-pink-500">
             <GiLaurelCrown size={20} />
