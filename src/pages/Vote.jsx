@@ -101,9 +101,10 @@ const Vote = () => {
             <p className=" text-sm lg:text-base">Total Votes</p>
             {/* <h3 className="text-xl font-bold">9,000</h3> */}
             <CountUpAnimation
-              from={0}
-              to={1552}
-              duration={3}
+              // from={0}
+              // to={1552}
+              // duration={3}
+              count={2500}
               // className="text-4xl font-bold text-purple-500"
             />
           </div>
@@ -111,9 +112,10 @@ const Vote = () => {
             <p className=" text-sm lg:text-base">Current Rank</p>
             {/* <h3 className="text-xl font-bold">#23</h3> */}
             <CountUpAnimation
-              from={0}
-              to={23}
-              duration={3}
+              count={50}
+              // from={0}
+              // to={23}
+              // duration={3}
               // className="text-4xl font-bold text-purple-500"
             />
           </div>
