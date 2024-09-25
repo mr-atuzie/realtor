@@ -82,12 +82,10 @@ const Login = () => {
 
         {/* Welcome Back Section */}
         <form onSubmit={handleSubmit}>
-          <div className="flex flex-col items-center justify-center text-pink-500 mb-8">
+          <div className="flex flex-col items-center justify-center text-pink-500">
             <GiJewelCrown size={40} />
             <h4 className="text-5xl font-extrabold -mt-2">Welcome Back</h4>
-            <p className="text-sm text-gray-500 mt-1">
-              Log into your dashboard
-            </p>
+            <p className="text-sm text-gray-500 ">Log into your dashboard</p>
           </div>
 
           {/* Input Fields */}
