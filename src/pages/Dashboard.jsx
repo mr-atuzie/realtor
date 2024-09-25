@@ -45,9 +45,10 @@ const Dashboard = () => {
             {/* <h3 className="text-xl font-bold">9,000</h3> */}
 
             <CountUpAnimation
-              from={0}
-              to={90}
-              duration={3}
+              count={1100}
+              // from={0}
+              // to={90}
+              // duration={3}
               // className="text-4xl font-bold text-purple-500"
             />
           </div>
@@ -55,9 +56,10 @@ const Dashboard = () => {
             <p className=" text-sm lg:text-base">Current Rank</p>
             {/* <h3 className="text-xl font-bold">#23</h3> */}
             <CountUpAnimation
-              from={0}
-              to={10}
-              duration={3}
+              count={15}
+              // from={0}
+              // to={10}
+              // duration={3}
               // className="text-4xl font-bold text-purple-500"
             />
           </div>
