@@ -24,8 +24,9 @@ const CountUpAnimation = ({ from, to, duration }) => {
       key={count}
       initial={{ opacity: 0, y: -5 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.2, ease: "easeOut" }} // Shorter duration
+      transition={{ duration: 0.2, ease: "easeOut" }}
       className="text-xl font-bold"
+      style={{ willChange: "transform" }}
     >
       {count}
     </motion.div>

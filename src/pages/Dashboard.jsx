@@ -46,7 +46,7 @@ const Dashboard = () => {
 
             <CountUpAnimation
               from={0}
-              to={1552}
+              to={90}
               duration={3}
               // className="text-4xl font-bold text-purple-500"
             />
