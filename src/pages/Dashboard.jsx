@@ -28,10 +28,10 @@ const Dashboard = () => {
         <div>
           <h1 className=" text-xl lg:text-3xl font-semibold">Rex atuzie</h1>
           <p className="text-gray-600 mb-1 font-medium text-sm lg:text-base">
-            Contestant code: <span className="font-mono">ASR34567</span>
+            contestant code: <span className="font-mono">ASR34567</span>
           </p>
-          <p className=" text-xs w-fit p-2 bg-green-50 rounded-lg lg:text-sm text-green-600">
-            Active
+          <p className=" font-medium text-xs w-fit p-2 bg-green-50 rounded-lg lg:text-sm text-green-600">
+            status: Active
           </p>
         </div>
       </div>
@@ -116,8 +116,8 @@ const Dashboard = () => {
 
       {/* Contestant Bio */}
       <div className="my-6">
-        <div className=" flex justify-between items-center">
-          <h4 className=" lg:text-2xl font-semibold">About Rex atuzie</h4>
+        <div className=" flex justify-between items-center mb-1">
+          <h2 className=" lg:text-2xl font-semibold">About Rex atuzie</h2>
 
           <div className=" border border-pink-500 text-pink-500 p-2 rounded-full">
             <span>
@@ -146,7 +146,33 @@ const Dashboard = () => {
 
       {/* Gallery Section */}
       <div className="my-6">
-        <h2 className=" lg:text-2xl font-semibold mb-3">Gallery</h2>
+        <div className=" flex justify-between items-center mb-1">
+          <h2 className=" lg:text-2xl font-semibold">Gallery</h2>
+
+          <div className=" border border-pink-500 text-pink-500 p-2 rounded-full">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className=" w-4 h-4"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z"
+                />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {galleryImages.map((image, index) => (
             <img
