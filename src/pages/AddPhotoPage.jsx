@@ -13,8 +13,10 @@ const AddPhotoPage = () => {
   };
 
   return (
-    <div className="add-photo-page container mx-auto px-4 py-8">
-      <h1 className="text-2xl font-bold mb-6">Upload Your Photo</h1>
+    <div>
+      <h1 className=" text-pink-500 lg:text-2xl font-bold mb-6">
+        Upload Your Photo
+      </h1>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Image Upload Form */}

@@ -1,35 +1,35 @@
 import React from "react";
 // import { GiLaurelCrown } from "react-icons/gi";
-import avatar from "../assets/award.svg";
+// import avatar from "../assets/award.svg";
 import { Link } from "react-router-dom";
 import CountUpAnimation from "../components/CountUpAnimation";
 import ShareLinks from "../components/ShareLinks";
 
 const Dashboard = () => {
   const galleryImages = [
-    "https://media.istockphoto.com/id/1331637318/photo/portrait-of-young-afro-woman-with-bright-make-up.jpg?s=612x612&w=0&k=20&c=F6PSgaagZEabgAfTvxE78YPhKtK-5a8yYoA_oSbGNMM=",
+    // "https://media.istockphoto.com/id/1331637318/photo/portrait-of-young-afro-woman-with-bright-make-up.jpg?s=612x612&w=0&k=20&c=F6PSgaagZEabgAfTvxE78YPhKtK-5a8yYoA_oSbGNMM=",
     "https://media.istockphoto.com/id/1182617710/photo/photo-of-cheerful-curly-girl-with-positive-emotions.jpg?s=612x612&w=0&k=20&c=HeCma1qBTyPS5NdvkEh-LD9rmxQSvDed_zOtmx7OYOg=",
     "https://media.istockphoto.com/id/1306514019/photo/beautiful-girl-with-curly-hairstyle.jpg?s=612x612&w=0&k=20&c=4roFL5l37zg8gDsPuCTisDbIMnzvSGyKLwf8sjzH9oo=",
   ];
 
-  const contestUrl = "https://yourdomain.com/contest/123";
+  const contestUrl = "https://luxelueur.netlify.app/vote/contestant/1234";
   const contestTitle = "Vote for me for Miss Universe 2024!";
   const contestHashtag = "#MissUniverse2024";
   return (
     <div className=" w-full  space-y-6 ">
       {/* Contestant Info */}
-      <div className="flex items-center justify-center space-x-2 my-4">
-        {/* <GiLaurelCrown size={30} className="text-pink-500" /> */}
+      {/* <div className="flex items-center justify-center space-x-2 my-4">
+        <GiLaurelCrown size={30} className="text-pink-500" />
         <h2 className="font-semibold capitalize text-pink-500">Dashboard</h2>
-      </div>
+      </div> */}
 
       {/* Header Section */}
       <div className="flex items-center space-x-4">
-        <img
+        {/* <img
           src={avatar}
           alt="Contestant"
           className="w-24 h-24 object-cover "
-        />
+        /> */}
         <div>
           <h1 className=" text-xl lg:text-3xl font-semibold">Rex atuzie</h1>
           <p className="text-gray-600 mb-1  text-sm lg:text-base">
@@ -122,7 +122,7 @@ const Dashboard = () => {
       {/* Contestant Bio */}
       <div className="my-6">
         <div className=" flex justify-between items-end">
-          <h2 className=" text-lg text-pink-500 lg:text-2xl font-semibold">
+          <h2 className="text-pink-500 lg:text-2xl font-semibold">
             About Rex atuzie
           </h2>
 
@@ -154,9 +154,7 @@ const Dashboard = () => {
       {/* Gallery Section */}
       <div className="my-6">
         <div className=" flex justify-between items-end">
-          <h2 className=" text-lg text-pink-500 lg:text-2xl font-semibold">
-            Gallery
-          </h2>
+          <h2 className="  text-pink-500 lg:text-2xl font-semibold">Gallery</h2>
 
           <Link to={"/dashboard/add-photo"}>
             <span className=" text-gray-500">
@@ -197,9 +195,7 @@ const Dashboard = () => {
       {/* Footer Section */}
       <div className="my-6">
         <div className=" flex justify-between items-end">
-          <h2 className=" text-lg text-pink-500 lg:text-2xl font-semibold">
-            Share
-          </h2>
+          <h2 className="  text-pink-500 lg:text-2xl font-semibold">Share</h2>
 
           <div>
             <span className=" text-gray-500">
