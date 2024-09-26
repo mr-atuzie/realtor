@@ -11,11 +11,11 @@ const Dashboard = () => {
     "https://media.istockphoto.com/id/1306514019/photo/beautiful-girl-with-curly-hairstyle.jpg?s=612x612&w=0&k=20&c=4roFL5l37zg8gDsPuCTisDbIMnzvSGyKLwf8sjzH9oo=",
   ];
   return (
-    <div className=" w-full  space-y-6 mb-24 lg:mb-0">
+    <div className=" w-full  space-y-6 ">
       {/* Contestant Info */}
       <div className="flex items-center justify-center space-x-2 my-4">
         {/* <GiLaurelCrown size={30} className="text-pink-500" /> */}
-        <h2 className="font-semibold capitalize text-sm">Dashboard</h2>
+        <h2 className="font-semibold capitalize text-pink-500">Dashboard</h2>
       </div>
 
       {/* Header Section */}
@@ -27,11 +27,11 @@ const Dashboard = () => {
         />
         <div>
           <h1 className=" text-xl lg:text-3xl font-semibold">Rex atuzie</h1>
-          <p className="text-gray-600 mb-1 font-medium text-sm lg:text-base">
+          <p className="text-gray-600 mb-1  text-sm lg:text-base">
             contestant code: <span className="font-mono">ASR34567</span>
           </p>
-          <p className=" font-medium text-xs w-fit p-2 bg-green-50 rounded-lg lg:text-sm text-green-600">
-            status: Active
+          <p className=" text-xs w-fit p-2 bg-green-50 rounded-lg lg:text-sm text-green-600">
+            Status: Active
           </p>
         </div>
       </div>
@@ -116,10 +116,10 @@ const Dashboard = () => {
 
       {/* Contestant Bio */}
       <div className="my-6">
-        <div className=" flex justify-between items-center mb-1">
+        <div className=" flex justify-between items-center">
           <h2 className=" lg:text-2xl font-semibold">About Rex atuzie</h2>
 
-          <div className=" border border-pink-500 text-pink-500 p-2 rounded-full">
+          <div>
             <span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -146,10 +146,10 @@ const Dashboard = () => {
 
       {/* Gallery Section */}
       <div className="my-6">
-        <div className=" flex justify-between items-center mb-1">
+        <div className=" flex justify-between items-center">
           <h2 className=" lg:text-2xl font-semibold">Gallery</h2>
 
-          <div className=" border border-pink-500 text-pink-500 p-2 rounded-full">
+          <div>
             <span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

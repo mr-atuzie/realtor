@@ -15,7 +15,7 @@ const DasboardLayout = () => {
           <h4 className="text-2xl font-bold text-gray-800">The Grand Stage</h4>
         </div>
       </div>
-      <div className=" w-[90%]  mx-auto lg:w-[85%] ">
+      <div className=" w-[90%] mb-24 lg:mb-0  mx-auto lg:w-[85%] ">
         <Outlet />
       </div>
       <MobileNav />

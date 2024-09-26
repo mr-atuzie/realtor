@@ -76,7 +76,7 @@ const EditProfile = () => {
     //   }
   };
   return (
-    <div className=" w-full mb-24 lg:mb-0">
+    <div className=" w-full ">
       <div className="flex items-center justify-center space-x-2 mb-5">
         {/* <span className=" text-pink-500">
           <svg
@@ -198,15 +198,14 @@ const EditProfile = () => {
         </div>
 
         {/* Submit Button */}
-        <div className="flex flex-col items-center">
-          <button
-            disabled={loading}
-            className="text-sm lg:text-base w-full py-3 bg-pink-600 rounded-lg text-white font-semibold hover:bg-pink-700 transition-all disabled:bg-gray-300"
-            type="submit"
-          >
-            {loading ? "Loading..." : "Submit"}
-          </button>
-        </div>
+
+        <button
+          disabled={loading}
+          className="text-sm lg:text-base w-full my-16 py-3 bg-pink-600 rounded-lg text-white font-semibold hover:bg-pink-700 transition-all disabled:bg-gray-300"
+          type="submit"
+        >
+          {loading ? "Loading..." : "Submit"}
+        </button>
       </form>
     </div>
   );

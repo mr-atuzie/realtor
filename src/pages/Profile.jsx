@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Profile = () => {
   return (
-    <div className=" w-full  space-y-6   mb-24 lg:mb-0">
+    <div className=" w-full  space-y-6 ">
       {/* Contestant Info */}
       <div className="flex items-center justify-center space-x-2 mb-5">
         {/* <GiLaurelCrown size={30} className="text-pink-500" /> */}
