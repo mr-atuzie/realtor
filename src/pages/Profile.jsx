@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // import { GiLaurelCrown } from "react-icons/gi";
 
 const Profile = () => {
@@ -112,6 +113,32 @@ const Profile = () => {
       </div>
 
       {/* Manage account*/}
+      <Link to={"/dashboard/edit-profile"}>
+        <div className="flex items-center text-sm space-x-2">
+          <span className="text-pink-500">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+              />
+            </svg>
+          </span>
+          <div>
+            <h2 className="font-semibold capitalize ">Manage Account</h2>
+            <p className=" text-blue-600">Edit Profile</p>
+          </div>
+        </div>
+      </Link>
+
+      {/* Manage passowrd*/}
       <div className="flex items-center text-sm space-x-2">
         <span className="text-pink-500">
           <svg
@@ -125,13 +152,13 @@ const Profile = () => {
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
-              d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+              d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"
             />
           </svg>
         </span>
         <div>
-          <h2 className="font-semibold capitalize ">Manage Account</h2>
-          <p className="font-mono text-blue-600">Edit Profile</p>
+          <h2 className="font-semibold capitalize ">Manage Password</h2>
+          <p className=" text-blue-600">reset your password</p>
         </div>
       </div>
 
@@ -157,6 +184,7 @@ const Profile = () => {
           <button className="font-semibold text-red-500 capitalize ">
             Log out
           </button>
+          <p className=" text-gray-600">log out from your account</p>
         </div>
       </div>
     </div>

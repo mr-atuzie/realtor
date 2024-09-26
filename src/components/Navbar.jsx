@@ -117,7 +117,7 @@ const Navbar = () => {
           </div>
 
           <div className=" flex flex-col my-6 gap-4">
-            <Link className=" flex items-center gap-2" to={"/"}>
+            <Link className=" flex font-medium items-center gap-2" to={"/"}>
               <span className=" text-pink-500">
                 <RiVipCrownLine />
               </span>

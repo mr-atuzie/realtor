@@ -28,10 +28,10 @@ const Dashboard = () => {
         <div>
           <h1 className=" text-xl lg:text-3xl font-semibold">Rex atuzie</h1>
           <p className="text-gray-600 mb-1 text-sm lg:text-base">
-            Contestant Code: <span className="font-mono">ASR34567</span>
+            Contestant code: <span className="font-mono">ASR34567</span>
           </p>
-          <p className=" text-xs w-fit p-2 bg-green-50 rounded-md lg:text-sm text-green-600">
-            Status: Active
+          <p className=" text-xs w-fit p-2 bg-green-50 rounded-full lg:text-sm text-green-600">
+            Active
           </p>
         </div>
       </div>
@@ -44,24 +44,12 @@ const Dashboard = () => {
             <p className=" text-sm lg:text-base">Total Votes</p>
             {/* <h3 className="text-xl font-bold">9,000</h3> */}
 
-            <CountUpAnimation
-              count={1100}
-              // from={0}
-              // to={90}
-              // duration={3}
-              // className="text-4xl font-bold text-purple-500"
-            />
+            <CountUpAnimation count={9000} />
           </div>
           <div>
             <p className=" text-sm lg:text-base">Current Rank</p>
             {/* <h3 className="text-xl font-bold">#23</h3> */}
-            <CountUpAnimation
-              count={15}
-              // from={0}
-              // to={10}
-              // duration={3}
-              // className="text-4xl font-bold text-purple-500"
-            />
+            <CountUpAnimation count={100} />
           </div>
           <Link to={"/vote/contestant/1234"}>
             <button className="bg-pink-500 font-medium text-sm lg:text-base text-white py-2 px-4 rounded-md">
