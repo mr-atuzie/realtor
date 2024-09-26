@@ -55,17 +55,16 @@ const AddPhotoPage = () => {
         </div>
 
         {/* Image Upload Rules */}
-        <div className=" bg-orange-50 py-8 px-4 rounded-lg">
-          <h2 className=" lg:text-xl font-bold text-center mb-4">
+        <div className=" bg-orange-50 py-8  rounded-lg">
+          <h4 className=" text-xl font-bold text-center mb-4">
             Photo Guidelines
-          </h2>
-          <ul className="list-disc  text-sm">
+          </h4>
+          <ul className="list-disc px-5  text-sm">
             <li className="mb-2">
               Upload 2 portrait selfie photo.{" "}
-              <span className=" italic text-pink-500">View demo</span>
+              <span className=" italic text-pink-500">view demo</span>
             </li>
-            <li className="mb-2">The image must be in JPG or PNG format.</li>
-            <li className="mb-2">The image must be clear and high-quality.</li>
+
             <li className="mb-2">
               Please ensure your photo is clear, well-lit, and high resolution.
             </li>
