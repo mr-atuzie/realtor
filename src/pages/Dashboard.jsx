@@ -126,7 +126,7 @@ const Dashboard = () => {
             About Rex atuzie
           </h2>
 
-          <div>
+          <Link to={"/dashboard/edit-profile"}>
             <span className=" text-gray-500">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -143,7 +143,7 @@ const Dashboard = () => {
                 />
               </svg>
             </span>
-          </div>
+          </Link>
         </div>
         <p className=" text-sm lg:text-base">
           An enthusiastic and confident contestant with a passion for fashion
@@ -154,9 +154,11 @@ const Dashboard = () => {
       {/* Gallery Section */}
       <div className="my-6">
         <div className=" flex justify-between items-end">
-          <h2 className=" lg:text-2xl font-semibold">Gallery</h2>
+          <h2 className=" text-lg text-pink-500 lg:text-2xl font-semibold">
+            Gallery
+          </h2>
 
-          <div>
+          <Link to={"/dashboard/add-photo"}>
             <span className=" text-gray-500">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -178,7 +180,7 @@ const Dashboard = () => {
                 />
               </svg>
             </span>
-          </div>
+          </Link>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 mt-2 md:grid-cols-3 gap-4">
           {galleryImages.map((image, index) => (

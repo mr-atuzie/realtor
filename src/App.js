@@ -11,6 +11,7 @@ import VotingLayout from "./pages/VotingLayout";
 import Vote from "./pages/Vote";
 import Contestants from "./pages/Contestants";
 import EditProfile from "./pages/EditProfile";
+import AddPhotoPage from "./pages/AddPhotoPage";
 // import Test from "./pages/test";
 // import Navbar from "./components/Navbar";
 
@@ -29,6 +30,7 @@ function App() {
           <Route path="/dashboard" element={<DasboardLayout />}>
             <Route index element={<Dashboard />} />
             <Route path="profile" element={<Profile />} />
+            <Route path="add-photo" element={<AddPhotoPage />} />
             <Route path="edit-profile" element={<EditProfile />} />
           </Route>
 

@@ -9,7 +9,7 @@ import { FaFacebook, FaWhatsapp, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const ShareLinks = ({ url, title, hashtag }) => {
   return (
-    <div className="flex gap-4 items-center justify-center">
+    <div className="flex gap-7 items-center ">
       {/* Facebook Share */}
       <FacebookShareButton url={url} quote={title} hashtag={hashtag}>
         <FaFacebook className="text-blue-600 w-6 h-6" />
