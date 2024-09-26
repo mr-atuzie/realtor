@@ -8,7 +8,7 @@ const Profile = () => {
       {/* Contestant Info */}
       <div className="flex items-center justify-center space-x-2 mb-5">
         {/* <GiLaurelCrown size={30} className="text-pink-500" /> */}
-        <h2 className=" font-semibold capitalize">Profile</h2>
+        <h2 className=" font-semibold capitalize text-pink-500">Profile</h2>
       </div>
 
       {/* Contestant's Name */}
