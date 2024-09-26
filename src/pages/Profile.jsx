@@ -113,8 +113,8 @@ const Profile = () => {
       </div>
 
       {/* Manage account*/}
-      <Link to={"/dashboard/edit-profile"}>
-        <div className="flex items-center text-sm space-x-2">
+      <div className="flex items-center text-sm space-x-2">
+        <Link to={"/dashboard/edit-profile"}>
           <span className="text-pink-500">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -131,12 +131,14 @@ const Profile = () => {
               />
             </svg>
           </span>
+        </Link>
+        <Link to={"/dashboard/edit-profile"}>
           <div>
             <h2 className="font-semibold capitalize ">Manage Account</h2>
             <p className=" text-blue-600">Edit Profile</p>
           </div>
-        </div>
-      </Link>
+        </Link>
+      </div>
 
       {/* Manage passowrd*/}
       <div className="flex items-center text-sm space-x-2">
@@ -158,7 +160,7 @@ const Profile = () => {
         </span>
         <div>
           <h2 className="font-semibold capitalize ">Manage Password</h2>
-          <p className=" text-blue-600">reset your password</p>
+          <p className=" text-blue-600">Reset your password</p>
         </div>
       </div>
 
@@ -184,7 +186,7 @@ const Profile = () => {
           <button className="font-semibold text-red-500 capitalize ">
             Log out
           </button>
-          <p className=" text-gray-600">log out from your account</p>
+          <p className=" text-gray-600">Log out from account</p>
         </div>
       </div>
     </div>
