@@ -13,9 +13,9 @@ const Dashboard = () => {
   return (
     <div className=" w-full  space-y-6 mb-24 lg:mb-0">
       {/* Contestant Info */}
-      <div className="flex items-center justify-center space-x-2 mb-5">
+      <div className="flex items-center justify-center space-x-2 my-4">
         {/* <GiLaurelCrown size={30} className="text-pink-500" /> */}
-        <h4 className="font-semibold capitalize">Dashboard</h4>
+        <h2 className="font-semibold capitalize text-sm">Dashboard</h2>
       </div>
 
       {/* Header Section */}
@@ -27,7 +27,7 @@ const Dashboard = () => {
         />
         <div>
           <h1 className=" text-xl lg:text-3xl font-semibold">Rex atuzie</h1>
-          <p className="text-gray-600 mb-1 text-sm lg:text-base">
+          <p className="text-gray-600 mb-1 font-medium text-sm lg:text-base">
             Contestant code: <span className="font-mono">ASR34567</span>
           </p>
           <p className=" text-xs w-fit p-2 bg-green-50 rounded-full lg:text-sm text-green-600">
@@ -38,7 +38,7 @@ const Dashboard = () => {
 
       {/* Vote Information */}
       <div className="my-6">
-        <h4 className=" lg:text-2xl font-semibold">Voting</h4>
+        <h2 className=" lg:text-2xl font-semibold">Voting</h2>
         <div className="flex space-x-5 lg:space-x-8">
           <div>
             <p className=" text-sm lg:text-base">Total Votes</p>

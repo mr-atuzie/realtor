@@ -76,10 +76,10 @@ const EditProfile = () => {
     //   }
   };
   return (
-    <div className=" w-full">
+    <div className=" w-full mb-24">
       <div className="flex items-center justify-center space-x-2 mb-5">
         {/* <GiLaurelCrown size={30} className="text-pink-500" /> */}
-        <h4 className=" font-semibold capitalize">Edit Profile</h4>
+        <h2 className=" font-semibold capitalize">Edit Profile</h2>
       </div>
       {/* Registration Form */}
       <form onSubmit={handleSubmit}>
@@ -159,7 +159,9 @@ const EditProfile = () => {
             <label
               className="block text-sm font-medium text-gray-700 mb-1"
               htmlFor="bio"
-            ></label>
+            >
+              bio
+            </label>
 
             <textarea
               id="bio"
@@ -168,13 +170,13 @@ const EditProfile = () => {
               value={bio}
               onChange={handleBioChange}
               maxLength={maxLength}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-3"
-              placeholder="Tell us about yourself (max 40 characters)"
+              className="border border-gray-300 p-2.5 bg-gray-50 rounded-lg block w-full text-sm focus:outline-none focus:ring-2 focus:ring-pink-500"
+              placeholder="Tell us about yourself "
             />
 
-            <p className="text-sm text-gray-500">
+            <small className="text-xs text-gray-400 mt-1 block">
               {bio.length}/{maxLength} characters used
-            </p>
+            </small>
           </div>
         </div>
 
