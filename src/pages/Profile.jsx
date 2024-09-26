@@ -159,7 +159,7 @@ const Profile = () => {
           </svg>
         </span>
         <div>
-          <h2 className="font-semibold capitalize ">Manage Password</h2>
+          <h2 className="font-semibold capitalize ">Change Password</h2>
           <p className=" text-blue-600">Reset your password</p>
         </div>
       </div>
