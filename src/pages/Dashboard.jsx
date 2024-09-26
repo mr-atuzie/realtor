@@ -35,7 +35,7 @@ const Dashboard = () => {
           <p className="text-gray-600 mb-1  text-sm lg:text-base">
             contestant code: <span className="font-mono">ASR34567</span>
           </p>
-          <p className=" text-xs w-fit p-2 bg-green-50 rounded-lg lg:text-sm text-green-600">
+          <p className=" shadow-md text-xs w-fit p-2 bg-green-50 rounded-lg lg:text-sm text-green-600">
             Status: Active
           </p>
         </div>
