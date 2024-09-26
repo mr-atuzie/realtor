@@ -14,7 +14,7 @@ const AddPhotoPage = () => {
 
   return (
     <div>
-      <h1 className=" text-pink-500 lg:text-2xl font-bold mb-6">
+      <h1 className=" text-pink-500 text-center lg:text-2xl font-bold mb-6">
         Upload Your Photo
       </h1>
 
@@ -55,19 +55,24 @@ const AddPhotoPage = () => {
         </div>
 
         {/* Image Upload Rules */}
-        <div>
-          <h2 className="text-xl font-bold mb-4">Image Upload Rules</h2>
-          <ul className="list-disc pl-5 text-sm">
-            <li className="mb-2">The image must be in JPG or PNG format.</li>
-            <li className="mb-2">Maximum file size allowed is 5MB.</li>
-            <li className="mb-2">The image must be clear and high-quality.</li>
-            <li className="mb-2">No watermarks or logos on the image.</li>
+        <div className=" bg-orange-50 py-8 px-4 rounded-lg">
+          <h2 className=" lg:text-xl font-bold text-center mb-4">
+            Photo Guidelines
+          </h2>
+          <ul className="list-disc  text-sm">
             <li className="mb-2">
-              The image should be taken in good lighting.
+              Upload 2 portrait selfie photo.{" "}
+              <span className=" italic text-pink-500">View demo</span>
+            </li>
+            <li className="mb-2">The image must be in JPG or PNG format.</li>
+            <li className="mb-2">The image must be clear and high-quality.</li>
+            <li className="mb-2">
+              Please ensure your photo is clear, well-lit, and high resolution.
             </li>
             <li className="mb-2">
-              Ensure that the image is appropriate and adheres to our content
-              policy.
+              Photos should be respectful and appropriate, showcasing you at
+              your best. Offensive or inappropriate content will result in
+              disqualification.
             </li>
           </ul>
         </div>
