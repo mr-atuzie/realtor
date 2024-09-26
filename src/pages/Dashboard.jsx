@@ -3,6 +3,7 @@ import React from "react";
 import avatar from "../assets/award.svg";
 import { Link } from "react-router-dom";
 import CountUpAnimation from "../components/CountUpAnimation";
+import ShareLinks from "../components/ShareLinks";
 
 const Dashboard = () => {
   const galleryImages = [
@@ -10,6 +11,10 @@ const Dashboard = () => {
     "https://media.istockphoto.com/id/1182617710/photo/photo-of-cheerful-curly-girl-with-positive-emotions.jpg?s=612x612&w=0&k=20&c=HeCma1qBTyPS5NdvkEh-LD9rmxQSvDed_zOtmx7OYOg=",
     "https://media.istockphoto.com/id/1306514019/photo/beautiful-girl-with-curly-hairstyle.jpg?s=612x612&w=0&k=20&c=4roFL5l37zg8gDsPuCTisDbIMnzvSGyKLwf8sjzH9oo=",
   ];
+
+  const contestUrl = "https://yourdomain.com/contest/123";
+  const contestTitle = "Vote for me for Miss Universe 2024!";
+  const contestHashtag = "#MissUniverse2024";
   return (
     <div className=" w-full  space-y-6 ">
       {/* Contestant Info */}
@@ -117,7 +122,9 @@ const Dashboard = () => {
       {/* Contestant Bio */}
       <div className="my-6">
         <div className=" flex justify-between items-end">
-          <h2 className=" lg:text-2xl font-semibold">About Rex atuzie</h2>
+          <h2 className=" text-lg text-pink-500 lg:text-2xl font-semibold">
+            About Rex atuzie
+          </h2>
 
           <div>
             <span className=" text-gray-500">
@@ -187,8 +194,36 @@ const Dashboard = () => {
 
       {/* Footer Section */}
       <div className="my-6">
-        <h2 className=" text-lg lg:text-2xl font-semibold">Share</h2>
-        <div className="flex text-sm space-x-4">
+        <div className=" flex justify-between items-end">
+          <h2 className=" text-lg text-pink-500 lg:text-2xl font-semibold">
+            Share
+          </h2>
+
+          <div>
+            <span className=" text-gray-500">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-5 h-5"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+        <ShareLinks
+          url={contestUrl}
+          title={contestTitle}
+          hashtag={contestHashtag}
+        />
+        {/* <div className="flex text-sm space-x-4">
           <a href="*" className="text-blue-600">
             Facebook
           </a>
@@ -198,7 +233,7 @@ const Dashboard = () => {
           <a href="*" className="text-pink-600">
             Instagram
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );

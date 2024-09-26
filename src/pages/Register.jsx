@@ -110,7 +110,7 @@ const Register = () => {
                 placeholder="Enter your Name"
                 required
               />
-              <small className="text-xs text-gray-400 mt-1 block">
+              <small className="text-xs text-gray-600 mt-1 block">
                 Name as you'd like it to appear in the contest.
               </small>
             </div>
@@ -133,7 +133,7 @@ const Register = () => {
                 placeholder="Enter your Email"
                 required
               />
-              <small className="text-xs text-gray-400 mt-1 block">
+              <small className="text-xs text-gray-600 mt-1 block">
                 Make sure your email address is correct.
               </small>
             </div>
@@ -156,7 +156,7 @@ const Register = () => {
                 placeholder="Enter your Phone Number"
                 required
               />
-              <small className="text-xs text-gray-400 mt-1 block">
+              <small className="text-xs text-gray-600 mt-1 block">
                 Make sure your phone number is valid.
               </small>
             </div>
@@ -179,14 +179,14 @@ const Register = () => {
                 placeholder="Enter your Password"
                 required
               />
-              <small className="text-xs text-gray-400 mt-1 block">
+              <small className="text-xs text-gray-600 mt-1 block">
                 Password must be at least 8 characters.
               </small>
             </div>
           </div>
 
           {/* Entry Fee */}
-          <p className="text-sm text-gray-700 mb-6">
+          <p className="text-sm text-gray-600 mb-6">
             Pay the entry fee <span className="font-medium">₦5,000</span> to
             complete your registration.
           </p>
