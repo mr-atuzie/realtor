@@ -24,7 +24,7 @@ const EditProfile = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const maxLength = 40;
+  const maxLength = 50;
 
   const handleBioChange = (e) => {
     setBio(e.target.value);
@@ -104,10 +104,7 @@ const EditProfile = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
           {/* Full Name */}
           <div>
-            <label
-              className="block text-sm font-medium text-gray-700 mb-1"
-              htmlFor="name"
-            >
+            <label className="block text-sm font-medium  mb-1" htmlFor="name">
               Full Name
             </label>
             <input
@@ -120,17 +117,14 @@ const EditProfile = () => {
               placeholder="Enter your Name"
               required
             />
-            <small className="text-xs text-gray-400 mt-1 block">
+            <small className="text-xs text-gray-600 mt-1 block">
               Name as you'd like it to appear in the contest.
             </small>
           </div>
 
           {/* Email */}
           <div>
-            <label
-              className="block text-sm font-medium text-gray-700 mb-1"
-              htmlFor="email"
-            >
+            <label className="block text-sm font-medium mb-1" htmlFor="email">
               Email
             </label>
             <input
@@ -143,17 +137,14 @@ const EditProfile = () => {
               placeholder="Enter your Email"
               required
             />
-            <small className="text-xs text-gray-400 mt-1 block">
+            <small className="text-xs text-gray-600 mt-1 block">
               Make sure your email address is correct.
             </small>
           </div>
 
           {/* Phone Number */}
           <div>
-            <label
-              className="block text-sm font-medium text-gray-700 mb-1"
-              htmlFor="phone"
-            >
+            <label className="block text-sm font-medium  mb-1" htmlFor="phone">
               Phone Number
             </label>
             <input
@@ -166,17 +157,14 @@ const EditProfile = () => {
               placeholder="Enter your Phone Number"
               required
             />
-            <small className="text-xs text-gray-400 mt-1 block">
+            <small className="text-xs text-gray-600 mt-1 block">
               Make sure your phone number is valid.
             </small>
           </div>
 
           {/* bio */}
           <div>
-            <label
-              className="block text-sm font-medium text-gray-700 mb-1"
-              htmlFor="bio"
-            >
+            <label className="block text-sm font-medium  mb-1" htmlFor="bio">
               Bio
             </label>
 
@@ -191,7 +179,7 @@ const EditProfile = () => {
               placeholder="Tell us about yourself "
             />
 
-            <small className="text-xs text-gray-400 mt-1 block">
+            <small className="text-xs text-gray-600 mt-1 block">
               {bio.length}/{maxLength} characters used
             </small>
           </div>
