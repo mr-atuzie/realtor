@@ -16,12 +16,17 @@ const ShareLinks = ({ url, title, hashtag }) => {
       </FacebookShareButton>
 
       {/* WhatsApp Share */}
-      <WhatsappShareButton url={url} title={title}>
+      <WhatsappShareButton separator="rex test" url={url} title={title}>
         <FaWhatsapp className="text-green-500 w-6 h-6" />
       </WhatsappShareButton>
 
       {/* X (Twitter) Share */}
-      <TwitterShareButton url={url} title={title} hashtags={[hashtag]}>
+      <TwitterShareButton
+        url={url}
+        title={title}
+        hashtags={[hashtag, "#FaceCard20204"]}
+        related={["AtuzieR", "ikwerreg"]}
+      >
         <FaTwitter className="text-blue-400 w-6 h-6" />
       </TwitterShareButton>
 
