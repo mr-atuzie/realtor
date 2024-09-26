@@ -201,7 +201,7 @@ const EditProfile = () => {
 
         <button
           disabled={loading}
-          className="text-sm lg:text-base w-full my-8 py-3 bg-pink-600 rounded-lg text-white font-semibold hover:bg-pink-700 transition-all disabled:bg-gray-300"
+          className="text-sm lg:text-base w-full  mb-20 py-3 bg-pink-600 rounded-lg text-white font-semibold hover:bg-pink-700 transition-all disabled:bg-gray-300"
           type="submit"
         >
           {loading ? "Loading..." : "Submit"}
