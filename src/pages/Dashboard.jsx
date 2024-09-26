@@ -15,7 +15,7 @@ const Dashboard = () => {
       {/* Contestant Info */}
       <div className="flex items-center justify-center space-x-2 mb-5">
         {/* <GiLaurelCrown size={30} className="text-pink-500" /> */}
-        <h2 className="font-semibold capitalize">Dashboard</h2>
+        <h4 className="font-semibold capitalize">Dashboard</h4>
       </div>
 
       {/* Header Section */}
@@ -38,7 +38,7 @@ const Dashboard = () => {
 
       {/* Vote Information */}
       <div className="my-6">
-        <h2 className=" lg:text-2xl font-semibold">Voting</h2>
+        <h4 className=" lg:text-2xl font-semibold">Voting</h4>
         <div className="flex space-x-5 lg:space-x-8">
           <div>
             <p className=" text-sm lg:text-base">Total Votes</p>
@@ -116,7 +116,7 @@ const Dashboard = () => {
 
       {/* Contestant Bio */}
       <div className="my-6">
-        <h2 className=" lg:text-2xl font-semibold">About Rex atuzie</h2>
+        <h4 className=" lg:text-2xl font-semibold">About Rex atuzie</h4>
         <p className=" text-sm lg:text-base">
           An enthusiastic and confident contestant with a passion for fashion
           and creative arts.
